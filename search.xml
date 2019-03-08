@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[webstorm .swig文件语法高亮]]></title>
+    <url>%2F2019%2F03%2F07%2Fwebstorm-swig%E6%96%87%E4%BB%B6%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE%2F</url>
+    <content type="text"><![CDATA[前言swig是nodeJS前端模板引擎，swig特点看这里。 语法高亮webstrom（1）在File&gt;Settings&gt;Plugins，选择下方 Browse repositories... （2）在编辑框输入 twig，点击 Twig Support，Install之后重启webstorm （3）重启后，打开File&gt;Settings&gt;Editor&gt;File Types，找到Twig，点击+号添加*.swig，apply后就能看到.swig都高亮啦~]]></content>
+      <tags>
+        <tag>.swig</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git出现The following problems have occurred when adding the files: *** is in submodule]]></title>
+    <url>%2F2019%2F03%2F06%2Fgit%E5%87%BA%E7%8E%B0The-following-problems-have-occurred-when-adding-the-files-is-in-submodule%2F</url>
+    <content type="text"><![CDATA[前言开始搭建博客的时候，使用到Next主题1git clone https://github.com/iissnan/hexo-theme-next themes/next clone下的项目内包含.git隐藏文件，删除后，更改主题的代码后提交报错，手动git add依然报错The following problems have occurred when adding the files: *** is in submodule 解决这是因为本来是其他git项目，需要清除缓存记录。1git rm -rf --cached themes/next 运行上面的代码之后，再git add就不会报错啦~]]></content>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Android P报java.net.UnknownServiceException: CLEARTEXT communication to *** not permitted by netwo...]]></title>
+    <url>%2F2019%2F03%2F06%2FAndroid-P%E6%8A%A5java-net-UnknownServiceException-CLEARTEXT-communication-to-not-permitted-by-netwo%2F</url>
+    <content type="text"><![CDATA[原因由于 Android P 限制了明文流量的网络请求，非加密的流量请求都会被系统禁止掉。 如果当前应用的请求是 htttp 请求，而非 https ,这样就会导系统禁止当前应用进行该请求，如果 WebView 的 url 用 http 协议，同样会出现加载失败，https 不受影响。 为此，OkHttp3 做了检查，所以如果使用了明文流量，默认情况下，在 Android P 版本 OkHttp3 就抛出异常: CLEARTEXT communication to *** not permitted by network security policy 解决办法（任选一个）1.在 res 下新建一个 xml目录，然后创建一个名为：network_security_config.xml 文件 ，该文件内容如下：1234&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;network-security-config&gt; &lt;base-config cleartextTrafficPermitted="true" /&gt;&lt;/network-security-config&gt; 然后在 AndroidManifest.xml application 标签内应用上面的xml配置：android:networkSecurityConfig=&quot;@xml/network_security_config&quot;123456&lt;application android:name=".app.App" android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:networkSecurityConfig="@xml/network_security_config" android:label="@string/app_name" android:theme="@style/AppTheme"&gt; 2.服务器和本地应用都改用 https 3.targetSdkVersion 降级回到 27]]></content>
+      <tags>
+        <tag>Android P</tag>
+      </tags>
+  </entry>
+</search>
