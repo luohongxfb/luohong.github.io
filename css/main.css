@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bbdaba;
+  background: #add486;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3134,12 +3134,6 @@ pre .javascript .function {
 .links-of-blogroll-inline .links-of-blogroll-item:first-child {
   width: 60%;
 }
-.post-body a {
-  color: #72baa7;
-}
-.post-body a:hover {
-  color: #0bdca5;
-}
 .link-blue {
   color: #f36;
 }
@@ -3149,7 +3143,6 @@ pre .javascript .function {
 code {
   color: #c7254e;
   background: #f9f2f4;
-  border: 1px solid #d6d6d6;
 }
 .posts-expand .post-body img {
   margin: 0 auto;
