@@ -1869,7 +1869,7 @@ pre .javascript .function {
   padding: 2px;
   max-width: 120px;
   height: auto;
-  border: 1px solid #eee;
+  border: 2px solid #eee;
 }
 .site-author-name {
   margin: 0;
@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #24d9ff;
+  background: #42cfad;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3136,6 +3136,15 @@ body {
 .post-body a:not(.btn):hover {
   color: #5073b8;
   border-bottom: 1px solid #5073b8;
+}
+.site-author-image:hover {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 2px;
+  max-width: 120px;
+  height: auto;
+  border: 2px solid #fff159;
 }
 .posts-expand .post-title-link::before {
   background-image: linear-gradient(90deg, #a166ab 0%, #ef4e7b 25%, #f37055 50%, #ef4e7b 75%, #a166ab 100%);
