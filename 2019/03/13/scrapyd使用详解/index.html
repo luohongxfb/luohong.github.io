@@ -101,7 +101,8 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT, Android, Python, H5, NodeJS, life">
+  <meta name="keywords" content="Scrapy线上部署,Scrapyd,">
+  
 
 
 
@@ -111,18 +112,18 @@
 
 
 
-
-<meta name="description" content="Stay hungry，stay foolish.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="https://www.aililuo.cn/categories/index.html">
+<meta name="description" content="Scrapyd官方文档 https://scrapyd.readthedocs.io/en/latest/index.html  前言Scrapyd通常作为守护进程运行，它侦听运行爬虫的请求，并为每个请求生成一个进程，该进程基本上执行:scrapy crawl [myspider]。 Scrapyd还并行运行多个进程，将它们分配到max_proc和max_proc_per_cpu选项提供的固定数">
+<meta name="keywords" content="Scrapy线上部署,Scrapyd">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Scrapyd使用详解">
+<meta property="og:url" content="https://www.aililuo.cn/2019/03/13/scrapyd使用详解/index.html">
 <meta property="og:site_name" content="Crawler_lh&#39;s Blog">
-<meta property="og:description" content="Stay hungry，stay foolish.">
+<meta property="og:description" content="Scrapyd官方文档 https://scrapyd.readthedocs.io/en/latest/index.html  前言Scrapyd通常作为守护进程运行，它侦听运行爬虫的请求，并为每个请求生成一个进程，该进程基本上执行:scrapy crawl [myspider]。 Scrapyd还并行运行多个进程，将它们分配到max_proc和max_proc_per_cpu选项提供的固定数">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-07T08:54:55.053Z">
+<meta property="og:updated_time" content="2019-03-15T06:52:09.659Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
-<meta name="twitter:description" content="Stay hungry，stay foolish.">
+<meta name="twitter:title" content="Scrapyd使用详解">
+<meta name="twitter:description" content="Scrapyd官方文档 https://scrapyd.readthedocs.io/en/latest/index.html  前言Scrapyd通常作为守护进程运行，它侦听运行爬虫的请求，并为每个请求生成一个进程，该进程基本上执行:scrapy crawl [myspider]。 Scrapyd还并行运行多个进程，将它们分配到max_proc和max_proc_per_cpu选项提供的固定数">
 
 
 
@@ -152,13 +153,13 @@
 
 
 
-  <link rel="canonical" href="https://www.aililuo.cn/categories/">
+  <link rel="canonical" href="https://www.aililuo.cn/2019/03/13/scrapyd使用详解/">
 
 
 
 
 
-  <title>分类 | Crawler_lh's Blog</title>
+  <title>Scrapyd使用详解 | Crawler_lh's Blog</title>
   
 
 
@@ -305,40 +306,263 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     
     
-    <div class="post-block page">
+    
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://www.aililuo.cn/2019/03/13/scrapyd使用详解/">
+
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Crawler_lh">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Crawler_lh's Blog">
+    </span>
+
+      
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">分类</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                暂无分类
-            </div>
-            <div class="category-all">
+        <h1 class="post-title" itemprop="name headline">Scrapyd使用详解</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
               
+              <span class="post-meta-item-text">发表于</span>
+            
+
+
+
+
+
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-13T16:54:45+08:00">
+                2019-03-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+          
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/03/13/scrapyd使用详解/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/13/scrapyd使用详解/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+            
+
+            
+            
+              <span id="/2019/03/13/scrapyd使用详解/" class="leancloud_visitors" data-flag-title="Scrapyd使用详解">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+                
+                  <span class="post-meta-item-text">阅读次数&#58;</span>
+                
+                <span class="leancloud-visitors-count"></span>
+             </span>
+            
+
+            
+            
+
+            
+              <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span class="post-meta-item-text">字数统计&#58;</span>
+              
+                <span title="字数统计">
+                  389
+                </span>
+              
+
+                
+
+                
             </div>
-          </div>
+            
+
+            
+              
+        </div>
+      </header>
+      
+
+      
+      <div class="post-body" itemprop="articleBody">
+
         
+      
+
+    
+      <blockquote>
+<p>Scrapyd官方文档 <a href="https://scrapyd.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener">https://scrapyd.readthedocs.io/en/latest/index.html</a></p>
+</blockquote>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>Scrapyd通常作为守护进程运行，它侦听运行爬虫的请求，并为每个请求生成一个进程，该进程基本上执行:<code>scrapy crawl [myspider]</code>。</p>
+<p>Scrapyd还并行运行多个进程，将它们分配到<code>max_proc</code>和<code>max_proc_per_cpu</code>选项提供的固定数量的插槽中，启动尽可能多的进程来处理负载。</p>
+<p>除了调度和管理进程之外，Scrapyd还提供了一个JSON web服务来上载新的项目版本(作为egg)和调度爬虫。<br><a id="more"></a></p>
+<h3 id="使用详解"><a href="#使用详解" class="headerlink" title="使用详解"></a>使用详解</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install scrapyd</span><br></pre></td></tr></table></figure>
+<p>依赖的库及版本：</p>
+<ul>
+<li>Python 2.7 or above</li>
+<li>Twisted 8.0 or above</li>
+<li>Scrapy 1.0 or above</li>
+<li>six</li>
+</ul>
+<h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><p>在项目目录下，输入<code>scrapyd</code>即可运行，默认地址为<code>http://localhost:6800</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapyd</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>官方详细配置文档说明：<a href="https://scrapyd.readthedocs.io/en/latest/config.html" target="_blank" rel="noopener">https://scrapyd.readthedocs.io/en/latest/config.html</a></p>
+</blockquote>
+<p>修改默认配置信息可以在项目下新建一个<code>scrapyd.conf</code>或者在<code>scrapy.cfg</code>中增加<code>[scrapyd]</code>：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[scrapyd]</span><br><span class="line"># 网页和Json服务监听的IP地址，默认为127.0.0.1</span><br><span class="line">bind_address = 127.0.0.1</span><br><span class="line"># 监听的端口，默认为6800</span><br><span class="line">http_port   = 6800</span><br><span class="line">debug       = off</span><br></pre></td></tr></table></figure></p>
+<h4 id="项目部署"><a href="#项目部署" class="headerlink" title="项目部署"></a>项目部署</h4><p>部署主要分为两步：</p>
+<ul>
+<li>将项目打包成<code>egg</code></li>
+<li>将<code>egg</code>通过Scrapyd的<code>addversion.json</code>接口上传到目标服务器</li>
+</ul>
+<p>官方的部署上传接口文档：<a href="https://scrapyd.readthedocs.io/en/latest/api.html#addversion-json" target="_blank" rel="noopener">https://scrapyd.readthedocs.io/en/latest/api.html#addversion-json</a></p>
+<p>推荐使用<code>Scrapyd-client</code>中的<a href="https://github.com/scrapy/scrapyd-client#scrapyd-deploy" target="_blank" rel="noopener">scrapyd-deploy</a>一步上传，关于<code>Scrapyd-client</code>介绍：</p>
+<blockquote>
+<p>Scrapyd-client is a client for Scrapyd. It provides the general scrapyd-client and the scrapyd-deploy utility which allows you to deploy your project to a Scrapyd server.</p>
+</blockquote>
+<h5 id="Scrapy-client安装"><a href="#Scrapy-client安装" class="headerlink" title="Scrapy-client安装"></a>Scrapy-client安装</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install scrapyd-client</span><br></pre></td></tr></table></figure>
+
+    
+    </div>
+    
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>觉得不错的话，给Crawler_lh点杯咖啡吧~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="Crawler_lh 微信支付">
+        <p>微信支付</p>
       </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="Crawler_lh 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Crawler_lh
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.aililuo.cn/2019/03/13/scrapyd使用详解/" title="Scrapyd使用详解">https://www.aililuo.cn/2019/03/13/scrapyd使用详解/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Scrapy线上部署/" rel="tag"><i class="fa fa-tag"> Scrapy线上部署</i></a>
+          
+            <a href="/tags/Scrapyd/" rel="tag"><i class="fa fa-tag"> Scrapyd</i></a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/07/webstorm-swig文件语法高亮/" rel="next" title="webstorm .swig文件语法高亮">
+                <i class="fa fa-chevron-left"></i> webstorm .swig文件语法高亮
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
       
       
-      
+    </footer>
     </div>
     
     
     
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -374,8 +598,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -428,6 +661,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用详解"><span class="nav-number">2.</span> <span class="nav-text">使用详解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动"><span class="nav-number">2.2.</span> <span class="nav-text">启动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#项目部署"><span class="nav-number">2.3.</span> <span class="nav-text">项目部署</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Scrapy-client安装"><span class="nav-number">2.3.1.</span> <span class="nav-text">Scrapy-client安装</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
