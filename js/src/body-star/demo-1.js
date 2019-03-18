@@ -85,7 +85,6 @@
     }
     else if (e.clientX || e.clientY) {
       posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-      posy = e.clientY;
       posy = e.clientY - document.body.scrollTop - document.documentElement.scrollTop;
     }
     target.x = posx;
