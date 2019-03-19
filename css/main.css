@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4501e4;
+  background: #ff8be5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2727,7 +2727,7 @@ pre .javascript .function {
 .header {
   position: relative;
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
@@ -2787,7 +2787,7 @@ pre .javascript .function {
   }
 }
 .container .main-inner {
-  width: 60%;
+  width: 70%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container .main-inner {
@@ -2846,7 +2846,7 @@ pre .javascript .function {
   display: none;
 }
 .footer-inner {
-  width: 60%;
+  width: 70%;
   padding-left: 260px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3198,11 +3198,11 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: #ccc;
+  background-color: #aaa;
 }
 ::-webkit-scrollbar-thumb:hover {
   border-radius: 5px;
-  background-color: #448aff;
+  background-color: #999;
 }
 ::-webkit-scrollbar-track {
   background: #eee;
@@ -3287,6 +3287,66 @@ code {
 }
 .posts-expand .post-body img {
   margin: 0 auto;
+}
+.post-tags a {
+  display: inline-flex !important;
+  margin: 0 15px 15px 0;
+  align-items: center;
+  height: 30px;
+  padding: 0px 10px;
+  background: #eee;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  transition: all 0.15s linear;
+}
+.post-tags a:hover {
+  color: #2196f3;
+  border-color: #2196f3;
+}
+.post-nav-item a {
+  color: #5073b8;
+  font-weight: bold;
+}
+.post-nav-item {
+  max-width: 45%;
+  width: auto;
+}
+.post-nav-item a:hover {
+  color: #a166ab;
+  font-weight: bold;
+}
+.post-nav {
+  display: flex;
+}
+.post-nav-divider {
+  flex: 1;
+}
+.tag-cloud-tags a:hover {
+  color: #2196f3 !important;
+  border-bottom: solid 1px #2196f3 !important;
+}
+.posts-collapse .archive-page-counter {
+  color: #212121;
+  line-height: 32px;
+  font-size: 28px;
+}
+.posts-collapse .post-header:hover {
+  color: #2196f3 !important;
+  border-bottom-color: #2196f3;
+}
+.posts-collapse .post-title a {
+  color: inherit !important;
+}
+.posts-collapse .post-header::before {
+  background: #fff !important;
+  border: solid 1px #b0bec5;
+  border-radius: 50%;
+}
+.posts-collapse .post-header:hover::before {
+  border: solid 1px #2196f3;
+}
+.category-all {
+  padding: 0px 20px;
 }
 a#download {
   display: inline-block;

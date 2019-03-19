@@ -4,6 +4,9 @@
     <title><![CDATA[Scrapyd使用详解]]></title>
     <url>%2F2019%2F03%2F13%2Fscrapyd%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3%2F</url>
     <content type="text"><![CDATA[Scrapyd官方文档 https://scrapyd.readthedocs.io/en/latest/index.html 前言Scrapyd通常作为守护进程运行，它侦听运行爬虫的请求，并为每个请求生成一个进程，该进程基本上执行:scrapy crawl [myspider]。 Scrapyd还并行运行多个进程，将它们分配到max_proc和max_proc_per_cpu选项提供的固定数量的插槽中，启动尽可能多的进程来处理负载。 除了调度和管理进程之外，Scrapyd还提供了一个JSON web服务来上载新的项目版本(作为egg)和调度爬虫。 使用详解安装1pip install scrapyd 依赖的库及版本： Python 2.7 or above Twisted 8.0 or above Scrapy 1.0 or above six 启动在项目目录下，输入scrapyd即可运行，默认地址为http://localhost:68001scrapyd 官方详细配置文档说明：https://scrapyd.readthedocs.io/en/latest/config.html 修改默认配置信息可以在项目下新建一个scrapyd.conf或者在scrapy.cfg中增加[scrapyd]：123456[scrapyd]# 网页和Json服务监听的IP地址，默认为127.0.0.1bind_address = 127.0.0.1# 监听的端口，默认为6800http_port = 6800debug = off 项目部署部署主要分为两步： 将项目打包成egg 将egg通过Scrapyd的addversion.json接口上传到目标服务器 官方的部署上传接口文档：https://scrapyd.readthedocs.io/en/latest/api.html#addversion-json 推荐使用Scrapyd-client中的scrapyd-deploy一步上传，关于Scrapyd-client介绍： Scrapyd-client is a client for Scrapyd. It provides the general scrapyd-client and the scrapyd-deploy utility which allows you to deploy your project to a Scrapyd server. Scrapy-client安装1pip install scrapyd-client]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
       <tags>
         <tag>Scrapy线上部署</tag>
         <tag>Scrapyd</tag>
@@ -29,6 +32,9 @@
     <title><![CDATA[Android P报java.net.UnknownServiceException: CLEARTEXT communication to *** not permitted by netwo...]]></title>
     <url>%2F2019%2F03%2F06%2FAndroid-P%E6%8A%A5java-net-UnknownServiceException-CLEARTEXT-communication-to-not-permitted-by-netwo%2F</url>
     <content type="text"><![CDATA[原因由于 Android P 限制了明文流量的网络请求，非加密的流量请求都会被系统禁止掉。 如果当前应用的请求是 htttp 请求，而非 https ,这样就会导系统禁止当前应用进行该请求，如果 WebView 的 url 用 http 协议，同样会出现加载失败，https 不受影响。 为此，OkHttp3 做了检查，所以如果使用了明文流量，默认情况下，在 Android P 版本 OkHttp3 就抛出异常: CLEARTEXT communication to *** not permitted by network security policy 解决办法（任选一个）1.在 res 下新建一个 xml目录，然后创建一个名为：network_security_config.xml 文件 ，该文件内容如下：1234&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;network-security-config&gt; &lt;base-config cleartextTrafficPermitted="true" /&gt;&lt;/network-security-config&gt; 然后在 AndroidManifest.xml application 标签内应用上面的xml配置：android:networkSecurityConfig=&quot;@xml/network_security_config&quot;123456&lt;application android:name=".app.App" android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:networkSecurityConfig="@xml/network_security_config" android:label="@string/app_name" android:theme="@style/AppTheme"&gt; 2.服务器和本地应用都改用 https 3.targetSdkVersion 降级回到 27]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
       <tags>
         <tag>Android P</tag>
       </tags>
