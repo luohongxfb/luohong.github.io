@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a381a3;
+  background: #ff536b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3321,6 +3321,14 @@ code {
 .post-nav-divider {
   flex: 1;
 }
+.post-category a {
+  color: #5073b8;
+  border-bottom-color: #5073b8;
+}
+.post-category a:hover {
+  color: #a166ab;
+  border-bottom-color: #a166ab;
+}
 .tag-cloud-tags a:hover {
   color: #2196f3 !important;
   border-bottom: solid 1px #2196f3 !important;
@@ -3348,8 +3356,18 @@ code {
 .category-all {
   padding: 0px 20px;
 }
+.post-body .image-caption {
+  min-width: 20%;
+  max-width: 80%;
+  min-height: 22px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #969696;
+  line-height: 1.7;
+}
 a#download {
-  display: inline-block;
+  display: block;
   padding: 0 10px;
   color: #000;
   background: transparent;
