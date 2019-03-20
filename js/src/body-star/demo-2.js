@@ -125,14 +125,43 @@
   function animateDots() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     moveDots();
-    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-      // alert('手机端')
-    }else {
+    if (isMobile()) {
+      // alert('手机端') 手机端不连接点
+    } else {
       connectDots();
     }
     drawDots();
 
     requestAnimationFrame(animateDots);
+  }
+
+  //判断是否是移动端
+  function isMobile() {
+    var userAgent = window.navigator.userAgent;
+
+    var isiPad = userAgent.match(/iPad/i) !== null;
+    var mobileUA = [
+      'iphone', 'android', 'phone', 'mobile',
+      'wap', 'netfront', 'x11', 'java', 'opera mobi',
+      'opera mini', 'ucweb', 'windows ce', 'symbian',
+      'symbianos', 'series', 'webos', 'sony',
+      'blackberry', 'dopod', 'nokia', 'samsung',
+      'palmsource', 'xda', 'pieplus', 'meizu',
+      'midp', 'cldc', 'motorola', 'foma',
+      'docomo', 'up.browser', 'up.link', 'blazer',
+      'helio', 'hosin', 'huawei', 'novarra',
+      'coolpad', 'webos', 'techfaith', 'palmsource',
+      'alcatel', 'amoi', 'ktouch', 'nexian',
+      'ericsson', 'philips', 'sagem', 'wellcom',
+      'bunjalloo', 'maui', 'smartphone', 'iemobile',
+      'spice', 'bird', 'zte-', 'longcos',
+      'pantech', 'gionee', 'portalmmm', 'jig browser',
+      'hiptop', 'benq', 'haier', '^lct',
+      '320x320', '240x320', '176x220'
+    ];
+    var pattern = new RegExp(mobileUA.join('|'), 'i');
+
+    return !isiPad && userAgent.match(pattern);
   }
 
   window.addEventListener('mousemove', function (e) {
