@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1ff;
+  background: #ed29ed;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3120,9 +3120,13 @@ pre .javascript .function {
   }
 }
 body {
-  background-image: url("/images/background.jpg");
+  background-image: url("/images/body-star.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.site-meta {
+  background: linear-gradient(90deg, #5586f3 0%, #666eab 100%);
 }
 .site-title {
   font-family: "Biaodian Pro Sans GB", Menlo, Consolas, Courier, "Han Heiti GB", monospace, monospace, sans-serif;
@@ -3141,9 +3145,13 @@ body {
   border-bottom: none;
   text-decoration: none;
 }
-.post-body a:not(.btn):hover {
+.post-body a:not(.btn):hover,
+.footer-inner a:hover {
   color: #5073b8;
   border-bottom: 1px solid #5073b8;
+}
+.footer-inner a {
+  color: #999;
 }
 .site-author-image {
   animation: cycle 0.8s 0s forwards;
@@ -3333,6 +3341,9 @@ code {
   color: #2196f3 !important;
   border-bottom: solid 1px #2196f3 !important;
 }
+.tag-cloud .tag-cloud-title {
+  margin-bottom: 20px;
+}
 .posts-collapse .archive-page-counter {
   color: #212121;
   line-height: 32px;
@@ -3365,6 +3376,29 @@ code {
   font-size: 14px;
   color: #969696;
   line-height: 1.7;
+}
+.category-all-page .category-list-count:before {
+  display: inline;
+  content: " [";
+}
+.category-all-page .category-list-count:after {
+  display: inline;
+  content: "] ";
+}
+.category-all-page .category-all-title {
+  text-align: left;
+  margin-top: 30px;
+}
+.category-all-page .category-list-item {
+  float: left;
+  margin: 0px;
+  padding: 0px 20px 0px 0px;
+  box-sizing: border-box;
+  width: 50%;
+}
+.category-all-page {
+  width: 70%;
+  margin: 0px auto;
 }
 a#download {
   display: block;

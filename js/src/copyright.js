@@ -1,5 +1,6 @@
 (() => {
-  const author=document.getElementsByClassName("author")[0].textContent;
+  if (document.getElementsByClassName("post-copyright").length>0) {
+    const author=document.getElementsByClassName("author")[0].textContent;
     document.addEventListener('copy', e => {
       let clipboardData = e.clipboardData || window.clipboardData;
       if(!clipboardData) {
@@ -25,4 +26,5 @@
       clipboardData.setData('text/html', htmlData);
       clipboardData.setData('text/plain', textData);
     });
+  }
 })();
