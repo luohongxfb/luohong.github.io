@@ -397,16 +397,6 @@
 
           
           
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/03/06/git出现The-following-problems-have-occurred-when-adding-the-files-is-in-submodule/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/06/git出现The-following-problems-have-occurred-when-adding-the-files-is-in-submodule/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
             
 
             
@@ -606,7 +596,9 @@
 
   
     <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MzMxMi8xOTg1Mw=="></div>
     </div>
+
   
 
 
@@ -931,37 +923,26 @@
 
 
   
-
-
-
-
-
-
-
-
-
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: true,
-        notify: true,
-        appId: 'Sp5mK2jCMpHCvt753L4DklNJ-gzGzoHsz',
-        appKey: '8hLXaqq5xNVYE8cD5oRLAGda',
-        placeholder: '留个言吧~',
-        avatar:'retro',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
+
+
+
+
+
+
+
+
+
 
 
 
