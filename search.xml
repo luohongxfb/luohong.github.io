@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Hexo--GitHub Pages部署]]></title>
     <url>%2F2019%2F03%2F22%2FHexo-GitHub-Pages%E9%83%A8%E7%BD%B2%2F</url>
-    <content type="text"><![CDATA[部署到GitHub请先准备一个]]></content>
+    <content type="text"><![CDATA[部署到GitHub Pages请先准备一个GitHub账号，没有的话，出门右转浏览器地址栏输入：https://github.com/ Sign Up开始注册 有Git账号的准备新建仓库：https://github.com/new Repository name建议填自己用户名Owner带上.github.io 注意两点： 仓库名为[Owner].github.io时才可以通过https://[Owner].github.io访问，如果不是则需要按照原来的仓库形式，即Git地址+用户名+仓库名 仓库权限必须为Public 在Hexo项目配置文件_config.yml中，拉到底部，找到deploy配置字段，1234567# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repository: #前面创建的仓库地址 branch: master message: #描述 运行hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy，没设置全局用户名的可能需要输入Git用户名密码。 等待一段时间~ 完成后在仓库的Settings中，配置Source为master branch就能通过https://[Owner].github.io访问啦~ 配置域名访问在腾讯云域名（https://www.qcloud.com/act/event/dnspod_baidu?!preview ）或阿里云域名（https://wanwang.aliyun.com/domain/?spm=a2c4g.11174283.2.1.789dc8caQX0KM1 ）购买一个域名登陆管理后台，配置云解析，添加记录将想要的前缀配置CNAME规则到git域名[Owner].github.io在仓库的Settings中GitHub Pages的Custom domain填入配置的前缀+域名即可。Enforce HTTPS会强制域名访问的时候也是通过https。]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
