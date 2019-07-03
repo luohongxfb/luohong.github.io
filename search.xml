@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[小游戏--第一弹]]></title>
+    <url>%2F2019%2F04%2F08%2F%E5%B0%8F%E6%B8%B8%E6%88%8F-%E7%AC%AC%E4%B8%80%E5%BC%B9%2F</url>
+    <content type="text"><![CDATA[微信小游戏官方文档：https://developers.weixin.qq.com/minigame/dev/index.html?t=19040421 基础1.文件结构12├── game.js└── game.json game.js 小游戏入口文件 game.json 配置文件。全局配置，决定相关界面渲染、属性设置等（官方详细配置：https://developers.weixin.qq.com/minigame/dev/reference/configuration/app.html） 123456789101112131415&#123; "deviceOrientation": "portrait", "networkTimeout": &#123; "request": 5000, "connectSocket": 5000, "uploadFile": 5000, "downloadFile": 5000 &#125;, "navigateToMiniProgramAppIdList": ["wxe5f52902cf4de896"], "permission": &#123; "scope.userLocation": &#123; "desc": "你的位置信息将用于小游戏位置接口的效果展示" &#125; &#125;&#125; deviceOrientation：屏幕选择方向。默认’portrait’。 showStatusBar：是否显示状态栏。默认false。 networkTimeout：网络请求的超时时间，单位：毫秒。 workers：使用 Worker 处理多线程任务时，设置 Worker 代码放置的目录。 navigateToMiniProgramAppIdList：当小程序需要使用 wx.navigateToMiniProgram 接口跳转到其他小程序时，需要先在配置文件中声明需要跳转的小程序 appId 列表，最多允许填写 10 个。 permission：小游戏接口权限相关设置。授权：https://developers.weixin.qq.com/minigame/dev/tutorial/open-ability/authorize.html 2.代码包大小限制4MB 3.wx API只能使用js编写小游戏。 运行环境：JavaScript VM。无BOM、DOM]]></content>
+      <categories>
+        <category>小游戏</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo--GitHub Pages部署]]></title>
     <url>%2F2019%2F03%2F22%2FHexo-GitHub-Pages%E9%83%A8%E7%BD%B2%2F</url>
     <content type="text"><![CDATA[部署到GitHub Pages请先准备一个GitHub账号，没有的话，出门右转浏览器地址栏输入：https://github.com/ Sign Up开始注册 有Git账号的准备新建仓库：https://github.com/new Repository name建议填自己用户名Owner带上.github.io 注意两点： 仓库名为[Owner].github.io时才可以通过https://[Owner].github.io访问，如果不是则需要按照原来的仓库形式，即Git地址+用户名+仓库名 仓库权限必须为Public 在Hexo项目配置文件_config.yml中，拉到底部，找到deploy配置字段，1234567# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repository: #前面创建的仓库地址 branch: master message: #描述 运行hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy，没设置全局用户名的可能需要输入Git用户名密码。 等待一段时间~ 完成后在仓库的Settings中，配置Source为master branch就能通过https://[Owner].github.io访问啦~ 配置域名访问在腾讯云域名（https://www.qcloud.com/act/event/dnspod_baidu?!preview ）或阿里云域名（https://wanwang.aliyun.com/domain/?spm=a2c4g.11174283.2.1.789dc8caQX0KM1 ）购买一个域名登陆管理后台，配置云解析，添加记录将想要的前缀配置CNAME规则到git域名[Owner].github.io在仓库的Settings中GitHub Pages的Custom domain填入配置的前缀+域名即可。Enforce HTTPS会强制域名访问的时候也是通过https。]]></content>
