@@ -340,7 +340,7 @@
     
     
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://luohongxfb.github.io/2019/04/08/小游戏-第一弹/">
+      <link itemprop="mainEntityOfPage" href="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/">
 
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="所谓向日葵族">
@@ -359,7 +359,7 @@
         
         <h1 class="post-title" itemprop="name headline">
             
-            <a class="post-title-link" href="/2019/04/08/小游戏-第一弹/" itemprop="url">小游戏--第一弹</a></h1>
+            <a class="post-title-link" href="/2019/07/04/markdown转html、pdf-带目录生成/" itemprop="url">最完善的markdown转html/pdf方法、带目录生成</a></h1>
         
 
         <div class="post-meta">
@@ -372,8 +372,8 @@
               <span class="post-meta-item-text">创建于</span>
             
 
-              <time title="创建于 2019-04-08" itemprop="dateCreated datePublished" datetime="2019-04-08T18:36:37+08:00">
-                2019-04-08
+              <time title="创建于 2019-07-04" itemprop="dateCreated datePublished" datetime="2019-07-04T10:45:49+08:00">
+                2019-07-04
               </time>
             
 
@@ -389,35 +389,13 @@
               <span class="post-meta-item-text">更新于</span>
             
 
-              <time title="更新于 2019-04-08" itemprop="dateModified" datetime="2019-04-08T19:06:59+08:00">
-                2019-04-08
+              <time title="更新于 2019-07-04" itemprop="dateModified" datetime="2019-07-04T10:49:28+08:00">
+                2019-07-04
               </time>
             
           </span>
 
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/小游戏/" itemprop="url" rel="index">
-                    <span itemprop="name">小游戏</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
           
@@ -425,7 +403,7 @@
 
             
             
-              <span id="/2019/04/08/小游戏-第一弹/" class="leancloud_visitors" data-flag-title="小游戏--第一弹">
+              <span id="/2019/07/04/markdown转html、pdf-带目录生成/" class="leancloud_visitors" data-flag-title="最完善的markdown转html/pdf方法、带目录生成">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -451,7 +429,7 @@
                 <span class="post-meta-item-text">字数统计&#58;</span>
               
                 <span title="字数统计">
-                  293 字
+                  939 字
                 </span>
               
 
@@ -467,7 +445,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  3 分钟
                 </span>
                 
             </div>
@@ -487,16 +465,37 @@
 
     
       
-        <p id="div-border-left-yellow">微信小游戏官方文档：<a href="https://developers.weixin.qq.com/minigame/dev/index.html?t=19040421" target="_blank" rel="noopener">https://developers.weixin.qq.com/minigame/dev/index.html?t=19040421</a><br></p>
+        <p id="div-border-top-purple">最近小编需要写个SDK接入文档，用word调格式当然不如markdown来的舒服，写起来舒服了，但是.md没办法直接看效果，最终萌生出把markdown转成html形式的想法。</p>
 
-<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="1-文件结构"><a href="#1-文件结构" class="headerlink" title="1.文件结构"></a>1.文件结构</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">├── game.js</span><br><span class="line">└── game.json</span><br></pre></td></tr></table></figure>
+<p>网上markdown转换html的方法有很多，包括在线转换和借助工具，最终小编选择了<strong>VisualStudio Code的插件Markdown Preview Enhanced</strong>。</p>
 <ul>
-<li>game.js 小游戏入口文件</li>
-<li>game.json 配置文件。全局配置，决定相关界面渲染、属性设置等<br>（官方详细配置：<a href="https://developers.weixin.qq.com/minigame/dev/reference/configuration/app.html）" target="_blank" rel="noopener">https://developers.weixin.qq.com/minigame/dev/reference/configuration/app.html）</a></li>
+<li><strong>目录</strong><ul>
+<li><a href="#1在线转换的网站"> 1.在线转换的网站
+</a></li>
+<li><a href="#2借助工具"> 2.借助工具
+</a><ul>
+<li><a href="#21-typora"> 2.1 typora
+</a></li>
+<li><a href="#22-i5ting_toc"> 2.2 i5ting_toc
+</a></li>
+<li><a href="#23-visualstudio-code插件"> 2.3 VisualStudio Code插件
+</a><ul>
+<li><a href="#插件1copy-markdown-as-html"> 插件1：copy Markdown as HTML
+</a></li>
+<li><a href="#插件2markdownmath"> 插件2：Markdown+Math
+</a></li>
+<li><a href="#插件3markdown-preview-enhanced-推荐"> 插件3：Markdown Preview Enhanced （推荐） 
+</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
         <!--noindex-->
         <div class="post-button text-center">
-          <a class="btn" href="/2019/04/08/小游戏-第一弹/" rel="contents">
+          <a class="btn" href="/2019/07/04/markdown转html、pdf-带目录生成/" rel="contents">
             阅读全文 &raquo;
           </a>
         </div>
@@ -913,212 +912,6 @@
         
     
     </ul></p></div>
-    
-    <div>
-      
-    </div>
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-    </div>
-    
-    
-    
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    
-    
-    
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://luohongxfb.github.io/2019/03/13/scrapyd使用详解/">
-
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="所谓向日葵族">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="所谓向日葵族's Blog">
-    </span>
-
-      
-      <header class="post-header">
-
-        
-        
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a class="post-title-link" href="/2019/03/13/scrapyd使用详解/" itemprop="url">Scrapyd使用详解</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-              <span class="post-meta-item-text">创建于</span>
-            
-
-              <time title="创建于 2019-03-13" itemprop="dateCreated datePublished" datetime="2019-03-13T16:54:45+08:00">
-                2019-03-13
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-              <span class="post-meta-item-text">更新于</span>
-            
-
-              <time title="更新于 2019-03-22" itemprop="dateModified" datetime="2019-03-22T17:58:16+08:00">
-                2019-03-22
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-          
-            
-
-            
-            
-              <span id="/2019/03/13/scrapyd使用详解/" class="leancloud_visitors" data-flag-title="Scrapyd使用详解">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-                
-                  <span class="post-meta-item-text">阅读次数&#58;</span>
-                
-                <span class="leancloud-visitors-count"></span>
-             </span>
-            
-
-            
-            
-
-            
-              <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span class="post-meta-item-text">字数统计&#58;</span>
-              
-                <span title="字数统计">
-                  389 字
-                </span>
-              
-
-                
-                  <span class="post-meta-divider">|</span>
-                
-
-                
-                  <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1 分钟
-                </span>
-                
-            </div>
-            
-
-            
-              
-        </div>
-      </header>
-      
-
-      
-      <div class="post-body" itemprop="articleBody">
-
-        
-      
-
-    
-      
-        <blockquote>
-<p>Scrapyd官方文档 <a href="https://scrapyd.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener">https://scrapyd.readthedocs.io/en/latest/index.html</a></p>
-</blockquote>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>Scrapyd通常作为守护进程运行，它侦听运行爬虫的请求，并为每个请求生成一个进程，该进程基本上执行:<code>scrapy crawl [myspider]</code>。</p>
-<p>Scrapyd还并行运行多个进程，将它们分配到<code>max_proc</code>和<code>max_proc_per_cpu</code>选项提供的固定数量的插槽中，启动尽可能多的进程来处理负载。</p>
-<p>除了调度和管理进程之外，Scrapyd还提供了一个JSON web服务来上载新的项目版本(作为egg)和调度爬虫。<br>
-        <!--noindex-->
-        <div class="post-button text-center">
-          <a class="btn" href="/2019/03/13/scrapyd使用详解/" rel="contents">
-            阅读全文 &raquo;
-          </a>
-        </div>
-        <!--/noindex-->
-        
-    
-    </p></div>
     
     <div>
       
@@ -1761,7 +1554,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1834,7 +1627,7 @@
     
       <span class="post-meta-item-text">本站总字数&#58;</span>
     
-    <span title="本站总字数">2.6k 字</span>
+    <span title="本站总字数">2.9k 字</span>
   
 </div>
 
