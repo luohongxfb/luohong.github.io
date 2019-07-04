@@ -128,7 +128,7 @@
 <meta property="og:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/1562147864.jpg">
 <meta property="og:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/1562148417.jpg">
 <meta property="og:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/wx_subscription.jpg">
-<meta property="og:updated_time" content="2019-07-04T03:53:10.490Z">
+<meta property="og:updated_time" content="2019-07-04T09:07:51.858Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最完善的markdown转html&#x2F;pdf方法、带目录生成">
 <meta name="twitter:description" content="最近小编需要写个SDK接入文档，用word调格式当然不如markdown来的舒服，写起来舒服了，但是.md没办法直接看效果，最终萌生出把markdown转成html形式的想法。  网上markdown转换html的方法有很多，包括在线转换和借助工具，最终小编选择了VisualStudio Code的插件Markdown Preview Enhanced。  目录  1.在线转换的网站   2.借助">
@@ -396,7 +396,7 @@
               <span class="post-meta-item-text">更新于</span>
             
 
-              <time title="更新于 2019-07-04" itemprop="dateModified" datetime="2019-07-04T11:53:10+08:00">
+              <time title="更新于 2019-07-04" itemprop="dateModified" datetime="2019-07-04T17:07:51+08:00">
                 2019-07-04
               </time>
             
@@ -436,7 +436,7 @@
                 <span class="post-meta-item-text">字数统计&#58;</span>
               
                 <span title="字数统计">
-                  939 字
+                  938 字
                 </span>
               
 
@@ -508,7 +508,7 @@
 <li>…（在线的还有很多，反正小编没有找到理想的）</li>
 </ul>
 <h2 id="2-借助工具"><a href="#2-借助工具" class="headerlink" title="2.借助工具"></a>2.借助工具</h2><h3 id="2-1-typora"><a href="#2-1-typora" class="headerlink" title="2.1 typora"></a>2.1 typora</h3><p><a href="https://www.typora.io/" target="_blank" rel="noopener">官网</a>下载。很多人说好用。Q@Q原谅小编没使明白。</p>
-<h3 id="2-2-i5ting-toc"><a href="#2-2-i5ting-toc" class="headerlink" title="2.2 i5ting_toc"></a>2.2 i5ting_toc</h3><p>==解析渲染ok，可自动生成侧边目录，不可以编写过程中实时预览，生成的侧边栏不更改本身.md文件，附带的样式太多。==<br>依赖Node环境，通过<code>npm install i5ting_toc -g</code>安装，等待安装完成。</p>
+<h3 id="2-2-i5ting-toc"><a href="#2-2-i5ting-toc" class="headerlink" title="2.2 i5ting_toc"></a>2.2 i5ting_toc</h3><p><span id="inline-blue">解析渲染ok，可自动生成侧边目录，不可以编写过程中实时预览，生成的侧边栏不更改本身.md文件，附带的样式太多。</span><br>依赖Node环境，通过<code>npm install i5ting_toc -g</code>安装，等待安装完成。</p>
 <p>输入<code>i5ting_toc -h</code>回车查看帮助。<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562150197.jpg" title="i5ting_toc -h"></p>
 <p>转换html，输入<code>i5ting_toc -f [需要转换文件名].md</code>默认在同级目录生成<strong>preview</strong>文件夹，打开preview下的同名.html文件或者直接<code>i5ting_toc -o</code>可预览。<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562150452.jpg" title="生成preview"><br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562150862.jpg" title="浏览器预览"></p>
 <h3 id="2-3-VisualStudio-Code插件"><a href="#2-3-VisualStudio-Code插件" class="headerlink" title="2.3 VisualStudio Code插件"></a>2.3 VisualStudio Code插件</h3><p>需要先<a href="https://code.visualstudio.com/Download" target="_blank" rel="noopener">安装VisualStudio Code</a>。右键.md选择打开方式为VisualStudio Code。下载插件转换。<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562143385.jpg" title="插件下载"></p>
@@ -526,9 +526,10 @@
 </ul>
 <p>这里小编介绍一下目录生成及输出html。<br>首先安装插件：点击侧边栏最后一个<strong>Extensions</strong>，在搜索框输入<strong>Markdown Preview Enhanced</strong>，点击<strong>Install</strong>等待安装完成。<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562145483.jpg" title="安装插件"></p>
 <p>打开需要转换的.md文件，右键选择打开同步预览。<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562147451.jpg" title="打开同步预览"></p>
-<p>生成目录：<a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/toc" target="_blank" rel="noopener">详细讲解</a> 光标放置想要生成目录的输出位置，<code>Ctrl+Shift+P</code>（MacOS：cmd+shift+p）呼出命令面板，输入<strong>Markdown Preview Enhanced: Create Toc</strong>会生成一段类似<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562147864.jpg" title="目录临时"><br>然后Ctrl+s保存，就会生成目录。==注意：必须要在预览打开的情况下生成操作，保存才能更新。==</p>
+<p>生成目录：<a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/toc" target="_blank" rel="noopener">详细讲解</a> 光标放置想要生成目录的输出位置，<code>Ctrl+Shift+P</code>（MacOS：cmd+shift+p）呼出命令面板，输入<strong>Markdown Preview Enhanced: Create Toc</strong>会生成一段类似<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562147864.jpg" title="目录临时"><br>然后Ctrl+s保存，就会生成目录。<span id="inline-blue">注意：必须要在预览打开的情况下生成操作，保存才能更新。</span></p>
 <p>输出html：在右侧的预览界面，右键点击选择<code>HTML-&gt;HTML(offline)</code>。在当前.md文件的同级目录会生成一个同名.html文件，解析渲染都理想~<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562148417.jpg" title="输出html"></p>
-<p>——————本文结束——————<br>~生成的html是你想要的样式吗？或者你有更好的方法欢迎联系我~</p>
+<p>——————本文结束——————</p>
+<p>生成的html是你想要的样式吗？或者你有更好的方法欢迎联系我</p>
 <p>更多好文欢迎关注我的公众号：<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/wx_subscription.jpg" title="我的公众号"></p>
 
     
