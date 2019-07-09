@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff7ff;
+  background: #70ffa4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3143,7 +3143,7 @@ pre .javascript .function {
   }
 }
 body {
-  background-image: url("/images/11907264.jpg");
+  background-image: url("/images/11766793.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -3835,6 +3835,9 @@ a.fork-me-github {
   border-top-style: solid;
   border-top-color: #a166ab;
   box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.15);
+}
+.headband {
+  height: 0px;
 }
 @-moz-keyframes anim-moema-1 {
   60% {
