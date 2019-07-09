@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #feffa1;
+  background: #fff7ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3143,7 +3143,7 @@ pre .javascript .function {
   }
 }
 body {
-  background-image: url("/images/body-star.jpg");
+  background-image: url("/images/11907264.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -3219,9 +3219,6 @@ body {
 }
 #main .content-wrap {
   background-color: #f9f9f9;
-}
-#main {
-  padding-bottom: 120px;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -3822,6 +3819,22 @@ a.fork-me-github {
   position: absolute;
   right: 0px;
   border-bottom: none;
+}
+.links-of-author-item {
+  width: 100%;
+}
+.links-of-author-item a {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.footer {
+  line-height: 1.5;
+  background-color: rgba(255,255,255,0.75);
+  color: #333;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #a166ab;
+  box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.15);
 }
 @-moz-keyframes anim-moema-1 {
   60% {

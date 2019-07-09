@@ -23,3 +23,6 @@
 .post-eof {
   display: none !important;
 }
+#content {
+  opacity: 0.96;
+}
