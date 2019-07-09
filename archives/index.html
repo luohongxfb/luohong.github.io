@@ -190,7 +190,11 @@
 
 
 <div class="container sidebar-position-left page-archive">
-  <div class="headband"></div>
+  <div class="headband">
+    <a class="fork-me-github" href="https://github.com/luohongxfb">
+      <img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1">
+    </a>
+  </div>
   <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
     <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
@@ -813,6 +817,12 @@
   
 
   
+    <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+    </div>
+  
 
 </div>
 
@@ -1387,6 +1397,31 @@
 </script>
 
 
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "vertical";
+      
+          flOptions.position = "bottomCenter";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
 
 
 
