@@ -125,7 +125,7 @@
   function animateDots() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     moveDots();
-    if (isMobile()) {
+    if (NexT.utils.isMobile()) {
       // alert('手机端') 手机端不连接点
     } else {
       connectDots();

@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff70df;
+  background: #91e929;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3412,7 +3412,7 @@ code {
 .category-all-page .category-list-item {
   float: left;
   margin: 0px;
-  padding: 0px 20px 0px 0px;
+  padding: 0px 20px 20px 0px;
   box-sizing: border-box;
   width: 50%;
 }
