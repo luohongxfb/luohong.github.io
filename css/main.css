@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff9dff;
+  background: #751f41;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3838,6 +3838,22 @@ a.fork-me-github {
 }
 .headband {
   height: 0px;
+}
+.mermaid {
+  text-align: center;
+  max-height: 300px;
+}
+.flow-chart {
+  text-align: center;
+  max-height: 300px;
+  overflow: auto;
+  background: #f7f7f7;
+}
+.sequence {
+  text-align: center;
+  max-height: 300px;
+  overflow: auto;
+  background: #f7f7f7;
 }
 @-moz-keyframes anim-moema-1 {
   60% {

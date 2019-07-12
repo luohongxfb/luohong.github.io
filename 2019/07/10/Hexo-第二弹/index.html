@@ -112,27 +112,17 @@
 
 
 
-<meta name="description" content="最近小编需要写个SDK接入文档，用word调格式当然不如markdown来的舒服，写起来舒服了，但是.md没办法直接看效果，最终萌生出把markdown转成html形式的想法。  网上markdown转换html的方法有很多，包括在线转换和借助工具，最终小编选择了VisualStudio Code的插件Markdown Preview Enhanced。  目录  1.在线转换的网站   2.借助">
+<meta name="description" content="目录  1. Hexo支持流程图、时序图 2. Hexo多行代码提供复制 3. Hexo复制时追加版权  Hexo支持流程图、时序图画流程图还需要用别的编辑器画了用图片导入？Hexo实现手写流程图也很简单哦，但是有个小坑，小编被坑了好久，接下来手把手👇带你们过坑。 markdown语法实现流程图的方式可以通过mermaid或flowchart，时序图则可以mermaid或sequence，但是默">
 <meta property="og:type" content="article">
-<meta property="og:title" content="最完善的markdown转html&#x2F;pdf方法、带目录生成">
-<meta property="og:url" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/index.html">
+<meta property="og:title" content="Hexo--第二弹">
+<meta property="og:url" content="https://luohongxfb.github.io/2019/07/10/Hexo-第二弹/index.html">
 <meta property="og:site_name" content="所谓向日葵族&#39;s Blog">
-<meta property="og:description" content="最近小编需要写个SDK接入文档，用word调格式当然不如markdown来的舒服，写起来舒服了，但是.md没办法直接看效果，最终萌生出把markdown转成html形式的想法。  网上markdown转换html的方法有很多，包括在线转换和借助工具，最终小编选择了VisualStudio Code的插件Markdown Preview Enhanced。  目录  1.在线转换的网站   2.借助">
+<meta property="og:description" content="目录  1. Hexo支持流程图、时序图 2. Hexo多行代码提供复制 3. Hexo复制时追加版权  Hexo支持流程图、时序图画流程图还需要用别的编辑器画了用图片导入？Hexo实现手写流程图也很简单哦，但是有个小坑，小编被坑了好久，接下来手把手👇带你们过坑。 markdown语法实现流程图的方式可以通过mermaid或flowchart，时序图则可以mermaid或sequence，但是默">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/1562150197.jpg">
-<meta property="og:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/1562150452.jpg">
-<meta property="og:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/1562150862.jpg">
-<meta property="og:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/1562143385.jpg">
-<meta property="og:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/1562145483.jpg">
-<meta property="og:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/1562147451.jpg">
-<meta property="og:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/1562147864.jpg">
-<meta property="og:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/1562148417.jpg">
-<meta property="og:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/wx_subscription.jpg">
-<meta property="og:updated_time" content="2019-07-04T09:07:51.858Z">
+<meta property="og:updated_time" content="2019-07-12T04:27:47.911Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="最完善的markdown转html&#x2F;pdf方法、带目录生成">
-<meta name="twitter:description" content="最近小编需要写个SDK接入文档，用word调格式当然不如markdown来的舒服，写起来舒服了，但是.md没办法直接看效果，最终萌生出把markdown转成html形式的想法。  网上markdown转换html的方法有很多，包括在线转换和借助工具，最终小编选择了VisualStudio Code的插件Markdown Preview Enhanced。  目录  1.在线转换的网站   2.借助">
-<meta name="twitter:image" content="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/1562150197.jpg">
+<meta name="twitter:title" content="Hexo--第二弹">
+<meta name="twitter:description" content="目录  1. Hexo支持流程图、时序图 2. Hexo多行代码提供复制 3. Hexo复制时追加版权  Hexo支持流程图、时序图画流程图还需要用别的编辑器画了用图片导入？Hexo实现手写流程图也很简单哦，但是有个小坑，小编被坑了好久，接下来手把手👇带你们过坑。 markdown语法实现流程图的方式可以通过mermaid或flowchart，时序图则可以mermaid或sequence，但是默">
 
 
 
@@ -162,13 +152,13 @@
 
 
 
-  <link rel="canonical" href="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/">
+  <link rel="canonical" href="https://luohongxfb.github.io/2019/07/10/Hexo-第二弹/">
 
 
 
 
 
-  <title>最完善的markdown转html/pdf方法、带目录生成 | 所谓向日葵族's Blog</title>
+  <title>Hexo--第二弹 | 所谓向日葵族's Blog</title>
   
 
 
@@ -388,7 +378,7 @@
     
     
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/">
+      <link itemprop="mainEntityOfPage" href="https://luohongxfb.github.io/2019/07/10/Hexo-第二弹/">
 
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="所谓向日葵族">
@@ -405,7 +395,7 @@
 
         
         
-        <h1 class="post-title" itemprop="name headline">最完善的markdown转html/pdf方法、带目录生成</h1>
+        <h1 class="post-title" itemprop="name headline">Hexo--第二弹</h1>
         
 
         <div class="post-meta">
@@ -418,8 +408,8 @@
               <span class="post-meta-item-text">创建于</span>
             
 
-              <time title="创建于 2019-07-04" itemprop="dateCreated datePublished" datetime="2019-07-04T10:45:49+08:00">
-                2019-07-04
+              <time title="创建于 2019-07-10" itemprop="dateCreated datePublished" datetime="2019-07-10T16:00:09+08:00">
+                2019-07-10
               </time>
             
 
@@ -429,6 +419,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
           
@@ -436,7 +448,7 @@
 
             
             
-              <span id="/2019/07/04/markdown转html、pdf-带目录生成/" class="leancloud_visitors" data-flag-title="最完善的markdown转html/pdf方法、带目录生成">
+              <span id="/2019/07/10/Hexo-第二弹/" class="leancloud_visitors" data-flag-title="Hexo--第二弹">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -462,7 +474,7 @@
                 <span class="post-meta-item-text">字数统计&#58;</span>
               
                 <span title="字数统计">
-                  938 字
+                  2.3k 字
                 </span>
               
 
@@ -478,7 +490,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3 分钟
+                  11 分钟
                 </span>
                 
             </div>
@@ -497,66 +509,129 @@
       
 
     
-      <p id="div-border-top-purple">最近小编需要写个SDK接入文档，用word调格式当然不如markdown来的舒服，写起来舒服了，但是.md没办法直接看效果，最终萌生出把markdown转成html形式的想法。</p>
+      <p><strong>目录</strong></p>
+<ul>
+<li><a href="#Hexo支持流程图、时序图">1. Hexo支持流程图、时序图</a></li>
+<li><a href="#Hexo多行代码提供复制">2. Hexo多行代码提供复制</a></li>
+<li><a href="#Hexo复制时追加版权">3. Hexo复制时追加版权</a></li>
+</ul>
+<h2 id="Hexo支持流程图、时序图"><a href="#Hexo支持流程图、时序图" class="headerlink" title="Hexo支持流程图、时序图"></a>Hexo支持流程图、时序图</h2><p>画流程图还需要用别的编辑器画了用图片导入？Hexo实现手写流程图也很简单哦，但是有个小坑，小编被坑了好久，接下来手把手👇带你们过坑。</p>
+<p>markdown语法实现流程图的方式可以通过mermaid或flowchart，时序图则可以mermaid或sequence，但是默认是不会识别语法的，只是当做普通的多行代码，需要安装插件。</p>
+<a id="more"></a>  
+<h3 id="方式一：mermaid"><a href="#方式一：mermaid" class="headerlink" title="方式一：mermaid"></a>方式一：mermaid</h3><p>支持流程图（graph）、时序图（sequenceDiagram）、甘特图（gantt），可以说支持很多了。配置教方式二麻烦一点。</p>
+<p id="div-border-left-yellow">在线编辑器地址：<a href="https://mermaidjs.github.io/mermaid-live-editor/" target="_blank" rel="noopener">https://mermaidjs.github.io/mermaid-live-editor/</a> ，可以利用在线编辑器编辑完流程图之后，下载SVG或者直接link。</p>
 
-<p>网上markdown转换html的方法有很多，包括在线转换和借助工具，最终小编选择了<strong>VisualStudio Code的插件Markdown Preview Enhanced</strong>。</p>
-<ul>
-<li><strong>目录</strong><ul>
-<li><a href="#1在线转换的网站"> 1.在线转换的网站
-</a></li>
-<li><a href="#2借助工具"> 2.借助工具
-</a><ul>
-<li><a href="#21-typora"> 2.1 typora
-</a></li>
-<li><a href="#22-i5ting_toc"> 2.2 i5ting_toc
-</a></li>
-<li><a href="#23-visualstudio-code插件"> 2.3 VisualStudio Code插件
-</a><ul>
-<li><a href="#插件1copy-markdown-as-html"> 插件1：copy Markdown as HTML
-</a></li>
-<li><a href="#插件2markdownmath"> 插件2：Markdown+Math
-</a></li>
-<li><a href="#插件3markdown-preview-enhanced-推荐"> 插件3：Markdown Preview Enhanced （推荐） 
-</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<a id="more"></a>
-<h2 id="1-在线转换的网站"><a href="#1-在线转换的网站" class="headerlink" title="1.在线转换的网站"></a>1.在线转换的网站</h2><ul>
-<li><a href="http://www.bejson.com/convert/html2markdown/" target="_blank" rel="noopener">http://www.bejson.com/convert/html2markdown/</a> ：不支持表格，<strong>不推荐</strong></li>
-<li><a href="http://www.atool9.com/html2markdown.php" target="_blank" rel="noopener">http://www.atool9.com/html2markdown.php</a> ：不支持表格，<strong>不推荐</strong></li>
-<li><a href="https://www.zai17.com/md2html/" target="_blank" rel="noopener">https://www.zai17.com/md2html/</a> ：```{代码}```包含的代码处理不太理想，<strong>不推荐</strong></li>
-<li><a href="https://github.com/markedjs/marked" target="_blank" rel="noopener">https://github.com/markedjs/marked</a> ：<strong>转换结果比较理想，渲染需更改</strong>。可以用<a href="https://marked.js.org/demo/" target="_blank" rel="noopener">Demo Page</a>查看效果。渲染可以使用<a href="https://github.com/sindresorhus/github-markdown-css" target="_blank" rel="noopener">github-markdown-css</a>，github风格。</li>
-<li>…（在线的还有很多，反正小编没有找到理想的）</li>
-</ul>
-<h2 id="2-借助工具"><a href="#2-借助工具" class="headerlink" title="2.借助工具"></a>2.借助工具</h2><h3 id="2-1-typora"><a href="#2-1-typora" class="headerlink" title="2.1 typora"></a>2.1 typora</h3><p><a href="https://www.typora.io/" target="_blank" rel="noopener">官网</a>下载。很多人说好用。Q@Q原谅小编没使明白。</p>
-<h3 id="2-2-i5ting-toc"><a href="#2-2-i5ting-toc" class="headerlink" title="2.2 i5ting_toc"></a>2.2 i5ting_toc</h3><p><span id="inline-blue">解析渲染ok，可自动生成侧边目录，不可以编写过程中实时预览，生成的侧边栏不更改本身.md文件，附带的样式太多。</span><br>依赖Node环境，通过<code>npm install i5ting_toc -g</code>安装，等待安装完成。</p>
-<p>输入<code>i5ting_toc -h</code>回车查看帮助。<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562150197.jpg" title="i5ting_toc -h"></p>
-<p>转换html，输入<code>i5ting_toc -f [需要转换文件名].md</code>默认在同级目录生成<strong>preview</strong>文件夹，打开preview下的同名.html文件或者直接<code>i5ting_toc -o</code>可预览。<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562150452.jpg" title="生成preview"><br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562150862.jpg" title="浏览器预览"></p>
-<h3 id="2-3-VisualStudio-Code插件"><a href="#2-3-VisualStudio-Code插件" class="headerlink" title="2.3 VisualStudio Code插件"></a>2.3 VisualStudio Code插件</h3><p>需要先<a href="https://code.visualstudio.com/Download" target="_blank" rel="noopener">安装VisualStudio Code</a>。右键.md选择打开方式为VisualStudio Code。下载插件转换。<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562143385.jpg" title="插件下载"></p>
-<h4 id="插件1：copy-Markdown-as-HTML"><a href="#插件1：copy-Markdown-as-HTML" class="headerlink" title="插件1：copy Markdown as HTML"></a>插件1：copy Markdown as HTML</h4><p><code>Ctrl+Shift+P</code>（MacOS：cmd+shift+p）呼出命令面板。输入<code>markdown:copy as html</code>选中，复制到剪切板，新建一个.html文件，粘贴修改。<strong>转换结果比较理想，渲染需更改</strong></p>
-<h4 id="插件2：Markdown-Math"><a href="#插件2：Markdown-Math" class="headerlink" title="插件2：Markdown+Math"></a>插件2：Markdown+Math</h4><p><code>Ctrl+Shift+P</code>（MacOS：cmd+shift+p）呼出命令面板。输入<code>markdown:clip markdown+math to html</code>选中，同样复制到剪切板，需要新建一个.html文件，粘贴修改。<strong>转换结果比较理想，渲染需更改</strong></p>
-<h4 id="插件3：Markdown-Preview-Enhanced-（推荐）"><a href="#插件3：Markdown-Preview-Enhanced-（推荐）" class="headerlink" title="插件3：Markdown Preview Enhanced （推荐）"></a>插件3：Markdown Preview Enhanced （推荐）</h4><p>历经千辛万苦，小编终于找到了懒人的福音，可以<strong>一键生成目录、输出html/pdf</strong>的强大markdown插件–<strong>Markdown Preview Enhanced</strong>。详细用法<a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/" target="_blank" rel="noopener">点击查看官网</a>。</p>
-<p>多种特性：</p>
-<ul>
-<li>自动编辑器及预览滑动同步</li>
-<li>可导出的格式：漂亮的html、pandoc、电子书、幻灯片、PDF、 PNG、JPEG 。。</li>
-<li>支持LaTeX 数学、流程图 / 时序图 以及各种其他种类的图形，嵌入 LaTeX, 渲染 TikZ, Chemfig 等图形</li>
-<li>支持自定义预览 CSS</li>
-<li>生成目录。（TOC 生成）</li>
-<li>…</li>
-</ul>
-<p>这里小编介绍一下目录生成及输出html。<br>首先安装插件：点击侧边栏最后一个<strong>Extensions</strong>，在搜索框输入<strong>Markdown Preview Enhanced</strong>，点击<strong>Install</strong>等待安装完成。<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562145483.jpg" title="安装插件"></p>
-<p>打开需要转换的.md文件，右键选择打开同步预览。<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562147451.jpg" title="打开同步预览"></p>
-<p>生成目录：<a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/toc" target="_blank" rel="noopener">详细讲解</a> 光标放置想要生成目录的输出位置，<code>Ctrl+Shift+P</code>（MacOS：cmd+shift+p）呼出命令面板，输入<strong>Markdown Preview Enhanced: Create Toc</strong>会生成一段类似<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562147864.jpg" title="目录临时"><br>然后Ctrl+s保存，就会生成目录。<span id="inline-blue">注意：必须要在预览打开的情况下生成操作，保存才能更新。</span></p>
-<p>输出html：在右侧的预览界面，右键点击选择<code>HTML-&gt;HTML(offline)</code>。在当前.md文件的同级目录会生成一个同名.html文件，解析渲染都理想~<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/1562148417.jpg" title="输出html"></p>
-<p>——————本文结束——————</p>
-<p>生成的html是你想要的样式吗？或者你有更好的方法欢迎联系我</p>
-<p>更多好文欢迎关注我的公众号：<br><img src="/2019/07/04/markdown转html、pdf-带目录生成/wx_subscription.jpg" title="我的公众号"></p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>官方说的是通过yarn安装（如果没有安装yarn，使用<code>npm install -g yarn</code>安装）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-filter-mermaid-diagrams</span><br></pre></td></tr></table></figure></p>
+<p>也可以使用npm：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i hexo-filter-mermaid-diagrams</span><br></pre></td></tr></table></figure></p>
+<p><a href="https://www.npmjs.com/package/hexo-filter-mermaid-diagrams" target="_blank" rel="noopener">插件的官方网址</a></p>
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>（1）修改<span id="inline-green">站点配置文件_config.yml</span><br>在最后加入<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mermaid chart </span></span><br><span class="line"><span class="attr">mermaid:</span> <span class="comment">## mermaid url https://github.com/knsv/mermaid </span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span>  <span class="comment"># default true </span></span><br><span class="line"><span class="attr">  version:</span> <span class="string">"7.1.2"</span> <span class="comment"># default v7.1.2 </span></span><br><span class="line"><span class="attr">  options:</span>  <span class="comment"># find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js </span></span><br><span class="line">    <span class="comment">#startOnload: true  // default true</span></span><br></pre></td></tr></table></figure></p>
+<p>（2）Next主题更改：在themes/next/_partials/footer.swig 最后加入<br><figure class="highlight twig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="keyword">if</span></span> theme.mermaid.enable %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'https://unpkg.com/mermaid@</span></span></span><span class="template-variable">&#123;&#123; theme.mermaid.version &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">/dist/mermaid.min.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span></span><br><span class="line"><span class="xml">    if (window.mermaid) &#123;</span></span><br><span class="line"><span class="xml">      mermaid.initialize(&#123;theme: 'default'&#125;);</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="keyword">endif</span></span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure></p>
+<p>主题可更改，包含 default | forest</p>
+<p>重新<code>hexo clean &amp;&amp; hexo generate &amp;&amp; hexo server --debug</code>启动渲染也生效了。</p>
+<h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><p><strong>1. 流程图示例</strong></p>
+<blockquote>
+<p>```mermaid<br>graph TB<br>    start(开始)–&gt;inputA[输入用户名密码]<br>    inputA–&gt;opA{数据库查询子类}<br>    opA–&gt;conditionA{是否有此用户}<br>    conditionA–yes–&gt;conditionB{密码是否正确}<br>    conditionA–no–&gt;inputA<br>    conditionB–yes–&gt;opB[读入用户信息]<br>    conditionB–no–&gt;inputA<br>    opB–&gt;en(登录)<br> ```</p>
+</blockquote>
+<p>mermaid流程图展示：</p>
+<pre class="mermaid">graph TB
+    start(开始)-->inputA[输入用户名密码]
+    inputA-->opA{数据库查询子类}
+    opA-->conditionA{是否有此用户}
+    conditionA--yes-->conditionB{密码是否正确}
+    conditionA--no-->inputA
+    conditionB--yes-->opB[读入用户信息]
+    conditionB--no-->inputA
+    opB-->en(登录)</pre>
+
+<p><strong>2. 时序图示例</strong></p>
+<blockquote>
+<p>```mermaid<br>sequenceDiagram<br>participant Client<br>participant Server</p>
+<p>Note left of Client:SYN_SENT<br>Client-&gt;Server:SYN=1 seq=x<br>Note right of Server:SYN_RCVD<br>Server-&gt;Client:SYN=1 seq=y ACK=x+1<br>Note left of Client:ESTABLISHED<br>Client-&gt;Server:ACK=y+1<br>Note right of Server:ESTABLISHED<br>```</p>
+</blockquote>
+<p>mermaid时序图展示：</p>
+<pre class="mermaid">sequenceDiagram
+participant Client
+participant Server
+
+Note left of Client:SYN_SENT
+Client->Server:SYN=1 seq=x
+Note right of Server:SYN_RCVD
+Server->Client:SYN=1 seq=y ACK=x+1
+Note left of Client:ESTABLISHED
+Client->Server:ACK=y+1
+Note right of Server:ESTABLISHED</pre>
+
+<h4 id="要说的话"><a href="#要说的话" class="headerlink" title="要说的话"></a>要说的话</h4><p>mermaid帮助文档：<a href="https://mermaidjs.github.io/" target="_blank" rel="noopener">https://mermaidjs.github.io/</a> ，可在里面查看更多的使用介绍及语法。</p>
+<p><strong>优点</strong>：颜色鲜艳；语法结构简单，不需要先声明；方向可指定；灵活，可以更改样式。</p>
+<p><strong>缺点</strong>：方块模式提供没有标准流程图的规范的形状，比如输入框的平行四边形是没有的，需要自定义；加载渲染较慢，会出现展示多行代码样式。<br>···mermaid<br>graph LR<br>id1&gt;id1]–&gt;id2[id2]<br>id2—id3(id3)<br>id3—|text|id4((id4))<br>id4–&gt;|text|id5{id5}</p>
+<p>style id1 fill:#f9f,stroke:#333,stroke-width:4px<br>style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5<br>···</p>
+<pre class="mermaid">graph LR
+id1>id1]-->id2[id2]
+id2---id3(id3)
+id3---|text|id4((id4))
+id4-->|text|id5{id5}
+
+style id1 fill:#f9f,stroke:#333,stroke-width:4px
+style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5</pre>
+
+<p>更多流程图使用查看：<a href="https://mermaidjs.github.io/flowchart.html" target="_blank" rel="noopener">https://mermaidjs.github.io/flowchart.html</a></p>
+<p>流程图过长会占用界面大部分空间，博客中设置了最大高度，及居中展示，在themes/next/source/css/_custom/custom.styl下面加入<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*mermaid图居中*/</span></span><br><span class="line"><span class="selector-class">.mermaid</span>&#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">max-height</span>: <span class="number">300px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="方式二：flowchart-sequence"><a href="#方式二：flowchart-sequence" class="headerlink" title="方式二：flowchart+sequence"></a>方式二：flowchart+sequence</h3><h4 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h4><p>支持流程图，安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-filter-flowchart</span><br></pre></td></tr></table></figure></p>
+<p>支持时序图，安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-filter-sequence</span><br></pre></td></tr></table></figure></p>
+<h4 id="配置（非必须）"><a href="#配置（非必须）" class="headerlink" title="配置（非必须）"></a>配置（非必须）</h4><p>插件官方地址： <a href="https://github.com/bubkoo/hexo-filter-flowchart" target="_blank" rel="noopener">flowchart</a>  <a href="https://github.com/bubkoo/hexo-filter-sequence" target="_blank" rel="noopener">sequence</a></p>
+<p>官方配置提到需要更改<span id="inline-green">站点配置文件_config.yml</span>，增加：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">flowchart:</span></span><br><span class="line">  <span class="comment"># raphael:   # optional, the source url of raphael.js</span></span><br><span class="line">  <span class="comment"># flowchart: # optional, the source url of flowchart.js</span></span><br><span class="line"><span class="attr">  options:</span> <span class="comment"># options used for `drawSVG`</span></span><br><span class="line">  </span><br><span class="line"><span class="attr">sequence:</span></span><br><span class="line">  <span class="comment"># webfont:     # optional, the source url of webfontloader.js</span></span><br><span class="line">  <span class="comment"># snap:        # optional, the source url of snap.svg.js</span></span><br><span class="line">  <span class="comment"># underscore:  # optional, the source url of underscore.js</span></span><br><span class="line">  <span class="comment"># sequence:    # optional, the source url of sequence-diagram.js</span></span><br><span class="line">  <span class="comment"># css: # optional, the url for css, such as hand drawn theme </span></span><br><span class="line"><span class="attr">  options:</span> </span><br><span class="line"><span class="attr">    theme:</span> </span><br><span class="line"><span class="attr">    css_class:</span></span><br></pre></td></tr></table></figure></p>
+<p>亲测不配置也是可以的。<br><code>hexo clean &amp;&amp; hexo generate &amp;&amp; hexo server --debug</code>启动渲染也生效了。</p>
+<h4 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h4><p><strong>1.流程图示例</strong></p>
+<blockquote>
+<p>```flow<br>st=&gt;start: 开始<br>inputA=&gt;inputoutput: 输入用户名密码<br>opA=&gt;operation: 数据库查询子类<br>conditionA=&gt;condition: 是否有此用户<br>conditionB=&gt;condition: 密码是否正确<br>opB=&gt;operation: 读入用户信息<br>e=&gt;end: 登录<br>st-&gt;inputA-&gt;opA-&gt;conditionA<br>conditionA(yes)-&gt;conditionB<br>conditionA(no)-&gt;inputA<br>conditionB(yes)-&gt;opB-&gt;e<br>conditionB(no)-&gt;inputA<br>```</p>
+</blockquote>
+<p>flowchart流程图展示：</p>
+<div id="flowchart-0" class="flow-chart"></div>
+
+<p><strong>2.时序图示例</strong></p>
+<blockquote>
+<p>```sequence<br>participant Client<br>participant Server</p>
+<p>Note left of Client:SYN_SENT<br>Client-&gt;Server:SYN=1 seq=x<br>Note right of Server:SYN_RCVD<br>Server-&gt;Client:SYN=1 seq=y ACK=x+1<br>Note left of Client:ESTABLISHED<br>Client-&gt;Server:ACK=y+1<br>Note right of Server:ESTABLISHED<br>```</p>
+</blockquote>
+<p>sequence时序图展示：</p>
+<p><div id="sequence-0" class="sequence"></div></p>
+<h4 id="要说的话-1"><a href="#要说的话-1" class="headerlink" title="要说的话"></a>要说的话</h4><p><strong>优点</strong>：标准流程图的样式展示；渲染快，几乎不会出现展示多行代码的时候；实现简单。</p>
+<p><strong>缺点</strong>：样式不能更改，黑白界面；流程图语法需要先声明后使用。</p>
+<p>设置最大高度及居中展示，背景色，超出部分滑动：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.flow-chart</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">max-height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: auto;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#f7f7f7</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.sequence</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">max-height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: auto;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#f7f7f7</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>sequence的小编不走心，没有提供class，需要在node_modules/hexo-filter-sequence/lib/renderer.js修改，大约22行，设置id的时候同时增加class：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> start + <span class="string">'&lt;div id="'</span> + seqId + <span class="string">'" class="sequence"&gt;&lt;/div&gt;'</span> + end;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p><strong>特别注意</strong>：很多人说sequence设置无效，需要更改依赖的snap为raphael，也有说更改站点配置文件的external_link为false，小编都试过了，无效。为啥子时序图还是失败了呢？小编搜了整个项目差点以为是跟motion.js里面的sequence重合有缺陷，都打算改插件了，然而并不需要！！<br>如果您的使用的Hexo，而且时序图放在md文件的最后一个，导致渲染失效了的话，请在文章的最后输入一个回车，没错就是只需要一个回车就解决了。。不知道是不是Hexo的bug，所有的多行代码在文章末尾的都会出现渲染问题，并不是sequence的问题。</p>
+<h2 id="Hexo多行代码提供复制"><a href="#Hexo多行代码提供复制" class="headerlink" title="Hexo多行代码提供复制"></a>Hexo多行代码提供复制</h2><p>增加复制按钮及响应的js：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">clipboard.js</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> initCopyCode = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> copyHtml = <span class="string">''</span>;</span><br><span class="line">    copyHtml += <span class="string">'&lt;button class="btn-copy" data-clipboard-snippet=""&gt;'</span>;</span><br><span class="line">    copyHtml += <span class="string">'  &lt;i class="fa fa-clipboard"&gt;&lt;/i&gt;&lt;span&gt;copy&lt;/span&gt;'</span>;</span><br><span class="line">    copyHtml += <span class="string">'&lt;/button&gt;'</span>;</span><br><span class="line">    $(<span class="string">".highlight .code pre"</span>).before(copyHtml);</span><br><span class="line">    <span class="keyword">new</span> ClipboardJS(<span class="string">'.btn-copy'</span>, &#123;</span><br><span class="line">      target: <span class="function"><span class="keyword">function</span> (<span class="params">trigger</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> trigger.nextElementSibling;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
+<p>资源下载：<a href="/downloads/clipboard.js">clipboard.js</a> <a href="/downloads/clipboard-use.js">clipboard-use.js</a></p>
+<p>下载完成后，将clipboard.js和clipboard-use.js放在 themes/next/source/js/src/下，并更改themes/next/layout/_layout.swig，在上面加入<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--代码块复制功能--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">'text/javascript'</span> <span class="attr">src</span>=<span class="string">'/js/src/clipboard.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"/js/src/clipboard-use.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>这样在鼠标在代码区域时右上角显示copy。</p>
+<h2 id="Hexo复制时追加版权"><a href="#Hexo复制时追加版权" class="headerlink" title="Hexo复制时追加版权"></a>Hexo复制时追加版权</h2><p>虽然在<span id="inline-blue">主题配置文件_config.yml</span>中更改post_copyright可以在文章底部增加版权声明信息，复制时并不能像很多博客网站一样复制时直接追加。</p>
+<p>实现是通过监听copy事件，追加信息：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">copyright.js</span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="built_in">document</span>.getElementsByClassName(<span class="string">"post-copyright"</span>).length&gt;<span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> author=<span class="built_in">document</span>.getElementsByClassName(<span class="string">"author"</span>)[<span class="number">0</span>].textContent;</span><br><span class="line">    <span class="built_in">document</span>.addEventListener(<span class="string">'copy'</span>, e =&gt; &#123;</span><br><span class="line">      <span class="keyword">let</span> clipboardData = e.clipboardData || <span class="built_in">window</span>.clipboardData;</span><br><span class="line">      <span class="keyword">if</span>(!clipboardData) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      e.preventDefault();</span><br><span class="line"></span><br><span class="line">      <span class="keyword">const</span> selection = <span class="built_in">window</span>.getSelection().toString();</span><br><span class="line"></span><br><span class="line">      <span class="keyword">const</span> textData = selection + <span class="string">'\n-----------------------\n'</span></span><br><span class="line">        + (author ? <span class="string">`作者: <span class="subst">$&#123;author&#125;</span>\n`</span> : <span class="string">''</span>)</span><br><span class="line">        + <span class="string">'原文: '</span> + <span class="built_in">window</span>.location.href + <span class="string">'\n'</span></span><br><span class="line">        + <span class="string">'版权声明：本博客所有文章除特别声明外，均采用 CC BY-NC-SA 3.0 许可协议。转载请注明出处！\n\n'</span>;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">const</span> htmlData = selection + <span class="string">'&lt;br/&gt;-----------------------&lt;br/&gt;'</span></span><br><span class="line">        + (author ? <span class="string">`&lt;b&gt;作者&lt;/b&gt;: <span class="subst">$&#123;author&#125;</span>&lt;br/&gt;`</span> : <span class="string">''</span>)</span><br><span class="line">        + <span class="string">`&lt;b&gt;原文&lt;/b&gt;: &lt;a href="<span class="subst">$&#123;<span class="built_in">window</span>.location.href&#125;</span>"&gt;<span class="subst">$&#123;<span class="built_in">window</span>.location.href&#125;</span>&lt;/a&gt;&lt;br/&gt;`</span></span><br><span class="line">        + <span class="string">'版权声明：本博客所有文章除特别声明外，均采用 &lt;a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"&gt;CC BY-NC-SA 3.0&lt;/a&gt; 许可协议。转载请注明出处！&lt;br/&gt;'</span>;</span><br><span class="line"></span><br><span class="line">      clipboardData.setData(<span class="string">'text/html'</span>, htmlData);</span><br><span class="line">      clipboardData.setData(<span class="string">'text/plain'</span>, textData);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></p>
+<p>资源下载：<a href="/downloads/copyright.js">copyright.js</a><br>下载完成后，copyright.js放在 themes/next/source/js/src/下，并更改themes/next/layout/_layout.swig，在上面加入<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--&#123;#复制版权申明#&#125;--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"/js/src/copyright.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>版权开启时，复制时即可增加版权信息。</p>
+<p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 开始
+inputA=>inputoutput: 输入用户名密码
+opA=>operation: 数据库查询子类
+conditionA=>condition: 是否有此用户
+conditionB=>condition: 密码是否正确
+opB=>operation: 读入用户信息
+e=>end: 登录
+
+st->inputA->opA->conditionA
+conditionA(yes)->conditionB
+conditionA(no)->inputA
+conditionB(yes)->opB->e
+conditionB(no)->inputA</textarea><textarea id="flowchart-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script><script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">participant Client
+participant Server
+
+Note left of Client:SYN_SENT
+Client->Server:SYN=1 seq=x
+Note right of Server:SYN_RCVD
+Server->Client:SYN=1 seq=y ACK=x+1
+Note left of Client:ESTABLISHED
+Client->Server:ACK=y+1
+Note right of Server:ESTABLISHED</textarea><textarea id="sequence-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script></p>
 
     
     </div>
@@ -621,7 +696,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/" title="最完善的markdown转html/pdf方法、带目录生成">https://luohongxfb.github.io/2019/07/04/markdown转html、pdf-带目录生成/</a>
+    <a href="https://luohongxfb.github.io/2019/07/10/Hexo-第二弹/" title="Hexo--第二弹">https://luohongxfb.github.io/2019/07/10/Hexo-第二弹/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -643,8 +718,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/22/Hexo-GitHub-Pages部署/" rel="next" title="Hexo--GitHub Pages部署">
-                <i class="fa fa-chevron-left"></i> Hexo--GitHub Pages部署
+              <a href="/2019/07/05/排除aar-jar中冗余或者冲突包、类的脚本/" rel="next" title="排除aar/jar中冗余或者冲突包、类的脚本">
+                <i class="fa fa-chevron-left"></i> 排除aar/jar中冗余或者冲突包、类的脚本
               </a>
             
           </div>
@@ -652,10 +727,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/04/Hexo-第一弹/" rel="prev" title="Hexo--第一弹">
-                Hexo--第一弹 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -804,7 +875,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-在线转换的网站"><span class="nav-number">1.</span> <span class="nav-text">1.在线转换的网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-借助工具"><span class="nav-number">2.</span> <span class="nav-text">2.借助工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-typora"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 typora</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-i5ting-toc"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 i5ting_toc</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-VisualStudio-Code插件"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 VisualStudio Code插件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#插件1：copy-Markdown-as-HTML"><span class="nav-number">2.3.1.</span> <span class="nav-text">插件1：copy Markdown as HTML</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#插件2：Markdown-Math"><span class="nav-number">2.3.2.</span> <span class="nav-text">插件2：Markdown+Math</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#插件3：Markdown-Preview-Enhanced-（推荐）"><span class="nav-number">2.3.3.</span> <span class="nav-text">插件3：Markdown Preview Enhanced （推荐）</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo支持流程图、时序图"><span class="nav-number">1.</span> <span class="nav-text">Hexo支持流程图、时序图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方式一：mermaid"><span class="nav-number">1.1.</span> <span class="nav-text">方式一：mermaid</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">1.1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置"><span class="nav-number">1.1.2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#示例"><span class="nav-number">1.1.3.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#要说的话"><span class="nav-number">1.1.4.</span> <span class="nav-text">要说的话</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方式二：flowchart-sequence"><span class="nav-number">1.2.</span> <span class="nav-text">方式二：flowchart+sequence</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置（非必须）"><span class="nav-number">1.2.2.</span> <span class="nav-text">配置（非必须）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#示例-1"><span class="nav-number">1.2.3.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#要说的话-1"><span class="nav-number">1.2.4.</span> <span class="nav-text">要说的话</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo多行代码提供复制"><span class="nav-number">2.</span> <span class="nav-text">Hexo多行代码提供复制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo复制时追加版权"><span class="nav-number">3.</span> <span class="nav-text">Hexo复制时追加版权</span></a></li></ol></div>
             
 
           </div>
