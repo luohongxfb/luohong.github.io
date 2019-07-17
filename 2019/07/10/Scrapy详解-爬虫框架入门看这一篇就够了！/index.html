@@ -112,17 +112,19 @@
 
 
 
-<meta name="description" content="Empty page presents more possibilities.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="https://luohongxfb.github.io/categories/index.html">
+<meta name="description" content="前言学习Scrapy有一段时间了，当时想要获取一下百度汉字的解析，又不想一个个汉字去搜，复制粘贴太费劲，考虑到爬虫的便利性，这篇文章是介绍一个爬虫框架–Scrapy，非常主流的爬虫框架，写爬虫还不会Scrapy，你就out啦🙈~ 🐞爬虫的应用场景：  搜索多个汉字，存储下来汉字的解析 每隔一段时间获取一下最新天气，新闻等等 拿到豆瓣电影（豆瓣图书）的top100的电影名字、演员、上映时间以及各">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Scrapy详解 爬虫框架入门看这一篇就够了！">
+<meta property="og:url" content="https://luohongxfb.github.io/2019/07/10/Scrapy详解-爬虫框架入门看这一篇就够了！/index.html">
 <meta property="og:site_name" content="所谓向日葵族&#39;s Blog">
-<meta property="og:description" content="Empty page presents more possibilities.">
+<meta property="og:description" content="前言学习Scrapy有一段时间了，当时想要获取一下百度汉字的解析，又不想一个个汉字去搜，复制粘贴太费劲，考虑到爬虫的便利性，这篇文章是介绍一个爬虫框架–Scrapy，非常主流的爬虫框架，写爬虫还不会Scrapy，你就out啦🙈~ 🐞爬虫的应用场景：  搜索多个汉字，存储下来汉字的解析 每隔一段时间获取一下最新天气，新闻等等 拿到豆瓣电影（豆瓣图书）的top100的电影名字、演员、上映时间以及各">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-19T09:55:08.589Z">
+<meta property="og:image" content="https://luohongxfb.github.io/2019/07/10/Scrapy详解-爬虫框架入门看这一篇就够了！/2351264496.png">
+<meta property="og:updated_time" content="2019-07-17T07:04:38.954Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
-<meta name="twitter:description" content="Empty page presents more possibilities.">
+<meta name="twitter:title" content="Scrapy详解 爬虫框架入门看这一篇就够了！">
+<meta name="twitter:description" content="前言学习Scrapy有一段时间了，当时想要获取一下百度汉字的解析，又不想一个个汉字去搜，复制粘贴太费劲，考虑到爬虫的便利性，这篇文章是介绍一个爬虫框架–Scrapy，非常主流的爬虫框架，写爬虫还不会Scrapy，你就out啦🙈~ 🐞爬虫的应用场景：  搜索多个汉字，存储下来汉字的解析 每隔一段时间获取一下最新天气，新闻等等 拿到豆瓣电影（豆瓣图书）的top100的电影名字、演员、上映时间以及各">
+<meta name="twitter:image" content="https://luohongxfb.github.io/2019/07/10/Scrapy详解-爬虫框架入门看这一篇就够了！/2351264496.png">
 
 
 
@@ -152,13 +154,13 @@
 
 
 
-  <link rel="canonical" href="https://luohongxfb.github.io/categories/">
+  <link rel="canonical" href="https://luohongxfb.github.io/2019/07/10/Scrapy详解-爬虫框架入门看这一篇就够了！/">
 
 
 
 
 
-  <title>分类 | 所谓向日葵族's Blog</title>
+  <title>Scrapy详解 爬虫框架入门看这一篇就够了！ | 所谓向日葵族's Blog</title>
   
 
 
@@ -366,38 +368,314 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     
     
-    <div class="post-block page">
+    
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://luohongxfb.github.io/2019/07/10/Scrapy详解-爬虫框架入门看这一篇就够了！/">
+
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="所谓向日葵族">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="所谓向日葵族's Blog">
+    </span>
+
+      
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">分类</h1>
-
-
-
-</header>
-
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                <i class="fa fa-bookmark"> 目前共计 4 个分类
-            </i></div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Scrapy/">Scrapy</a><span class="category-list-count">2</span></li></ul>
+        <h1 class="post-title" itemprop="name headline">Scrapy详解 爬虫框架入门看这一篇就够了！</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              <span class="post-meta-item-text">创建于</span>
+            
+
+              <time title="创建于 2019-07-10" itemprop="dateCreated datePublished" datetime="2019-07-10T14:20:06+08:00">
+                2019-07-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Scrapy/" itemprop="url" rel="index">
+                    <span itemprop="name">Scrapy</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          
+            
+
+            
+            
+              <span id="/2019/07/10/Scrapy详解-爬虫框架入门看这一篇就够了！/" class="leancloud_visitors" data-flag-title="Scrapy详解 爬虫框架入门看这一篇就够了！">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+                
+                  <span class="post-meta-item-text">阅读次数&#58;</span>
+                
+                <span class="leancloud-visitors-count"></span>
+             </span>
+            
+
+            
+            
+
+            
+              <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span class="post-meta-item-text">字数统计&#58;</span>
+              
+                <span title="字数统计">
+                  1.1k 字
+                </span>
+              
+
+                
+                  <span class="post-meta-divider">|</span>
+                
+
+                
+                  <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3 分钟
+                </span>
+                
             </div>
-          </div>
+            
+
+            
+              
+        </div>
+      </header>
+      
+
+      
+      <div class="post-body" itemprop="articleBody">
+
         
+      
+
+    
+      <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>学习Scrapy有一段时间了，当时想要获取一下百度汉字的解析，又不想一个个汉字去搜，复制粘贴太费劲，考虑到爬虫的便利性，这篇文章是介绍一个爬虫框架–<strong>Scrapy</strong>，非常主流的爬虫框架，写爬虫还不会Scrapy，你就out啦🙈~</p>
+<p>🐞爬虫的应用场景：</p>
+<ul>
+<li>搜索多个汉字，存储下来汉字的解析</li>
+<li>每隔一段时间获取一下最新天气，新闻等等</li>
+<li>拿到豆瓣电影（豆瓣图书）的top100的电影名字、演员、上映时间以及各大网友的评论</li>
+<li>需要下载网站的一系列图片，视频等，下载慕课网的课程视频</li>
+<li>搜集安居客的所有房源，性价比分析</li>
+<li>刷票、抢票</li>
+<li>拿到微博当前的热门话题，自媒体需要即时写文章啦</li>
+<li>…</li>
+</ul>
+<a id="more"></a>             
+<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2><p><a href="https://scrapy-chs.readthedocs.io/zh_CN/0.24/intro/overview.html" target="_blank" rel="noopener">官方解析</a>：Scrapy是一个为了爬取网站数据，提取结构性数据而编写的应用框架。可以应用在包括数据挖掘，信息处理或存储历史数据等一系列的程序中。</p>
+<p>其最初是为了页面抓取（更确切来说,网络抓取）所设计的，也可以应用在获取API所返回的数据或者通用的网络爬虫。</p>
+<img src="/2019/07/10/Scrapy详解-爬虫框架入门看这一篇就够了！/2351264496.png" title="Scrapy架构图">
+<p><strong>架构分析</strong>：</p>
+<ul>
+<li><code>Scrapy Engine</code>：Scrapy引擎。负责控制数据流在系统中所有组件中流动，并在相应动作发生时触发事件。</li>
+<li><code>Scheduler</code>：调度器。从Scrapy Engine接受请求（requests）并排序列入队列，并在引擎再次请求时返回。用它来决定下一个抓取的网址是什么，同时去除重复的网址。</li>
+<li><code>Downloader</code>：下载器。抓取网页并将网页内容返还给Spiders。建立在twisted异步模型。</li>
+<li><code>Spiders</code>：爬虫。用户自定义的类，主要用来解析网页，提取Items，发送url跟进等新请求等。</li>
+<li><code>Item Pipelines</code>：管道。主要用来处理Spider解析出来的Items，进行按规则过滤，验证，持久化存储（如数据库存储）等</li>
+<li><code>Downloader Middlewares</code>：下载中间件。位于Scrapy Engine和Downloader之间，主要是处理Scrapy引擎与下载器之间的请求及响应。</li>
+<li><code>Spider Middlewares</code>：爬虫中间件。位于Scrapy Engine和Spiders之间，主要工作是处理Spiders的响应输入和请求输出。</li>
+<li><code>Scheduler Middlewares</code>：调度中间件。位于Scrapy Engine和Scheduler之间。主要工作是处理从Scrapy Engine发送到Scheduler的请求和响应。</li>
+</ul>
+<p><strong>数据处理流程</strong>：<br>1、引擎打开一个网站(open a domain)，找到处理该网站的Spider并向该Spider请求要爬取的第一个start_urls。<br>2、引擎从Spider中获取到第一个要爬取的URL并在调度器(Scheduler)以Request调度。<br>3、引擎向调度器请求下一个要爬取的URL。<br>4、调度器返回下一个要爬取的URL给引擎，引擎将URL通过<code>Downloader Middlewares</code>（request）转发给下载器(Downloader)。<br>5、一旦页面下载完毕，<code>Downloader</code>生成一个该页面的Response，并将其通过<code>Downloader Middlewares</code>(response)发送给引擎。<br>6、引擎从<code>Downloader</code>中接收到Response并通过<code>Spider Middlewares</code>（request）发送给Spider处理。<br>7、Spider处理Response并返回爬取到的Item及(跟进的)新的Request给引擎。<br>8、引擎将(Spider返回的)爬取到的Item给<code>Item Pipeline</code>，将(Spider返回的)Request给调度器。<br>9、系统重复2-9的操作，直到调度中没有更多地request，然后断开引擎与网站之间的联系。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>依赖环境：</p>
+<ul>
+<li>Python 2.7及以上</li>
+<li>Python Package: pip and setuptools. 现在 pip 依赖 setuptools ，如果未安装，则会自动安装 setuptools 。</li>
+</ul>
+<p>使用pip安装:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install Scrapy</span><br></pre></td></tr></table></figure></p>
+<p>创建项目：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy startproject [项目名]</span><br></pre></td></tr></table></figure></p>
+<p>如创建 scrapy startproject qimairank，会自动创建Scrapy的项目架构：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">qimairank</span><br><span class="line"></span><br><span class="line">|--qimairank</span><br><span class="line">    |--spiders</span><br><span class="line">        |--__init__.py</span><br><span class="line">    |--__init__.py</span><br><span class="line">    |--items.py</span><br><span class="line">    |--middlewares.py</span><br><span class="line">    |--pipelines.py</span><br><span class="line">    |--settings.py</span><br><span class="line">|--scrapy.cfg</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><code>scrapy.cfg</code>：项目的配置文件，指定<code>settings</code>文件，部署deploy的project名称等等。</li>
+<li><code>qimairank</code>：项目的python模块。</li>
+<li><code>spiders</code>：放置spider代码的目录。</li>
+<li><code>items.py</code>：项目中的item文件。</li>
+<li><code>pipelines.py</code>:项目中的pipelines文件。</li>
+<li><code>middlewares.py</code>：项目的中间件。</li>
+<li><code>settings.py</code>：Scrapy 配置文件。更多配置信息查看：<a href="https://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/settings.html" target="_blank" rel="noopener">https://scrapy-chs.readthedocs.io/zh_CN/0.24/topics/settings.html</a></li>
+</ul>
+<h2 id="第一个爬虫"><a href="#第一个爬虫" class="headerlink" title="第一个爬虫"></a>第一个爬虫</h2><p>爬虫实现讲解：</p>
+<p>第一弹：爬取有道翻译 <a href="../../16/Scrapy-爬取有道翻译的单词释义/">👉 点击前往</a></p>
+
+    
+    </div>
+    
+    <div>
+      
+        <div>
+  
+    <div style="text-align: center;font-size: 13px;letter-spacing: 10px;user-select: none;margin-top: 50px;color: #bbb;">-------------本文结束啦 <i class="fa fa-star"></i> 感谢您的阅读-------------</div>
+  
+</div>
+
+      
+    </div>
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wx_subscription.jpg" alt="所谓向日葵族 wechat" style="width: 200px; max-width: 100%;">
+    <div>💡 更多好文欢迎关注我的公众号~</div>
+</div>
+
       </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>觉得不错的话，点个赞🌟吧~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赞赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="所谓向日葵族 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="所谓向日葵族 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    所谓向日葵族
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://luohongxfb.github.io/2019/07/10/Scrapy详解-爬虫框架入门看这一篇就够了！/" title="Scrapy详解 爬虫框架入门看这一篇就够了！">https://luohongxfb.github.io/2019/07/10/Scrapy详解-爬虫框架入门看这一篇就够了！/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/05/排除aar-jar中冗余或者冲突包、类的脚本/" rel="next" title="排除aar/jar中冗余或者冲突包、类的脚本">
+                <i class="fa fa-chevron-left"></i> 排除aar/jar中冗余或者冲突包、类的脚本
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/10/Hexo-第二弹/" rel="prev" title="Hexo--第二弹">
+                Hexo--第二弹 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
       
       
+    </footer>
     </div>
     
     
     
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -406,6 +684,15 @@
 
 
         
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MzMxMi8xOTg1Mw=="></div>
+    </div>
+
+  
+
+
 
       </div>
       
@@ -426,8 +713,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -499,6 +795,22 @@
         </div>
       </section>
 
+      
+        <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#架构"><span class="nav-number">2.</span> <span class="nav-text">架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一个爬虫"><span class="nav-number">4.</span> <span class="nav-text">第一个爬虫</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+        <!--/noindex-->
       
 
       
@@ -717,6 +1029,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

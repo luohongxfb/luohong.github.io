@@ -112,17 +112,23 @@
 
 
 
-<meta name="description" content="本站的博客搭建采用Hexo+NexT主题，部署在GitHub Pages。下面手把手带你搭建免费高效的博客系统~  简介Hexo–快速、简洁且高效的博客框架，基于NodeJS环境。  超快速度Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。 支持 MarkdownHexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress">
+<meta name="description" content="前言熟悉Scrapy框架后，我们手写第一个爬虫，爬取有道翻译的单词发音，发音文件链接，释义，例句。 需要先熟悉Scrapy框架的同学：点击学习  如单词proportion：有道翻译的详情连接为 http://dict.youdao.com/w/eng/proportion 。本篇文章爬取的内容结果：12345678910&amp;#123;&quot;example&quot;: [&amp;#123;&quot;en&quot;: &quot;I seeme">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo--博客搭建">
-<meta property="og:url" content="https://luohongxfb.github.io/2019/03/22/Hexo--博客搭建/index.html">
+<meta property="og:title" content="Scrapy-爬取有道翻译的单词释义">
+<meta property="og:url" content="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/index.html">
 <meta property="og:site_name" content="所谓向日葵族&#39;s Blog">
-<meta property="og:description" content="本站的博客搭建采用Hexo+NexT主题，部署在GitHub Pages。下面手把手带你搭建免费高效的博客系统~  简介Hexo–快速、简洁且高效的博客框架，基于NodeJS环境。  超快速度Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。 支持 MarkdownHexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress">
+<meta property="og:description" content="前言熟悉Scrapy框架后，我们手写第一个爬虫，爬取有道翻译的单词发音，发音文件链接，释义，例句。 需要先熟悉Scrapy框架的同学：点击学习  如单词proportion：有道翻译的详情连接为 http://dict.youdao.com/w/eng/proportion 。本篇文章爬取的内容结果：12345678910&amp;#123;&quot;example&quot;: [&amp;#123;&quot;en&quot;: &quot;I seeme">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-15T10:12:19.883Z">
+<meta property="og:image" content="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563274686.jpg">
+<meta property="og:image" content="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563274952.jpg">
+<meta property="og:image" content="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563334153.jpg">
+<meta property="og:image" content="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563334228.jpg">
+<meta property="og:image" content="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563335067.jpg">
+<meta property="og:updated_time" content="2019-07-17T07:23:43.689Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo--博客搭建">
-<meta name="twitter:description" content="本站的博客搭建采用Hexo+NexT主题，部署在GitHub Pages。下面手把手带你搭建免费高效的博客系统~  简介Hexo–快速、简洁且高效的博客框架，基于NodeJS环境。  超快速度Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。 支持 MarkdownHexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress">
+<meta name="twitter:title" content="Scrapy-爬取有道翻译的单词释义">
+<meta name="twitter:description" content="前言熟悉Scrapy框架后，我们手写第一个爬虫，爬取有道翻译的单词发音，发音文件链接，释义，例句。 需要先熟悉Scrapy框架的同学：点击学习  如单词proportion：有道翻译的详情连接为 http://dict.youdao.com/w/eng/proportion 。本篇文章爬取的内容结果：12345678910&amp;#123;&quot;example&quot;: [&amp;#123;&quot;en&quot;: &quot;I seeme">
+<meta name="twitter:image" content="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563274686.jpg">
 
 
 
@@ -152,13 +158,13 @@
 
 
 
-  <link rel="canonical" href="https://luohongxfb.github.io/2019/03/22/Hexo--博客搭建/">
+  <link rel="canonical" href="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/">
 
 
 
 
 
-  <title>Hexo--博客搭建 | 所谓向日葵族's Blog</title>
+  <title>Scrapy-爬取有道翻译的单词释义 | 所谓向日葵族's Blog</title>
   
 
 
@@ -378,7 +384,7 @@
     
     
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://luohongxfb.github.io/2019/03/22/Hexo--博客搭建/">
+      <link itemprop="mainEntityOfPage" href="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/">
 
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="所谓向日葵族">
@@ -395,7 +401,7 @@
 
         
         
-        <h1 class="post-title" itemprop="name headline">Hexo--博客搭建</h1>
+        <h1 class="post-title" itemprop="name headline">Scrapy-爬取有道翻译的单词释义</h1>
         
 
         <div class="post-meta">
@@ -408,8 +414,8 @@
               <span class="post-meta-item-text">创建于</span>
             
 
-              <time title="创建于 2019-03-22" itemprop="dateCreated datePublished" datetime="2019-03-22T16:38:05+08:00">
-                2019-03-22
+              <time title="创建于 2019-07-16" itemprop="dateCreated datePublished" datetime="2019-07-16T18:52:59+08:00">
+                2019-07-16
               </time>
             
 
@@ -431,8 +437,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/Scrapy/" itemprop="url" rel="index">
+                    <span itemprop="name">Scrapy</span>
                   </a>
                 </span>
 
@@ -448,7 +454,7 @@
 
             
             
-              <span id="/2019/03/22/Hexo--博客搭建/" class="leancloud_visitors" data-flag-title="Hexo--博客搭建">
+              <span id="/2019/07/16/Scrapy-爬取有道翻译的单词释义/" class="leancloud_visitors" data-flag-title="Scrapy-爬取有道翻译的单词释义">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -474,7 +480,7 @@
                 <span class="post-meta-item-text">字数统计&#58;</span>
               
                 <span title="字数统计">
-                  1.1k 字
+                  1.7k 字
                 </span>
               
 
@@ -490,7 +496,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4 分钟
+                  7 分钟
                 </span>
                 
             </div>
@@ -509,71 +515,43 @@
       
 
     
-      <p id="div-border-top-purple">本站的博客搭建采用<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a>+<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT</a>主题，部署在<code>GitHub Pages</code>。<br>下面手把手带你搭建免费高效的博客系统~<br></p>
+      <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>熟悉Scrapy框架后，我们手写第一个爬虫，爬取有道翻译的单词发音，发音文件链接，释义，例句。</p>
+<p id="div-border-left-yellow">需要先熟悉Scrapy框架的同学：<a href="../../10/Scrapy详解-爬虫框架入门看这一篇就够了！/">点击学习</a></p>
 
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><code>Hexo</code>–快速、简洁且高效的博客框架，基于<a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJS</a>环境。</p>
-<p><ul><li><div><div><i class="fa fa-bolt"> 超快速度</i></div><p><code>Node.js</code> 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。</p></div></li><li><div><div><i class="fa fa-pencil"></i> 支持 <code>Markdown</code></div><p>Hexo 支持 <code>GitHub Flavored Markdown</code> 的所有功能，甚至可以整合 <code>Octopress</code> 的大多数插件。</p></div></li><li><div><div><i class="fa fa-cloud-upload"></i> 一键部署</div><p>只需一条指令即可部署到 <code>GitHub Pages</code>, <code>Heroku</code> 或其他网站。</p></div></li><li><div><div><i class="fa fa-cog"></i> 丰富的插件</div><p class="intro-feature-desc">Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 <code>Jade</code>, <code>CoffeeScript</code>。</p></div></li></ul><br><code>Hexo</code> 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<p>如单词<code>proportion</code>：有道翻译的详情连接为 <a href="http://dict.youdao.com/w/eng/proportion" target="_blank" rel="noopener">http://dict.youdao.com/w/eng/proportion</a> 。本篇文章爬取的内容结果：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="attr">"example"</span>: [&#123;<span class="attr">"en"</span>: <span class="string">"I seemed to have lost all sense of proportion."</span>,</span><br><span class="line">              <span class="attr">"zh"</span>: <span class="string">"我好象已经丧失了有关比例的一切感觉。"</span>&#125;,</span><br><span class="line">             &#123;<span class="attr">"en"</span>: <span class="string">"The price of this article is out of(all) proportion to its value."</span>,</span><br><span class="line">              <span class="attr">"zh"</span>: <span class="string">"这个商品的价格与它的价值完全不成比例。"</span>&#125;,</span><br><span class="line">             &#123;<span class="attr">"en"</span>: <span class="string">"But, the use of interception bases on the violation of the citizen rights, so it should be satisfactory of the principle of legal reservation and the principle of proportion."</span>,</span><br><span class="line">              <span class="attr">"zh"</span>: <span class="string">"但是，监听的适用是以侵害公民权利为前提的，因此监听在刑事侦查中的运用必须满足法律保留原则和比例原则的要求。"</span>&#125;],</span><br><span class="line"> <span class="attr">"explain"</span>: [<span class="string">"n. 比例，占比；部分；面积；均衡"</span>, <span class="string">"vt. 使成比例；使均衡；分摊"</span>],</span><br><span class="line"> <span class="attr">"pron"</span>: <span class="string">"[prə'pɔːʃ(ə)n]"</span>,</span><br><span class="line"> <span class="attr">"pron_url"</span>: <span class="string">"http://dict.youdao.com/dictvoice?audio=proportion&amp;type=1"</span>,</span><br><span class="line"> <span class="attr">"word"</span>: <span class="string">"proportion"</span>&#125;</span><br></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装前提：</p>
+<img src="/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563274686.jpg" title="proportion有道释义">
+<h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>在需要创建的目录下，<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy startproject youdaoeng</span><br></pre></td></tr></table></figure></p>
+<p>回车即可创建默认的Scrapy项目架构。</p>
+<img src="/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563274952.jpg" title="youdaoeng项目架构">
+<h2 id="创建Item"><a href="#创建Item" class="headerlink" title="创建Item"></a>创建Item</h2><p>创建YoudaoengItem继承scrapy.Item，并定义需要存储的单词，发音，发音文件链接，释义，例句。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">YoudaoengItem</span><span class="params">(scrapy.Item)</span>:</span></span><br><span class="line">    <span class="comment"># define the fields for your item here like:</span></span><br><span class="line">    <span class="comment"># name = scrapy.Field()</span></span><br><span class="line">    <span class="comment"># 单词</span></span><br><span class="line">    word = scrapy.Field()</span><br><span class="line">    <span class="comment"># 英式发音</span></span><br><span class="line">    pron = scrapy.Field()</span><br><span class="line">    <span class="comment"># 发音audio文件链接</span></span><br><span class="line">    pron_url = scrapy.Field()</span><br><span class="line">    <span class="comment"># 释义</span></span><br><span class="line">    explain = scrapy.Field()</span><br><span class="line">    <span class="comment"># 例句</span></span><br><span class="line">    example = scrapy.Field()</span><br></pre></td></tr></table></figure></p>
+<h2 id="创建Spider"><a href="#创建Spider" class="headerlink" title="创建Spider"></a>创建Spider</h2><p>在<code>spiders</code>目录下创建<code>EngSpider.py</code>，并创建<code>class EngSpider</code>，继承于Spider。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> scrapy <span class="keyword">import</span> Spider</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">EngSpider</span><span class="params">(Spider)</span>:</span></span><br><span class="line">    name = <span class="string">"EngSpider"</span></span><br><span class="line">    <span class="comment"># 允许访问的域</span></span><br><span class="line">    allowed_domains = [<span class="string">"dict.youdao.com"</span>]</span><br><span class="line"></span><br><span class="line">    start_urls = [</span><br><span class="line">        <span class="string">'http://dict.youdao.com/w/eng/agree'</span>, <span class="string">'http://dict.youdao.com/w/eng/prophet'</span>,</span><br><span class="line">                <span class="string">'http://dict.youdao.com/w/eng/proportion'</span>]</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parse</span><span class="params">(self, response)</span>:</span></span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure></p>
 <ul>
-<li><code>NodeJS</code>环境：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">下载地址</a> </li>
-<li><code>Git</code>：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Windows</a> | <a href="https://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="noopener">Mac</a></li>
+<li><code>name</code>：用于区别Spider，该名字必须是唯一的。</li>
+<li><code>start_urls</code>：Spider在启动时进行爬取的url列表，首先会爬取第一个。</li>
+<li><code>def parse(self, response)</code>：得到请求url后的response信息的解析方法。</li>
 </ul>
-<p>安装Hexo：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>具体的安装过程的问题，这里不再过多提及。官方安装文档：<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p>
-</blockquote>
-<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><p>新建文件夹创建项目：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
-<p>若需要在当前文件夹直接创建，在当前目录下<code>hexo init</code>。</p>
-<p>Hexo项目目录结构：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></p>
-<p><code>_config.yml</code>：网站的配置信息。官方配置文档：<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/configuration</a> 。</p>
-<p><code>package.json</code>：应用程序的信息。</p>
-<p><code>scaffolds</code>：<strong>模版</strong>文件夹。当您新建文章时，Hexo 会根据scaffold来建立文件。官方模板配置文档：<a href="https://hexo.io/zh-cn/docs/templates" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/templates</a></p>
-<p><code>source</code>：<strong>资源</strong>文件夹是存放用户资源的地方。除 <code>_posts</code> 文件夹之外，开头命名为 _ (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。</p>
-<p><code>themes</code>：<strong>主题</strong>文件夹。Hexo 会根据主题来生成静态页面。</p>
-<p id="div-border-top-green">项目下的<code>_config.yml</code>为<strong>项目配置文件</strong>，主题下的<code>_config.yml</code>为<strong>主题配置文件</strong>。<br></p>
-
-<p>执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate &amp;&amp; hexo server --debug</span><br></pre></td></tr></table></figure></p>
-<p>即可在本地<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 查看默认的网站样式啦~</p>
-<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><h3 id="新建网站项目"><a href="#新建网站项目" class="headerlink" title="新建网站项目"></a>新建网站项目</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init [folder]</span><br></pre></td></tr></table></figure>
-<p>如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。</p>
-<h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<p>如果没有设置 <code>layout</code> 的话，默认使用 网站配置<code>_config.yml</code> 中的 <code>default_layout</code> 参数代替。</p>
-<p><strong>如果标题包含空格的话，请使用引号括起来。</strong></p>
-<p>也可以简写：<code>hexo n [layout] &lt;title&gt;</code></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<p>有道翻译的网址为<a href="http://dict.youdao.com/" target="_blank" rel="noopener">http://dict.youdao.com/</a> ，根据分析，查询英文单词结果后链接更改，如查询<code>agree</code>，跳转单词详情地址为<a href="http://dict.youdao.com/w/eng/agree" target="_blank" rel="noopener">http://dict.youdao.com/w/eng/agree</a> 。所以几乎可以认为单词的详情页链接可以是<a href="http://dict.youdao.com/w/eng/" target="_blank" rel="noopener">http://dict.youdao.com/w/eng/</a> 拼接上单词本身，所以配置<code>start_urls</code>我们查询三个单词的释义详情。</p>
+<h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><p>解析用的Selectors选择器有多种方法：</p>
 <ul>
-<li>-d, –deploy    文件生成后立即部署网站</li>
-<li>-w, –watch    监视文件变动</li>
+<li>xpath(): 传入xpath表达式，返回该表达式所对应的所有节点的selector list列表 。</li>
+<li>css(): 传入CSS表达式，返回该表达式所对应的所有节点的selector list列表.</li>
+<li>extract(): 序列化该节点为unicode字符串并返回list。</li>
+<li>re(): 根据传入的正则表达式对数据进行提取，返回unicode字符串list列表。</li>
 </ul>
-<p>也可以简写：<code>hexo g</code></p>
-<h3 id="本地启动服务器"><a href="#本地启动服务器" class="headerlink" title="本地启动服务器"></a>本地启动服务器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>默认情况下，访问网址为： <a href="http://localhost:4000/。" target="_blank" rel="noopener">http://localhost:4000/。</a></p>
-<ul>
-<li>-p, –port    重设端口</li>
-<li>-s, –static    只使用静态文件</li>
-<li>-l, –log    启动日记记录，使用覆盖记录格式</li>
-</ul>
-<p>也可以简写：<code>hexo s</code></p>
-<h3 id="线上部署"><a href="#线上部署" class="headerlink" title="线上部署"></a>线上部署</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-<ul>
-<li>-g, –generate    部署之前预先生成静态文件</li>
-</ul>
-<p>也可以简写：<code>hexo d</code></p>
-<p>部署到<code>GitHub Pages</code>请看<a href="../Hexo-GitHub-Pages部署/">这篇文章</a>~</p>
-<h3 id="清除缓存文件和已生成的静态文件"><a href="#清除缓存文件和已生成的静态文件" class="headerlink" title="清除缓存文件和已生成的静态文件"></a>清除缓存文件和已生成的静态文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-<p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。</p>
-<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
-<p>更改配置文件<code>_config.yml</code>后需要运行该命令。不然可能会报<code>Unhandled rejection Error: ENOENT: no such file or directory, open &#39;**&#39;</code>。</p>
-<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>Hexo的默认主题是<code>landscape</code>，官方推荐主题：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p>
-<p>本博客网站使用的主题是<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">NexT.Pisces</a><br>如需要v6及以上的，请看新仓库<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a></p>
-<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>先从git将主题拉下来，在项目下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
-<p>在<strong>项目配置文件</strong><code>_config.yml</code>中查找<code>theme</code>，修改值为<code>theme: next</code>。（注意next前的空格哦）</p>
-<p>然后<code>hexo clean &amp;&amp; hexo generate &amp;&amp; hexo server --debug</code>就能看见next主题的默认样式啦</p>
-<p>选择NexT.Pisces需要在<code>themes/next</code>下的<strong>主题配置文件</strong><code>_config.yml</code>中查找<code>scheme</code>，修改值为<code>scheme: Pisces</code>再运行上面的重新启动，<br>就能看到样式啦</p>
-<p><span id="inline-green">安装Hexo和Next主题到此就结束啦~</span></p>
-<h2 id="要说的话"><a href="#要说的话" class="headerlink" title="要说的话"></a>要说的话</h2><p>建议在项目下<code>package.json</code>中配置开发运行脚本和部署脚本，在最外层json中添加：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">    "dev": "hexo clean &amp;&amp; hexo generate &amp;&amp; hexo server --debug",</span><br><span class="line">    "start": "hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy"</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></p>
-<p>以后开发运行<code>npm run dev</code>就好啦。线上部署使用<code>npm run start</code>。</p>
+<p>下面我们用xpath()选择节点，xpath的语法可参考w3c的<a href="http://www.w3school.com.cn/xpath/xpath_nodes.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/xpath/xpath_nodes.asp</a> 学习，需要熟悉语法、运算符、函数等。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span><span class="params">(self, response)</span>:</span></span><br><span class="line">    box = response.xpath(<span class="string">'//*[@id="results-contents"]'</span>)</span><br><span class="line">    word = YoudaoengItem()</span><br><span class="line">    <span class="comment"># 简明释义</span></span><br><span class="line">    box_simple = box.xpath(<span class="string">'.//*[@id="phrsListTab"]'</span>)</span><br><span class="line">    <span class="comment"># 判断查出来的字是否存在</span></span><br><span class="line">    <span class="keyword">if</span> box_simple:</span><br><span class="line">        <span class="comment"># 单词</span></span><br><span class="line">        word[<span class="string">'word'</span>] = box_simple.xpath(<span class="string">'.//h2[@class="wordbook-js"]//span[@class="keyword"]/text()'</span>).extract()[<span class="number">0</span>]</span><br><span class="line">        <span class="comment"># 英式发音</span></span><br><span class="line">        word[<span class="string">'pron'</span>] = box_simple.xpath(</span><br><span class="line">            <span class="string">'.//h2[@class="wordbook-js"]//div[@class="baav"]//*[@class="phonetic"]/text()'</span>).extract()[<span class="number">0</span>]</span><br><span class="line">        <span class="comment"># 发音链接</span></span><br><span class="line">        word[<span class="string">'pron_url'</span>] = <span class="string">"http://dict.youdao.com/dictvoice?audio="</span> + word[<span class="string">'word'</span>] + <span class="string">"&amp;type=1"</span></span><br><span class="line">        <span class="comment"># 释义</span></span><br><span class="line">        word[<span class="string">'explain'</span>] = []</span><br><span class="line">        temp = box_simple.xpath(<span class="string">'.//div[@class="trans-container"]//ul//li/text()'</span>).extract()</span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> temp:</span><br><span class="line">            <span class="keyword">if</span> len(item) &gt; <span class="number">0</span> <span class="keyword">and</span> <span class="keyword">not</span> re.search(<span class="string">r'\n'</span>, item) <span class="keyword">and</span> <span class="keyword">not</span> re.match(<span class="string">r' '</span>, item):</span><br><span class="line">                print(item)</span><br><span class="line">                word[<span class="string">'explain'</span>].append(item)</span><br><span class="line">        <span class="comment"># 例句</span></span><br><span class="line">        time.sleep(<span class="number">3</span>)</span><br><span class="line">        word[<span class="string">'example'</span>] = []</span><br><span class="line">        example_root = box.xpath(<span class="string">'//*[@id="bilingual"]//ul[@class="ol"]/li'</span>)</span><br><span class="line">        <span class="comment"># 1.双语例句是否存在</span></span><br><span class="line">        <span class="keyword">if</span> example_root:</span><br><span class="line">            <span class="keyword">for</span> li <span class="keyword">in</span> example_root:</span><br><span class="line">                en = <span class="string">""</span></span><br><span class="line">                <span class="keyword">for</span> span <span class="keyword">in</span> li.xpath(<span class="string">'./p[1]/span'</span>):</span><br><span class="line">                    <span class="keyword">if</span> span.xpath(<span class="string">'./text()'</span>).extract():</span><br><span class="line">                        en += span.xpath(<span class="string">'./text()'</span>).extract()[<span class="number">0</span>]</span><br><span class="line">                    <span class="keyword">elif</span> span.xpath(<span class="string">'./b/text()'</span>).extract():</span><br><span class="line">                        en += span.xpath(<span class="string">'./b/text()'</span>).extract()[<span class="number">0</span>]</span><br><span class="line">                zh = str().join(li.xpath(<span class="string">'./p[2]/span/text()'</span>).extract()).replace(<span class="string">' '</span>, <span class="string">''</span>)</span><br><span class="line">                word[<span class="string">'example'</span>].append(dict(en=en.replace(<span class="string">'\"'</span>, <span class="string">'\\"'</span>), zh=zh))</span><br><span class="line">        <span class="comment">#  2.柯林斯英汉双解大辞典的例句是否存在</span></span><br><span class="line">        <span class="keyword">elif</span> box.xpath(<span class="string">'//*[@id="collinsResult"]//ul[@class="ol"]//div[@class="examples"]'</span>):</span><br><span class="line">            example_root = box.xpath(<span class="string">'//*[@id="collinsResult"]//ul[@class="ol"]//li'</span>)</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> example_root:</span><br><span class="line">                <span class="keyword">if</span> i.xpath(<span class="string">'.//*[@class="exampleLists"]'</span>):</span><br><span class="line">                    en = i.xpath(</span><br><span class="line">                        <span class="string">'.//*[@class="exampleLists"][1]//div[@class="examples"]/p[1]/text()'</span>).extract()[<span class="number">0</span>]</span><br><span class="line">                    zh = i.xpath(</span><br><span class="line">                        <span class="string">'.//*[@class="exampleLists"][1]//div[@class="examples"]/p[2]/text()'</span>).extract()[<span class="number">0</span>]</span><br><span class="line">                    word[<span class="string">'example'</span>].append(dict(en=en.replace(<span class="string">'\"'</span>, <span class="string">'\\"'</span>), zh=zh))</span><br><span class="line">                    <span class="keyword">if</span> len(word[<span class="string">'example'</span>]) &gt;= <span class="number">3</span>:</span><br><span class="line">                        <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">yield</span> word</span><br></pre></td></tr></table></figure>
+<p>最后 <code>yield word</code>则是返回解析的word 给<code>Item Pipeline</code>，进行随后的数据过滤或者存储。</p>
+<h2 id="运行爬虫-爬取单词释义"><a href="#运行爬虫-爬取单词释义" class="headerlink" title="运行爬虫-爬取单词释义"></a>运行爬虫-爬取单词释义</h2><p>运行爬虫，会爬取agree、prophet、proportion三个单词的详情，在项目目录下（scrapy.cfg所在的目录）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youdaoeng&gt;scrapy crawl EngSpider -o data.json</span><br></pre></td></tr></table></figure></p>
+<p>即可运行，窗口可以看见爬取的日志内容输出，运行结束后会在项目目录下生成一个data.json文件。<br><img src="/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563334153.jpg" title="开始爬取"><br><img src="/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563334228.jpg" title="Item输出"><br><img src="/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563335067.jpg" title="生成的data.json"></p>
+<p>生成的数据为所有item的json格式数组，中文字符都是Unicode编码，可通过一些在线的json解析网站如 <a href="https://www.bejson.com/" target="_blank" rel="noopener">https://www.bejson.com/</a> ，Unicode转中文查看是我们想要的结果。</p>
+<h2 id="下载单词语音文件"><a href="#下载单词语音文件" class="headerlink" title="下载单词语音文件"></a>下载单词语音文件</h2><p>单词读音的mp3链接为解析时候保存的<code>pron_url</code>字段，接下来我们下载单词mp3文件到本地。<br>在Item下增加属性<code>pron_save_path</code>，存储发音文件的本地地址：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 发音 mp3 本地存放路径</span></span><br><span class="line">    pron_save_path = scrapy.Field()</span><br></pre></td></tr></table></figure></p>
+<p>并在settings.py文件中配置下载文件的目录，如在D:\scrapy_files\目录下，则配置<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FILES_STORE = <span class="string">"D:\\scrapy_files\\"</span></span><br></pre></td></tr></table></figure></p>
+<p>增加ItemPipeline重新发起文件下载请求：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Mp3Pipeline</span><span class="params">(FilesPipeline)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    自定义文件下载管道</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_media_requests</span><span class="params">(self, item, info)</span>:</span></span><br><span class="line">        <span class="string">'''</span></span><br><span class="line"><span class="string">        根据文件的url发送请求（url跟进）</span></span><br><span class="line"><span class="string">        :param item:</span></span><br><span class="line"><span class="string">        :param info:</span></span><br><span class="line"><span class="string">        :return:</span></span><br><span class="line"><span class="string">        '''</span></span><br><span class="line">        <span class="comment"># meta携带的数据可以在response获取到</span></span><br><span class="line">        <span class="keyword">yield</span> scrapy.Request(url=item[<span class="string">'pron_url'</span>], meta=&#123;<span class="string">'item'</span>: item&#125;)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">item_completed</span><span class="params">(self, results, item, info)</span>:</span></span><br><span class="line">        <span class="string">'''</span></span><br><span class="line"><span class="string">        处理请求结果</span></span><br><span class="line"><span class="string">        :param results:</span></span><br><span class="line"><span class="string">        :param item:</span></span><br><span class="line"><span class="string">        :param info:</span></span><br><span class="line"><span class="string">        :return:</span></span><br><span class="line"><span class="string">        '''</span></span><br><span class="line">        file_paths = [x[<span class="string">'path'</span>] <span class="keyword">for</span> ok, x <span class="keyword">in</span> results <span class="keyword">if</span> ok]</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> file_paths:</span><br><span class="line">            <span class="keyword">raise</span> DropItem(<span class="string">"Item contains no files"</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># old_name = FILES_STORE + file_paths[0]</span></span><br><span class="line">        <span class="comment"># new_name = FILES_STORE + item['word'] + '.mp3'</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 文件重命名 （相当于剪切）</span></span><br><span class="line">        <span class="comment"># os.rename(old_name, new_name)</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># item['pron_save_path'] = new_name</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 返回的result是除去FILES_STORE的目录</span></span><br><span class="line">        item[<span class="string">'pron_save_path'</span>] = FILES_STORE + file_paths[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">return</span> item</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">file_path</span><span class="params">(self, request, response=None, info=None)</span>:</span></span><br><span class="line">        <span class="string">'''</span></span><br><span class="line"><span class="string">        自定义文件保存路径</span></span><br><span class="line"><span class="string">        默认的保存路径是在FILES_STORE下创建的一个full来存放，如果我们想要直接在FILES_STORE下存放，则需要自定义存放路径。</span></span><br><span class="line"><span class="string">        默认下载的是无后缀的文件，需要增加.mp3后缀</span></span><br><span class="line"><span class="string">        :param request:</span></span><br><span class="line"><span class="string">        :param response:</span></span><br><span class="line"><span class="string">        :param info:</span></span><br><span class="line"><span class="string">        :return:</span></span><br><span class="line"><span class="string">        '''</span></span><br><span class="line">        file_name = request.meta[<span class="string">'item'</span>][<span class="string">'word'</span>] + <span class="string">".mp3"</span></span><br><span class="line">        <span class="keyword">return</span> file_name</span><br></pre></td></tr></table></figure></p>
+<p>需要更改settings.py文件，配置Mp3Pipeline，后面的300为优先级，数字越大，优先级越低。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Configure item pipelines</span></span><br><span class="line"><span class="comment"># See https://doc.scrapy.org/en/latest/topics/item-pipeline.html</span></span><br><span class="line">ITEM_PIPELINES = &#123;</span><br><span class="line">    <span class="comment"># 'youdaoeng.pipelines.YoudaoengPipeline': 300,</span></span><br><span class="line">    <span class="string">'youdaoeng.pipelines.Mp3Pipeline'</span>: <span class="number">300</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>运行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youdaoeng&gt;scrapy crawl EngSpider -o data1.json</span><br></pre></td></tr></table></figure></p>
+<p>等待运行完成，则在项目目录下生成了data1.json，并在D:\scrapy_files\目录下生成了我们爬取的三个单词的释义。</p>
+<p><a href="https://github.com/luohongxfb/Example_Spiders/tree/master/youdaoeng" target="_blank" rel="noopener">项目源码</a></p>
 
     
     </div>
@@ -638,7 +616,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://luohongxfb.github.io/2019/03/22/Hexo--博客搭建/" title="Hexo--博客搭建">https://luohongxfb.github.io/2019/03/22/Hexo--博客搭建/</a>
+    <a href="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/" title="Scrapy-爬取有道翻译的单词释义">https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -660,8 +638,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/07/webstorm-swig文件语法高亮/" rel="next" title="webstorm .swig文件语法高亮">
-                <i class="fa fa-chevron-left"></i> webstorm .swig文件语法高亮
+              <a href="/2019/07/10/Hexo-第二弹/" rel="next" title="Hexo--第二弹">
+                <i class="fa fa-chevron-left"></i> Hexo--第二弹
               </a>
             
           </div>
@@ -669,10 +647,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/22/Hexo-GitHub-Pages部署/" rel="prev" title="Hexo--GitHub Pages部署">
-                Hexo--GitHub Pages部署 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -821,7 +795,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建站"><span class="nav-number">3.</span> <span class="nav-text">建站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令"><span class="nav-number">4.</span> <span class="nav-text">命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#新建网站项目"><span class="nav-number">4.1.</span> <span class="nav-text">新建网站项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建文章"><span class="nav-number">4.2.</span> <span class="nav-text">新建文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成静态文件"><span class="nav-number">4.3.</span> <span class="nav-text">生成静态文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地启动服务器"><span class="nav-number">4.4.</span> <span class="nav-text">本地启动服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线上部署"><span class="nav-number">4.5.</span> <span class="nav-text">线上部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#清除缓存文件和已生成的静态文件"><span class="nav-number">4.6.</span> <span class="nav-text">清除缓存文件和已生成的静态文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题"><span class="nav-number">5.</span> <span class="nav-text">主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-1"><span class="nav-number">5.1.</span> <span class="nav-text">安装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#要说的话"><span class="nav-number">6.</span> <span class="nav-text">要说的话</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建项目"><span class="nav-number">2.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建Item"><span class="nav-number">3.</span> <span class="nav-text">创建Item</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建Spider"><span class="nav-number">4.</span> <span class="nav-text">创建Spider</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解析"><span class="nav-number">4.1.</span> <span class="nav-text">解析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行爬虫-爬取单词释义"><span class="nav-number">5.</span> <span class="nav-text">运行爬虫-爬取单词释义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载单词语音文件"><span class="nav-number">6.</span> <span class="nav-text">下载单词语音文件</span></a></li></ol></div>
             
 
           </div>
