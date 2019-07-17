@@ -124,7 +124,7 @@
 <meta property="og:image" content="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563334153.jpg">
 <meta property="og:image" content="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563334228.jpg">
 <meta property="og:image" content="https://luohongxfb.github.io/2019/07/16/Scrapy-爬取有道翻译的单词释义/1563335067.jpg">
-<meta property="og:updated_time" content="2019-07-17T07:23:43.689Z">
+<meta property="og:updated_time" content="2019-07-17T07:38:06.864Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Scrapy-爬取有道翻译的单词释义">
 <meta name="twitter:description" content="前言熟悉Scrapy框架后，我们手写第一个爬虫，爬取有道翻译的单词发音，发音文件链接，释义，例句。 需要先熟悉Scrapy框架的同学：点击学习  如单词proportion：有道翻译的详情连接为 http://dict.youdao.com/w/eng/proportion 。本篇文章爬取的内容结果：12345678910&amp;#123;&quot;example&quot;: [&amp;#123;&quot;en&quot;: &quot;I seeme">
@@ -532,7 +532,7 @@
 <li><code>def parse(self, response)</code>：得到请求url后的response信息的解析方法。</li>
 </ul>
 <p>有道翻译的网址为<a href="http://dict.youdao.com/" target="_blank" rel="noopener">http://dict.youdao.com/</a> ，根据分析，查询英文单词结果后链接更改，如查询<code>agree</code>，跳转单词详情地址为<a href="http://dict.youdao.com/w/eng/agree" target="_blank" rel="noopener">http://dict.youdao.com/w/eng/agree</a> 。所以几乎可以认为单词的详情页链接可以是<a href="http://dict.youdao.com/w/eng/" target="_blank" rel="noopener">http://dict.youdao.com/w/eng/</a> 拼接上单词本身，所以配置<code>start_urls</code>我们查询三个单词的释义详情。</p>
-<h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><p>解析用的Selectors选择器有多种方法：</p>
+<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><p>解析用的Selectors选择器有多种方法：</p>
 <ul>
 <li>xpath(): 传入xpath表达式，返回该表达式所对应的所有节点的selector list列表 。</li>
 <li>css(): 传入CSS表达式，返回该表达式所对应的所有节点的selector list列表.</li>
@@ -795,7 +795,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建项目"><span class="nav-number">2.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建Item"><span class="nav-number">3.</span> <span class="nav-text">创建Item</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建Spider"><span class="nav-number">4.</span> <span class="nav-text">创建Spider</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解析"><span class="nav-number">4.1.</span> <span class="nav-text">解析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行爬虫-爬取单词释义"><span class="nav-number">5.</span> <span class="nav-text">运行爬虫-爬取单词释义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载单词语音文件"><span class="nav-number">6.</span> <span class="nav-text">下载单词语音文件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建项目"><span class="nav-number">2.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建Item"><span class="nav-number">3.</span> <span class="nav-text">创建Item</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建Spider"><span class="nav-number">4.</span> <span class="nav-text">创建Spider</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解析"><span class="nav-number">5.</span> <span class="nav-text">解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行爬虫-爬取单词释义"><span class="nav-number">6.</span> <span class="nav-text">运行爬虫-爬取单词释义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载单词语音文件"><span class="nav-number">7.</span> <span class="nav-text">下载单词语音文件</span></a></li></ol></div>
             
 
           </div>
