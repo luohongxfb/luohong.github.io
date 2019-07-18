@@ -112,21 +112,23 @@
 
 
 
-<meta name="description" content="部署到GitHub Pages请先准备一个GitHub账号，没有的话，出门右转浏览器地址栏输入：https://github.com/  Sign Up开始注册  有Git账号的准备新建仓库：https://github.com/new Repository name建议填自己用户名Owner带上.github.io">
+<meta name="description" content="1.简介Selenium是一个用于Web应用程序测试的工具。直接运行在浏览器中，就像真正的用户在操作一样。支持的浏览器包括IE（7, 8, 9, 10, 11），Firefox，Safari，Chrome，Opera等，在爬虫上则是模拟正常用户访问网页并获取数据。 2.安装 Selenium1&amp;gt; pip install selenium 3.安装驱动模拟真正的用户操作当然需要选择好用来操作的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo--GitHub Pages部署">
-<meta property="og:url" content="https://luohongxfb.github.io/2019/03/22/Hexo-GitHub-Pages部署/index.html">
+<meta property="og:title" content="Scrapy+Selenium爬取动态渲染网站">
+<meta property="og:url" content="https://luohongxfb.github.io/2019/07/17/Scrapy-Selenium爬取动态渲染网站/index.html">
 <meta property="og:site_name" content="所谓向日葵族&#39;s Blog">
-<meta property="og:description" content="部署到GitHub Pages请先准备一个GitHub账号，没有的话，出门右转浏览器地址栏输入：https://github.com/  Sign Up开始注册  有Git账号的准备新建仓库：https://github.com/new Repository name建议填自己用户名Owner带上.github.io">
+<meta property="og:description" content="1.简介Selenium是一个用于Web应用程序测试的工具。直接运行在浏览器中，就像真正的用户在操作一样。支持的浏览器包括IE（7, 8, 9, 10, 11），Firefox，Safari，Chrome，Opera等，在爬虫上则是模拟正常用户访问网页并获取数据。 2.安装 Selenium1&amp;gt; pip install selenium 3.安装驱动模拟真正的用户操作当然需要选择好用来操作的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://luohongxfb.github.io/2019/03/22/Hexo-GitHub-Pages部署/git_new_repo.png">
-<meta property="og:image" content="https://luohongxfb.github.io/2019/03/22/Hexo-GitHub-Pages部署/git_deploy.png">
-<meta property="og:image" content="https://luohongxfb.github.io/2019/03/22/Hexo-GitHub-Pages部署/git_pages.png">
-<meta property="og:updated_time" content="2019-03-26T10:42:08.973Z">
+<meta property="og:image" content="https://luohongxfb.github.io/2019/07/17/Scrapy-Selenium爬取动态渲染网站/1563419114.jpg">
+<meta property="og:image" content="https://luohongxfb.github.io/2019/07/17/Scrapy-Selenium爬取动态渲染网站/1563418582.jpg">
+<meta property="og:image" content="https://luohongxfb.github.io/2019/07/17/Scrapy-Selenium爬取动态渲染网站/1563419759.jpg">
+<meta property="og:image" content="https://luohongxfb.github.io/2019/07/17/Scrapy-Selenium爬取动态渲染网站/1563420565.jpg">
+<meta property="og:image" content="https://luohongxfb.github.io/2019/07/17/Scrapy-Selenium爬取动态渲染网站/1563420774.jpg">
+<meta property="og:updated_time" content="2019-07-18T10:42:11.695Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo--GitHub Pages部署">
-<meta name="twitter:description" content="部署到GitHub Pages请先准备一个GitHub账号，没有的话，出门右转浏览器地址栏输入：https://github.com/  Sign Up开始注册  有Git账号的准备新建仓库：https://github.com/new Repository name建议填自己用户名Owner带上.github.io">
-<meta name="twitter:image" content="https://luohongxfb.github.io/2019/03/22/Hexo-GitHub-Pages部署/git_new_repo.png">
+<meta name="twitter:title" content="Scrapy+Selenium爬取动态渲染网站">
+<meta name="twitter:description" content="1.简介Selenium是一个用于Web应用程序测试的工具。直接运行在浏览器中，就像真正的用户在操作一样。支持的浏览器包括IE（7, 8, 9, 10, 11），Firefox，Safari，Chrome，Opera等，在爬虫上则是模拟正常用户访问网页并获取数据。 2.安装 Selenium1&amp;gt; pip install selenium 3.安装驱动模拟真正的用户操作当然需要选择好用来操作的">
+<meta name="twitter:image" content="https://luohongxfb.github.io/2019/07/17/Scrapy-Selenium爬取动态渲染网站/1563419114.jpg">
 
 
 
@@ -156,13 +158,13 @@
 
 
 
-  <link rel="canonical" href="https://luohongxfb.github.io/2019/03/22/Hexo-GitHub-Pages部署/">
+  <link rel="canonical" href="https://luohongxfb.github.io/2019/07/17/Scrapy-Selenium爬取动态渲染网站/">
 
 
 
 
 
-  <title>Hexo--GitHub Pages部署 | 所谓向日葵族's Blog</title>
+  <title>Scrapy+Selenium爬取动态渲染网站 | 所谓向日葵族's Blog</title>
   
 
 
@@ -382,7 +384,7 @@
     
     
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://luohongxfb.github.io/2019/03/22/Hexo-GitHub-Pages部署/">
+      <link itemprop="mainEntityOfPage" href="https://luohongxfb.github.io/2019/07/17/Scrapy-Selenium爬取动态渲染网站/">
 
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="所谓向日葵族">
@@ -399,7 +401,7 @@
 
         
         
-        <h1 class="post-title" itemprop="name headline">Hexo--GitHub Pages部署</h1>
+        <h1 class="post-title" itemprop="name headline">Scrapy+Selenium爬取动态渲染网站</h1>
         
 
         <div class="post-meta">
@@ -412,8 +414,8 @@
               <span class="post-meta-item-text">创建于</span>
             
 
-              <time title="创建于 2019-03-22" itemprop="dateCreated datePublished" datetime="2019-03-22T19:08:16+08:00">
-                2019-03-22
+              <time title="创建于 2019-07-17" itemprop="dateCreated datePublished" datetime="2019-07-17T18:53:44+08:00">
+                2019-07-17
               </time>
             
 
@@ -435,8 +437,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/Scrapy/" itemprop="url" rel="index">
+                    <span itemprop="name">Scrapy</span>
                   </a>
                 </span>
 
@@ -452,7 +454,7 @@
 
             
             
-              <span id="/2019/03/22/Hexo-GitHub-Pages部署/" class="leancloud_visitors" data-flag-title="Hexo--GitHub Pages部署">
+              <span id="/2019/07/17/Scrapy-Selenium爬取动态渲染网站/" class="leancloud_visitors" data-flag-title="Scrapy+Selenium爬取动态渲染网站">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -478,7 +480,7 @@
                 <span class="post-meta-item-text">字数统计&#58;</span>
               
                 <span title="字数统计">
-                  343 字
+                  1.3k 字
                 </span>
               
 
@@ -494,7 +496,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  5 分钟
                 </span>
                 
             </div>
@@ -513,27 +515,106 @@
       
 
     
-      <blockquote>
-<p>部署到GitHub Pages请先准备一个GitHub账号，没有的话，出门右转浏览器地址栏输入：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a>  Sign Up开始注册</p>
-</blockquote>
-<p>有Git账号的准备新建仓库：<a href="https://github.com/new" target="_blank" rel="noopener">https://github.com/new</a></p>
-<p><code>Repository name</code><span id="inline-blue">建议</span>填自己用户名<code>Owner</code>带上<code>.github.io</code></p>
+      <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>Selenium是一个用于Web应用程序测试的工具。直接运行在浏览器中，就像真正的用户在操作一样。支持的浏览器包括IE（7, 8, 9, 10, 11），Firefox，Safari，Chrome，Opera等，在爬虫上则是模拟正常用户访问网页并获取数据。</p>
+<h2 id="2-安装-Selenium"><a href="#2-安装-Selenium" class="headerlink" title="2.安装 Selenium"></a>2.安装 Selenium</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; pip install selenium</span><br></pre></td></tr></table></figure>
+<h2 id="3-安装驱动"><a href="#3-安装驱动" class="headerlink" title="3.安装驱动"></a>3.安装驱动</h2><p>模拟真正的用户操作当然需要选择好用来操作的浏览器，根据浏览器来安装相应的驱动调起。</p>
 <a id="more"></a>
-<img src="/2019/03/22/Hexo-GitHub-Pages部署/git_new_repo.png" title="新建仓库">
-<p><strong>注意两点</strong>：</p>
-<ul>
-<li><p>仓库名为<code>[Owner].github.io</code>时才可以通过<code>https://[Owner].github.io</code>访问，如果不是则需要按照原来的仓库形式，<br>即Git地址+用户名+仓库名</p>
+<h3 id="3-1-Chrome"><a href="#3-1-Chrome" class="headerlink" title="3.1 Chrome"></a>3.1 Chrome</h3><p>使用selenium驱动chrome浏览器需要下载chromedriver，而且chromedriver版本需要与chrome的版本对应，版本错误的话则会运行报错。</p>
+<p>查看chrome的版本，可通过<code>帮助 &gt; 关于Google Chrome(G)</code>。</p>
+<img src="/2019/07/17/Scrapy-Selenium爬取动态渲染网站/1563419114.jpg" title="查看Chrome版本">
+<p>下载chromedriver可以通过淘宝镜像地址：<a href="http://npm.taobao.org/mirrors/chromedriver/" target="_blank" rel="noopener">http://npm.taobao.org/mirrors/chromedriver/</a> 。最新的镜像与Chrome同名，尽量选择版本相近的避免兼容问题，镜像下notes.txt可查看当前驱动支持的版本。</p>
+<img src="/2019/07/17/Scrapy-Selenium爬取动态渲染网站/1563418582.jpg" title="chromedriver版本">
+<p>选择合适的版本下载，下载完解压将chromedriver.exe放在有设置环境变量的目录下，小编是放在python的安装目录下的，即python.exe所在的目录。</p>
+<img src="/2019/07/17/Scrapy-Selenium爬取动态渲染网站/1563419759.jpg" title="1563419759.jpg">
+<h3 id="3-2-Firefox"><a href="#3-2-Firefox" class="headerlink" title="3.2 Firefox"></a>3.2 Firefox</h3><p>使用selenium驱动Firefox浏览器需要下载geckodriver，查看浏览器版本通过<code>帮助 &gt; 关于 Firefox</code>。</p>
+<img src="/2019/07/17/Scrapy-Selenium爬取动态渲染网站/1563420565.jpg" title="Firefox版本">
+<p>下载geckodriver可通过mozilla的仓库地址：<a href="https://github.com/mozilla/geckodriver/releases。" target="_blank" rel="noopener">https://github.com/mozilla/geckodriver/releases。</a></p>
+<p>选择合适的版本下载，解压后geckodriver.exe同样也是放在python的安装目录下。</p>
+<img src="/2019/07/17/Scrapy-Selenium爬取动态渲染网站/1563420774.jpg" title="1563420774.jpg">
+<h3 id="3-3-其它浏览器驱动下载"><a href="#3-3-其它浏览器驱动下载" class="headerlink" title="3.3 其它浏览器驱动下载"></a>3.3 其它浏览器驱动下载</h3><p>Opera：<a href="http://npm.taobao.org/mirrors/operadriver/" target="_blank" rel="noopener">http://npm.taobao.org/mirrors/operadriver/</a></p>
+<p>IE：<a href="http://selenium-release.storage.googleapis.com/index.html" target="_blank" rel="noopener">http://selenium-release.storage.googleapis.com/index.html</a> （版本号要与selenium的版本一致，查看安装的selenium版本，可通过<code>pip show selenium</code>）如果没有vpn可能会打不开，可<a href="/download/IEDriverServer.zip">点击下载</a>3.14.0版本的。</p>
+<h2 id="4-Selenium使用"><a href="#4-Selenium使用" class="headerlink" title="4.Selenium使用"></a>4.Selenium使用</h2><h3 id="4-1-Chrome-配置"><a href="#4-1-Chrome-配置" class="headerlink" title="4.1 Chrome 配置"></a>4.1 Chrome 配置</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">options = webdriver.ChromeOptions()</span><br><span class="line"><span class="comment">## 无界面</span></span><br><span class="line"><span class="comment"># options.add_argument('--headless')</span></span><br><span class="line">driver = webdriver.Chrome(chrome_options=options)</span><br><span class="line">driver.set_window_size(<span class="number">1366</span>, <span class="number">768</span>)</span><br><span class="line">driver.set_page_load_timeout(self.timeout)</span><br></pre></td></tr></table></figure>
+<p>注意Chrome可能需要管理员权限相关配置，小编习惯性用Firefox😂</p>
+<h3 id="4-2-Firefox-配置"><a href="#4-2-Firefox-配置" class="headerlink" title="4.2 Firefox 配置"></a>4.2 Firefox 配置</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 实例化参数对象</span></span><br><span class="line">options = webdriver.FirefoxOptions()</span><br><span class="line"><span class="comment"># 无界面</span></span><br><span class="line"><span class="comment"># options.add_argument('--headless')</span></span><br><span class="line">driver = webdriver.Firefox(firefox_options=options)</span><br><span class="line">driver.set_window_size(<span class="number">1400</span>, <span class="number">700</span>)</span><br><span class="line">driver.set_page_load_timeout(self.timeout)</span><br></pre></td></tr></table></figure>
+<h3 id="4-3-不显示打开浏览器的界面"><a href="#4-3-不显示打开浏览器的界面" class="headerlink" title="4.3 不显示打开浏览器的界面"></a>4.3 不显示打开浏览器的界面</h3><p>有的时候我们不想要看到爬取的一步步操作，只关心结果，则可以在参数配置<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 无界面</span></span><br><span class="line">options.add_argument(<span class="string">'--headless'</span>)</span><br></pre></td></tr></table></figure></p>
+<h3 id="4-4-禁用浏览器弹窗"><a href="#4-4-禁用浏览器弹窗" class="headerlink" title="4.4 禁用浏览器弹窗"></a>4.4 禁用浏览器弹窗</h3><p>不是页面弹窗，是浏览器设置里的弹窗。在打开浏览器时，使用参数配置关闭<br><strong>Firefox</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">options.set_preference(<span class="string">'dom.webnotifications.enabled'</span>, <span class="literal">False</span>)</span><br><span class="line">options.set_preference(<span class="string">'dom.push.enabled'</span>, <span class="literal">False</span>)</span><br></pre></td></tr></table></figure></p>
+<p><strong>Chrome</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">prefs = &#123;</span><br><span class="line">    <span class="string">'profile.default_content_setting_values'</span>: &#123;</span><br><span class="line">        <span class="string">'notifications'</span>: <span class="number">2</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">options.add_experimental_option(<span class="string">'prefs'</span>, prefs)</span><br></pre></td></tr></table></figure></p>
+<h3 id="4-5-driver属性和方法"><a href="#4-5-driver属性和方法" class="headerlink" title="4.5 driver属性和方法"></a>4.5 driver属性和方法</h3><ul>
+<li><p>页面加载</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.get(<span class="string">"http://www.baidu.com"</span>)</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>仓库权限必须为<code>Public</code></p>
+<li><p>关闭浏览器</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 爬虫结束关闭浏览器</span></span><br><span class="line">driver.close()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取当前url</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.current_url</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>刷新</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.refresh()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>页面标题</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.title</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>页面渲染后的源码</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.page_source</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取窗口信息</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.get_window_rect()</span><br></pre></td></tr></table></figure>
+<p>  获取当前窗口的x,y坐标和当前窗口的高度和宽度，如：{‘height’: 1366, ‘width’: 768, ‘x’: 0, ‘y’: 200}</p>
+</li>
+<li><p>设置 User Agent(Firefox为例)</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">profile = webdriver.FirefoxProfile()</span><br><span class="line">profile.set_preference(<span class="string">"general.useragent.override"</span>, <span class="string">"some UA string"</span>)</span><br><span class="line">driver = webdriver.Firefox(profile=profile)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行js脚本</p>
+<p>  使用<code>driver.execute_script([js脚本],*args)</code>同步执行，如滑动到第一个class为cm-explain-bottom的元素位置。</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">driver.execute_script(</span><br><span class="line">   <span class="string">"document.getElementsByClassName('cm-explain-bottom')[0].scrollIntoView(true)"</span>)</span><br></pre></td></tr></table></figure>
+<p>  异步执行使用<code>driver.execute_async_script([js脚本],*args)</code>，*argsw为执行js代码要传入的参数。</p>
+</li>
+<li><p>查找元素</p>
+<p>  返回一个<code>WebElement</code>对象。</p>
+<ul>
+<li>通过id属性：<code>element = driver.find_element_by_id(&quot;coolestWidgetEvah&quot;)</code></li>
+<li>通过class属性：<code>cheeses = driver.find_elements_by_class_name(&quot;cheese&quot;)</code></li>
+<li>通过标签名：<code>frame = driver.find_element_by_tag_name(&quot;iframe&quot;)</code></li>
+<li>通过css选择器：<code>cheese = driver.find_element_by_css_selector(&quot;#food span.dairy.aged&quot;)</code></li>
+<li>通过name属性：<code>cheese = driver.find_element_by_name(&quot;cheese&quot;)</code></li>
+<li>通过xpath：<code>inputs = driver.find_elements_by_xpath(&quot;//input&quot;)</code></li>
+<li>通过链接文本（完全匹配）：<code>cheese = driver.find_element_by_link_text(&quot;cheese&quot;)</code></li>
+<li>通过链接文本（部分匹配）：<code>cheese = driver.find_element_by_partial_link_text(&quot;cheese&quot;)</code></li>
+</ul>
+</li>
+<li><p>元素(WebElement)的属性和方法</p>
+<ul>
+<li>标签下文本：<code>element.text</code></li>
+<li>点击：<code>element.click()</code></li>
+<li>表单提交：<code>element.submit()</code></li>
+<li><p>输入：<code>element.send_keys(123)</code></p>
+</li>
+<li><p>示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 等待邮箱和密码可定位及登录按钮可提交，清空输入框，分别输入用户名密码点击提交按钮</span></span><br><span class="line">email = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, <span class="string">"#email"</span>)))</span><br><span class="line">passwd = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, <span class="string">"#pass"</span>)))</span><br><span class="line">submit = self.wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, <span class="string">'#loginbutton'</span>)))</span><br><span class="line">email.clear()</span><br><span class="line">passwd.clear()</span><br><span class="line">email.send_keys(user)</span><br><span class="line">passwd.send_keys(password)</span><br><span class="line">submit.click()</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>在Hexo<span id="inline-green">项目配置文件</span>_config.yml中，拉到底部，找到<code>deploy</code>配置字段，<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repository:</span> <span class="comment">#前面创建的仓库地址</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br><span class="line"><span class="attr">  message:</span> <span class="comment">#描述</span></span><br></pre></td></tr></table></figure></p>
-<img src="/2019/03/22/Hexo-GitHub-Pages部署/git_deploy.png" title="部署配置">
-<p>运行<code>hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</code>，没设置全局用户名的可能需要输入Git用户名密码。</p>
-<p>等待一段时间~ 完成后在仓库的<strong>Settings</strong>中，配置<strong>Source</strong>为<strong>master branch</strong>就能通过<code>https://[Owner].github.io</code>访问啦~<br><img src="/2019/03/22/Hexo-GitHub-Pages部署/git_pages.png" title="GitHub Pages配置"></p>
-<p id="div-border-top-purple"><strong>配置域名访问</strong><br>在腾讯云域名（<a href="https://www.qcloud.com/act/event/dnspod_baidu?!preview" target="_blank" rel="noopener">https://www.qcloud.com/act/event/dnspod_baidu?!preview</a> ）或阿里云域名（<a href="https://wanwang.aliyun.com/domain/?spm=a2c4g.11174283.2.1.789dc8caQX0KM1" target="_blank" rel="noopener">https://wanwang.aliyun.com/domain/?spm=a2c4g.11174283.2.1.789dc8caQX0KM1</a> ）购买一个域名<br>登陆管理后台，配置<strong>云解析</strong>，添加记录将想要的前缀配置<strong>CNAME</strong>规则到git域名<code>[Owner].github.io</code><br>在仓库的<strong>Settings</strong>中GitHub Pages的<strong>Custom domain</strong>填入配置的前缀+域名即可。<br><strong>Enforce HTTPS</strong>会强制域名访问的时候也是通过https。<br></p>
-
-
+</li>
+<li><p>Cookie操作</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">driver.get(<span class="string">"http://www.example.com"</span>)</span><br><span class="line"><span class="comment"># 给当前url域设置cookie</span></span><br><span class="line"><span class="comment"># name的值对应cookie key，value的值对应cookie value</span></span><br><span class="line">driver.add_cookie(&#123;<span class="string">'name'</span>:<span class="string">'key'</span>, <span class="string">'value'</span>:<span class="string">'value'</span>, <span class="string">'path'</span>:<span class="string">'/'</span>&#125;)</span><br><span class="line"><span class="comment"># 可选的属性</span></span><br><span class="line"><span class="comment"># 'domain' -&gt; String,</span></span><br><span class="line"><span class="comment"># 'secure' -&gt; Boolean,</span></span><br><span class="line"><span class="comment"># 'expiry' -&gt; Milliseconds since the Epoch it should expire.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出当前url所有的Cookie</span></span><br><span class="line"><span class="keyword">for</span> cookie <span class="keyword">in</span> driver.get_cookies():</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"%s -&gt; %s"</span> % (cookie[<span class="string">'name'</span>], cookie[<span class="string">'value'</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过name删除Cookie</span></span><br><span class="line">driver.delete_cookie(<span class="string">"CookieName"</span>)</span><br><span class="line"><span class="comment"># 删除所有的Cookie</span></span><br><span class="line">driver.delete_all_cookies()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>切换页面框架或窗口</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driver.switch_to.window(<span class="string">"windowName"</span>)</span><br></pre></td></tr></table></figure>
+<p>  切换默认框架：<code>driver.switch_to.default_content()</code></p>
+<p>  切换最新窗口：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">windows = driver.window_handles</span><br><span class="line"><span class="comment"># 切换到最新打开的窗口中</span></span><br><span class="line">switch_to.window(windows[<span class="number">-1</span>])</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取最新的alert弹窗</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">alert = driver.switch_to.alert</span><br><span class="line"><span class="comment"># 关闭弹窗</span></span><br><span class="line">alert.dismiss()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>当前的url返回或者跟进</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">driver.forward()</span><br><span class="line">driver.back()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>截屏</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 返回页面的base64编码字符串</span></span><br><span class="line">base64 = driver.get_screenshot_as_base64()</span><br><span class="line"><span class="comment"># 返回保存到文件的结果</span></span><br><span class="line">result = driver.get_screenshot_as_file(<span class="string">"D:\\example.png"</span>)</span><br><span class="line"><span class="comment"># png格式的二进制字符串</span></span><br><span class="line">pngSrc =  driver.get_screenshot_as_png()</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>使用Selenium爬取七麦数据APP排行榜：<a href="../../16/Scrapy-爬取七麦-app数据排行榜/">点击前往</a></p>
 
     
     </div>
@@ -598,7 +679,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://luohongxfb.github.io/2019/03/22/Hexo-GitHub-Pages部署/" title="Hexo--GitHub Pages部署">https://luohongxfb.github.io/2019/03/22/Hexo-GitHub-Pages部署/</a>
+    <a href="https://luohongxfb.github.io/2019/07/17/Scrapy-Selenium爬取动态渲染网站/" title="Scrapy+Selenium爬取动态渲染网站">https://luohongxfb.github.io/2019/07/17/Scrapy-Selenium爬取动态渲染网站/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -620,8 +701,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/22/Hexo--博客搭建/" rel="next" title="Hexo--博客搭建">
-                <i class="fa fa-chevron-left"></i> Hexo--博客搭建
+              <a href="/2019/07/16/Scrapy-爬取有道翻译的单词释义/" rel="next" title="Scrapy-爬取有道翻译的单词释义">
+                <i class="fa fa-chevron-left"></i> Scrapy-爬取有道翻译的单词释义
               </a>
             
           </div>
@@ -629,10 +710,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/04/markdown转html、pdf-带目录生成/" rel="prev" title="最完善的markdown转html/pdf方法、带目录生成">
-                最完善的markdown转html/pdf方法、带目录生成 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -689,8 +766,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -762,6 +848,22 @@
         </div>
       </section>
 
+      
+        <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-简介"><span class="nav-number">1.</span> <span class="nav-text">1.简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装-Selenium"><span class="nav-number">2.</span> <span class="nav-text">2.安装 Selenium</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装驱动"><span class="nav-number">3.</span> <span class="nav-text">3.安装驱动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-Chrome"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 Chrome</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-Firefox"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 Firefox</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-其它浏览器驱动下载"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 其它浏览器驱动下载</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Selenium使用"><span class="nav-number">4.</span> <span class="nav-text">4.Selenium使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-Chrome-配置"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 Chrome 配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-Firefox-配置"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 Firefox 配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-不显示打开浏览器的界面"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 不显示打开浏览器的界面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-禁用浏览器弹窗"><span class="nav-number">4.4.</span> <span class="nav-text">4.4 禁用浏览器弹窗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-5-driver属性和方法"><span class="nav-number">4.5.</span> <span class="nav-text">4.5 driver属性和方法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+        <!--/noindex-->
       
 
       
