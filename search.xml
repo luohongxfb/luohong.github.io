@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[git出现RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054]]></title>
     <url>%2F2019%2F07%2F29%2Fgit%E5%87%BA%E7%8E%B0RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054%2F</url>
-    <content type="text"><![CDATA[前言在Hexo博客增加本地文件资源下载之后，deploy发布时出现：12error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054fatal: The remote end hung up unexpectedly 主要是因为一次性提交的文件过大，超出了缓存]]></content>
+    <content type="text"><![CDATA[前言在Hexo博客增加本地文件资源下载之后，deploy发布时出现：123error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054fatal: The remote end hung up unexpectedlyEverything up-to-date 主要是因为一次性提交的文件过大，超出了HTTP缓存的上限。 解决 通过配置缓存(524288000是500M)可解决。1git config --global http.postBuffer 524288000 查看配置git config --list]]></content>
       <tags>
         <tag>Git</tag>
       </tags>
