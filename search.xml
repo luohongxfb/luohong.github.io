@@ -78,6 +78,18 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[Scrapyd使用详解]]></title>
+    <url>%2F2019%2F03%2F13%2Fscrapyd%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[前言Scrapyd通常作为守护进程运行，它侦听运行爬虫的请求，并为每个请求生成一个进程，该进程基本上执行:scrapy crawl [myspider]。 Scrapyd还并行运行多个进程，将它们分配到max_proc和max_proc_per_cpu选项提供的固定数量的插槽中，启动尽可能多的进程来处理负载。 除了调度和管理进程之外，Scrapyd还提供了一个JSON web服务来上载新的项目版本(作为egg)和调度爬虫。 Scrapyd官方文档 https://scrapyd.readthedocs.io/en/latest/index.html 使用详解安装1pip install scrapyd 依赖的库及版本： Python 2.7 or above Twisted 8.0 or above Scrapy 1.0 or above six 启动在项目目录下，输入scrapyd即可运行，默认地址为http://localhost:68001scrapyd 官方详细配置文档说明：https://scrapyd.readthedocs.io/en/latest/config.html 修改默认配置信息可以在项目下新建一个scrapyd.conf或者在scrapy.cfg中增加[scrapyd]：123456[scrapyd]# 网页和Json服务监听的IP地址，默认为127.0.0.1bind_address = 127.0.0.1# 监听的端口，默认为6800http_port = 6800debug = off 项目部署部署主要分为两步： 将项目打包成egg 将egg通过Scrapyd的addversion.json接口上传到目标服务器 官方的部署上传接口文档：https://scrapyd.readthedocs.io/en/latest/api.html#addversion-json 推荐使用Scrapyd-client中的scrapyd-deploy一步上传，关于Scrapyd-client介绍： Scrapyd-client is a client for Scrapyd. It provides the general scrapyd-client and the scrapyd-deploy utility which allows you to deploy your project to a Scrapyd server. Scrapy-client安装1pip install scrapyd-client]]></content>
+      <categories>
+        <category>Scrapy</category>
+      </categories>
+      <tags>
+        <tag>Scrapy线上部署</tag>
+        <tag>Scrapyd</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[webstorm .swig文件语法高亮]]></title>
     <url>%2F2019%2F03%2F07%2Fwebstorm-swig%E6%96%87%E4%BB%B6%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE%2F</url>
     <content type="text"><![CDATA[前言swig是nodeJS前端模板引擎，swig特点看这里。 语法高亮webstrom（1）在File&gt;Settings&gt;Plugins，选择下方 Browse repositories... （2）在编辑框输入 twig，点击 Twig Support，Install之后重启webstorm （3）重启后，打开File&gt;Settings&gt;Editor&gt;File Types，找到Twig，点击+号添加*.swig，apply后就能看到.swig都高亮啦~]]></content>

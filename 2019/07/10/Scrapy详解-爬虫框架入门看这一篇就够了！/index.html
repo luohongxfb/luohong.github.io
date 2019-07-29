@@ -194,44 +194,6 @@
 
 <div class="container sidebar-position-left page-post-detail">
   <div class="headband">
-    
-    
-    
-    
-    
-    
-    <a href="https://github.com/luohongxfb" class="fork-me-github" aria-label="View source on GitHub">
-      <svg width="80" height="80" viewbox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
-      </svg>
-    </a>
-    <style>.fork-me-github:hover .octo-arm {
-        animation: octocat-wave 560ms ease-in-out
-      }
-
-      @keyframes octocat-wave {
-        0%, 100% {
-          transform: rotate(0)
-        }
-        20%, 60% {
-          transform: rotate(-25deg)
-        }
-        40%, 80% {
-          transform: rotate(10deg)
-        }
-      }
-
-      @media (max-width: 500px) {
-        .github-corner:hover .octo-arm {
-          animation: none
-        }
-
-        .github-corner .octo-arm {
-          animation: octocat-wave 560ms ease-in-out
-        }
-      }</style>
   </div>
   <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
     <div class="header-inner"><div class="site-brand-wrapper">
@@ -245,9 +207,9 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
+      <h1 class="site-subtitle" itemprop="description"></h1>
+    
   </div>
 
   <div class="site-nav-toggle">
@@ -269,9 +231,12 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i>
+              <br>
             
             首页
+            
+            
           </a>
         </li>
       
@@ -279,9 +244,14 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i>
+              <br>
             
             归档
+            
+            
+              <span class="badge">14</span>
+            
           </a>
         </li>
       
@@ -289,9 +259,12 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i>
+              <br>
             
             标签
+            
+            
           </a>
         </li>
       
@@ -299,9 +272,12 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-th"></i>
+              <br>
             
             分类
+            
+            
           </a>
         </li>
       
@@ -309,9 +285,12 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-user"></i>
+              <br>
             
             关于
+            
+            
           </a>
         </li>
       
@@ -320,12 +299,13 @@
         <li class="menu-item menu-item-search">
           
             <a href="javascript:;" class="popup-trigger">
+              
+              
+                <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+              
+              搜索
+            </a>
           
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
-            
-            搜索
-          </a>
         </li>
       
     </ul>
@@ -346,7 +326,10 @@
       <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
-  <div id="local-search-result"></div>
+  <div id="local-search-result">
+    
+    <div id="no-result"><i class="fa fa-search fa-5x"></i></div>
+  </div>
 </div>
 
 
@@ -359,7 +342,13 @@
 
  </div>
   </header>
-
+  <a href="https://github.com/luohongxfb" class="fork-me-github" aria-label="View source on GitHub">
+    <svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
+      <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
+      <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
+    </svg>
+  </a>
   <main id="main" class="main">
     <div class="main-inner">
       <div class="content-wrap">
@@ -397,7 +386,7 @@
 
         
         
-        <h1 class="post-title" itemprop="name headline">Scrapy详解 爬虫框架入门看这一篇就够了！</h1>
+        <h2 class="post-title" itemprop="name headline">Scrapy详解 爬虫框架入门看这一篇就够了！</h2>
         
 
         <div class="post-meta">
@@ -730,7 +719,7 @@
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="所谓向日葵族">
             
             <p class="site-author-name" itemprop="name">所谓向日葵族</p>
-            <p class="site-description motion-element" itemprop="description">Empty page presents more possibilities.</p>
+            <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -740,7 +729,7 @@
                 
                 <a href="/archives/">
                 
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -839,7 +828,7 @@
     
       <span class="post-meta-item-text">本站总字数&#58;</span>
     
-    <span title="本站总字数">13.3k 字</span>
+    <span title="本站总字数">13.6k 字</span>
   
 </div>
 
@@ -1074,6 +1063,10 @@
       $('#local-search-input').val('');
       $('.search-result-list').remove();
       $('#no-result').remove();
+      //增加默认的搜索图标，避免大片空白
+      $('#local-search-result').html('<div id="no-result"><i class="fa fa-search fa-5x" /></div>');
+
+
       $(".local-search-pop-overlay").remove();
       $('body').css('overflow', '');
     }
@@ -1091,7 +1084,7 @@
     }
 
     // search function;
-    var searchFunc = function(path, search_id, content_id) {
+    var searchFunc = function (path, search_id, content_id) {
       'use strict';
 
       // start loading animation
@@ -1108,20 +1101,20 @@
         url: path,
         dataType: isXml ? "xml" : "json",
         async: true,
-        success: function(res) {
+        success: function (res) {
           // get the contents from search data
           isfetched = true;
           $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
+          var datas = isXml ? $("entry", res).map(function () {
             return {
               title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
+              content: $("content", this).text(),
+              url: $("url", this).text()
             };
           }).get() : res;
           var input = document.getElementById(search_id);
           var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
+          var inputEventFunction = function () {
             var searchText = input.value.trim().toLowerCase();
             var keywords = searchText.split(/[\s\-]+/);
             if (keywords.length > 1) {
@@ -1130,20 +1123,20 @@
             var resultItems = [];
             if (searchText.length > 0) {
               // perform local searching
-              datas.forEach(function(data) {
+              datas.forEach(function (data) {
                 var isMatch = false;
                 var hitCount = 0;
                 var searchTextCount = 0;
                 var title = data.title.trim();
                 var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var content = data.content.trim().replace(/<[^>]+>/g, "");
                 var contentInLowerCase = content.toLowerCase();
                 var articleUrl = decodeURIComponent(data.url);
                 var indexOfTitle = [];
                 var indexOfContent = [];
                 // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
+                if (title != '') {
+                  keywords.forEach(function (keyword) {
                     function getIndexByWord(word, text, caseSensitive) {
                       var wordLen = word.length;
                       if (wordLen === 0) {
@@ -1236,13 +1229,13 @@
                     // cut out 100 characters
                     var start = position - 20;
                     var end = position + 80;
-                    if(start < 0){
+                    if (start < 0) {
                       start = 0;
                     }
                     if (end < position + word.length) {
                       end = position + word.length;
                     }
-                    if(end > content.length){
+                    if (end > content.length) {
                       end = content.length;
                     }
                     slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
@@ -1305,7 +1298,8 @@
                   });
                 }
               })
-            };
+            }
+            ;
             if (keywords.length === 1 && keywords[0] === "") {
               resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
             } else if (resultItems.length === 0) {
@@ -1350,17 +1344,18 @@
     }
 
     // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
+    $('.popup-trigger').click(function (e) {
       e.stopPropagation();
       if (isfetched === false) {
         searchFunc(path, 'local-search-input', 'local-search-result');
       } else {
         proceedsearch();
-      };
+      }
+      ;
     });
 
     $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
+    $('.popup').click(function (e) {
       e.stopPropagation();
     });
     $(document).on('keyup', function (event) {
