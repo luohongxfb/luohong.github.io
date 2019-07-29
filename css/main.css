@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d96687;
+  background: #ffc116;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3856,7 +3856,7 @@ a.fork-me-github {
   background-color: #f6f6f6;
 }
 .footer {
-  line-height: 1.5;
+  line-height: 1.6;
   background-color: rgba(255,255,255,0.75);
   color: #333;
   border-top-width: 3px;
