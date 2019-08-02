@@ -101,7 +101,8 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT, Android, Python, H5, NodeJS, life">
+  <meta name="keywords" content="Redis,">
+  
 
 
 
@@ -111,18 +112,18 @@
 
 
 
-
-<meta name="description" content="Empty page presents more possibilities.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="日程表">
-<meta property="og:url" content="https://luohongxfb.github.io/schedule/index.html">
+<meta name="description" content="前言Redis集群同步迁移的方法有很多，比如redis-port,redis-migrate-tool等工具，本文主要讲CentOS通过redis-migrate-tool从集群迁移到单实例。 redis-migrate-tool 是维品会开源的一款redis数据迁移工具，基于redis复制，快速，稳定，github地址为：https://github.com/vipshop/redis-migr">
+<meta name="keywords" content="Redis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Redis Cluster数据迁移单实例方案实战">
+<meta property="og:url" content="https://luohongxfb.github.io/2019/08/01/Cluster数据迁移单实例方案实战/index.html">
 <meta property="og:site_name" content="所谓向日葵族&#39;s Blog">
-<meta property="og:description" content="Empty page presents more possibilities.">
+<meta property="og:description" content="前言Redis集群同步迁移的方法有很多，比如redis-port,redis-migrate-tool等工具，本文主要讲CentOS通过redis-migrate-tool从集群迁移到单实例。 redis-migrate-tool 是维品会开源的一款redis数据迁移工具，基于redis复制，快速，稳定，github地址为：https://github.com/vipshop/redis-migr">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-07T08:58:36.905Z">
+<meta property="og:updated_time" content="2019-08-01T09:53:13.849Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="日程表">
-<meta name="twitter:description" content="Empty page presents more possibilities.">
+<meta name="twitter:title" content="Redis Cluster数据迁移单实例方案实战">
+<meta name="twitter:description" content="前言Redis集群同步迁移的方法有很多，比如redis-port,redis-migrate-tool等工具，本文主要讲CentOS通过redis-migrate-tool从集群迁移到单实例。 redis-migrate-tool 是维品会开源的一款redis数据迁移工具，基于redis复制，快速，稳定，github地址为：https://github.com/vipshop/redis-migr">
 
 
 
@@ -152,13 +153,13 @@
 
 
 
-  <link rel="canonical" href="https://luohongxfb.github.io/schedule/">
+  <link rel="canonical" href="https://luohongxfb.github.io/2019/08/01/Cluster数据迁移单实例方案实战/">
 
 
 
 
 
-  <title>日程表 | 所谓向日葵族's Blog</title>
+  <title>Redis Cluster数据迁移单实例方案实战 | 所谓向日葵族's Blog</title>
   
 
 
@@ -359,31 +360,280 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     
     
-    <div class="post-block page">
+    
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://luohongxfb.github.io/2019/08/01/Cluster数据迁移单实例方案实战/">
+
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="所谓向日葵族">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="所谓向日葵族's Blog">
+    </span>
+
+      
       <header class="post-header">
 
-	<h2 class="post-title" itemprop="name headline">日程表</h2>
-
-
-
-</header>
-
-      
-      
-      <div class="post-body">
         
         
+        <h2 class="post-title" itemprop="name headline">Redis Cluster数据迁移单实例方案实战</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              <span class="post-meta-item-text">创建于</span>
+            
+
+              <time title="创建于 2019-08-01" itemprop="dateCreated datePublished" datetime="2019-08-01T16:19:07+08:00">
+                2019-08-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
+
+          
+          
+            
+
+            
+            
+              <span id="/2019/08/01/Cluster数据迁移单实例方案实战/" class="leancloud_visitors" data-flag-title="Redis Cluster数据迁移单实例方案实战">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+                
+                  <span class="post-meta-item-text">阅读次数&#58;</span>
+                
+                <span class="leancloud-visitors-count"></span>
+             </span>
+            
+
+            
+            
+
+            
+              <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span class="post-meta-item-text">字数统计&#58;</span>
+              
+                <span title="字数统计">
+                  879 字
+                </span>
+              
+
+                
+                  <span class="post-meta-divider">|</span>
+                
+
+                
+                  <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4 分钟
+                </span>
+                
+            </div>
+            
+
+            
+              
+        </div>
+      </header>
+      
+
+      
+      <div class="post-body" itemprop="articleBody">
+
         
+      
+
+    
+      <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Redis集群同步迁移的方法有很多，比如redis-port,redis-migrate-tool等工具，本文主要讲CentOS通过redis-migrate-tool从集群迁移到单实例。</p>
+<p>redis-migrate-tool 是维品会开源的一款redis数据迁移工具，基于redis复制，快速，稳定，github地址为：<a href="https://github.com/vipshop/redis-migrate-tool" target="_blank" rel="noopener">https://github.com/vipshop/redis-migrate-tool</a> 。</p>
+<p>迁移工具的来源（source）可以是：单独的redis实例，twemproxy集群，redis cluster，rdb文件，aof文件。<br>迁移工具的目标（target）可以是：单独的redis实例，twemproxy集群，redis cluster，rdb文件。<br><a id="more"></a><br>目前测试的Redis版本为3.0.0，如果是4.0.x版本可能会报错<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[2019-07-31 16:57:50.393] rmt_redis.c:1517 MASTER &lt;-&gt; SLAVE sync: receiving 4860 bytes from master[172.16.255.34:7001@17001]</span><br><span class="line">[2019-07-31 16:57:50.393] rmt_redis.c:1623 MASTER &lt;-&gt; SLAVE sync: RDB data for node[172.16.255.34:7001@17001] is received, used: 0 s</span><br><span class="line">[2019-07-31 16:57:50.393] rmt_redis.c:1643 rdb file node172.16.255.34:7001@17001-1564563470312707-6709.rdb write complete</span><br><span class="line">[2019-07-31 16:57:50.393] rmt_redis.c:6446 ERROR: Can&apos;t handle RDB format version -1549717496</span><br><span class="line">[2019-07-31 16:57:50.393] rmt_redis.c:6715 ERROR: Rdb file for node[172.16.255.34:7001@17001] parsed failed</span><br></pre></td></tr></table></figure></p>
+<p>如上<code>Can&#39;t handle RDB format version -1549717496</code>为版本兼容问题，各个版本的.rdb是不兼容的，rmt工具似乎还不支持4.0.X。</p>
+<p>可考虑降版本，如果开启了<code>appendonly  yes</code>，可通过.aof文件迁移。</p>
+<p>当前集群数据存在 </p>
+<blockquote>
+<p>172.16.255.34:7000 172.16.255.34:7001<br>172.16.255.35:7002 172.16.255.35:7003<br>172.16.255.36:7004 172.16.255.36:7005</p>
+</blockquote>
+<p>需要将集群的数据迁移到单实例的172.16.255.34:6379</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>依赖：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yum -y install automake libtool autoconf bzip2 git</span><br></pre></td></tr></table></figure></p>
+<p>安装redis-migrate-tool：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/vipshop/redis-migrate-tool</span><br><span class="line">$ cd redis-migrate-tool</span><br><span class="line">$ autoreconf -fvi</span><br><span class="line">$ ./configure</span><br><span class="line">$ make</span><br></pre></td></tr></table></figure></p>
+<p>查看命令帮助可检查是否安装成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ src/redis-migrate-tool -h</span><br></pre></td></tr></table></figure></p>
+<p>如果出现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ src/redis-migrate-tool -h</span><br><span class="line">This is redis-migrate-tool-0.1.0</span><br><span class="line"></span><br><span class="line">Usage: redis-migrate-tool [-?hVdIn] [-v verbosity level] [-o output file]</span><br><span class="line">                  [-c conf file] [-C command]</span><br><span class="line">                  [-f source address] [-t target address]</span><br><span class="line">                  [-p pid file] [-m mbuf size] [-r target role]</span><br><span class="line">                  [-T thread number] [-b buffer size]</span><br><span class="line">....</span><br></pre></td></tr></table></figure></p>
+<p>安装成功。</p>
+<p id="div-border-left-green">更多介绍<a href="../redis-migrate-tool使用详解">查看redis-migrate-tool使用详解</a></p>
+
+<h2 id="配置文件更改"><a href="#配置文件更改" class="headerlink" title="配置文件更改"></a>配置文件更改</h2><p>redis-migrate-tool默认的配置文件为rmt.conf，更改如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$ vi rmt.conf</span><br><span class="line"></span><br><span class="line">[source]</span><br><span class="line">type: redis cluster</span><br><span class="line">servers :</span><br><span class="line">-172.16.255.34:7000</span><br><span class="line"></span><br><span class="line">[target]</span><br><span class="line">type: single</span><br><span class="line">servers:</span><br><span class="line">-172.16.255.34:6379</span><br><span class="line"></span><br><span class="line">[common]</span><br><span class="line">listen: 0.0.0.0:8888</span><br></pre></td></tr></table></figure></p>
+<p>Esc  :wq 保存退出。</p>
+<p>source为集群，只需要配置一个servers就可以。</p>
+<h2 id="开始迁移"><a href="#开始迁移" class="headerlink" title="开始迁移"></a>开始迁移</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ src/redis-migrate-tool -o log -d</span><br></pre></td></tr></table></figure>
+<p>开始在后台运行迁移，查看运行日志 <code>tail -200 log</code>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">....</span><br><span class="line">[2019-08-01 11:59:19.919] rmt_redis.c:6601 Rdb file for node[172.16.255.34:7000] parsed finished, use: 0 s.</span><br><span class="line">[2019-08-01 11:59:19.919] rmt_redis.c:6709 All nodes&apos; rdb file parsed finished for this write thread(0).</span><br></pre></td></tr></table></figure></p>
+<p>可看见<code>All nodes&#39; rdb file parsed finished</code>则表示运行完成。</p>
+<p><strong>运行数据检查</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ src/redis-migrate-tool -o log -d -C redis_check</span><br></pre></td></tr></table></figure></p>
+<p>默认抽样1000个数据检查<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Check job is running...</span><br><span class="line"></span><br><span class="line">Checked keys: 1000</span><br><span class="line">Inconsistent value keys: 0</span><br><span class="line">Inconsistent expire keys : 0</span><br><span class="line">Other check error keys: 0</span><br><span class="line">Checked OK keys: 1000</span><br><span class="line"></span><br><span class="line">All keys checked OK!</span><br><span class="line">Check job finished, used 1.041s</span><br></pre></td></tr></table></figure></p>
+<p>迁移成功~</p>
+<p>如果中途迁移失败，使用<code>redis-cli -h 172.16.255.34</code>，清除keys<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">172.16.255.34:6379&gt; flushall</span><br></pre></td></tr></table></figure></p>
+<p><code>keys *</code>检查是否清空，以免list等数据迁移时会增量，redis_check会检查一部分数据不一致，你会发现都是显示list<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[2019-07-31 17:00:27.185] rmt_check.c:848 ERROR: key checked failed: check key&apos;s value error, value is inconsistent. key(len:15, type:list): 509A4C6A4WAY_46</span><br></pre></td></tr></table></figure></p>
+<p>Java使用JedisCluster连接集群的改成JedisPool<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line">public void afterPropertiesSet() throws Exception &#123;</span><br><span class="line">    if (mJedis == null) &#123;</span><br><span class="line">        mJedisPool = new JedisPool(genericObjectPoolConfig, hostName, Integer.valueOf(port), timeout);</span><br><span class="line">        mJedis = mJedisPool.getResource();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@Autowired</span><br><span class="line">private Jedis jedis;</span><br></pre></td></tr></table></figure></p>
+
+    
+    </div>
+    
+    <div>
+      
+        <div>
+  
+    <div style="text-align: center;font-size: 13px;letter-spacing: 10px;user-select: none;margin-top: 50px;color: #bbb;">-------------本文结束啦 <i class="fa fa-star"></i> 感谢您的阅读-------------</div>
+  
+</div>
+
+      
+    </div>
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wx_subscription.jpg" alt="所谓向日葵族 wechat" style="width: 200px; max-width: 100%;">
+    <div>💡 更多好文欢迎关注我的公众号~</div>
+</div>
+
       </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>觉得不错的话，点个赞🌟吧~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赞赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="所谓向日葵族 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="所谓向日葵族 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    所谓向日葵族
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://luohongxfb.github.io/2019/08/01/Cluster数据迁移单实例方案实战/" title="Redis Cluster数据迁移单实例方案实战">https://luohongxfb.github.io/2019/08/01/Cluster数据迁移单实例方案实战/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Redis/" rel="tag"><i class="fa fa-tag"> Redis</i></a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/29/git出现RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/" rel="next" title="git出现RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054">
+                <i class="fa fa-chevron-left"></i> git出现RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/01/redis-migrate-tool使用详解/" rel="prev" title="redis-migrate-tool使用详解">
+                redis-migrate-tool使用详解 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
       
       
+    </footer>
     </div>
     
     
     
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -421,8 +671,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -494,6 +753,22 @@
         </div>
       </section>
 
+      
+        <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置文件更改"><span class="nav-number">3.</span> <span class="nav-text">配置文件更改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始迁移"><span class="nav-number">4.</span> <span class="nav-text">开始迁移</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+        <!--/noindex-->
       
 
       
