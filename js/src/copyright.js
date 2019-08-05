@@ -1,9 +1,17 @@
 (() => {
-  if (document.getElementsByClassName("post-copyright").length>0) {
-    const author=document.getElementsByClassName("author")[0].textContent;
+  //增加去除的文章名
+  var exceptUrl = ["Centos-7利用yum安装apache-mysql-8-php7"];
+  var url = window.location.href;
+  var flag = /[0-9]{4}\/[0-9]{2}\/[0-9]{2}/i.test(url)
+  if (flag) {
+    var str = decodeURI(url.slice(url.search(/[0-9]{4}\/[0-9]{2}\/[0-9]{2}/i) + 11, url.length - 1))
+    flag = exceptUrl.indexOf(str) < 0
+  }
+  if (document.getElementsByClassName("post-copyright").length > 0 && flag) {
+    const author = document.getElementsByClassName("author")[0].textContent;
     document.addEventListener('copy', e => {
       let clipboardData = e.clipboardData || window.clipboardData;
-      if(!clipboardData) {
+      if (!clipboardData) {
         return;
       }
 

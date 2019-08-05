@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff9ccc;
+  background: #0f25cd;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3805,6 +3805,7 @@ p#div-border-top-purple {
 #needsharebutton-float {
   position: fixed;
   bottom: 50%;
+  margin-bottom: 150px;
   left: 0px;
   z-index: 9999;
   cursor: pointer;
@@ -3932,6 +3933,15 @@ a.fork-me-github {
   margin: 0.35em 0 0 0;
   text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
   margin-right: 3px;
+}
+img {
+  max-width: 100%;
+  max-height: 300px;
+}
+.feed-link {
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
 }
 @-moz-keyframes anim-moema-1 {
   60% {
