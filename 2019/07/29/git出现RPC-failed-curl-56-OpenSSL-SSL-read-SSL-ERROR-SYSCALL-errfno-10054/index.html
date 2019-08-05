@@ -123,7 +123,7 @@
 <meta property="og:description" content="前言在Hexo博客增加本地文件资源下载之后，deploy发布时出现：123error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054fatal: The remote end hung up unexpectedlyEverything up-to-date 主要是因为一次性提交的文件过大，超出了HTTP">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://luohongxfb.github.io/2019/07/29/git出现RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/1564396087.jpg">
-<meta property="og:updated_time" content="2019-08-05T10:31:35.150Z">
+<meta property="og:updated_time" content="2019-08-05T10:39:14.643Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git出现RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054">
 <meta name="twitter:description" content="前言在Hexo博客增加本地文件资源下载之后，deploy发布时出现：123error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054fatal: The remote end hung up unexpectedlyEverything up-to-date 主要是因为一次性提交的文件过大，超出了HTTP">
@@ -458,7 +458,7 @@
                 <span class="post-meta-item-text">字数统计&#58;</span>
               
                 <span title="字数统计">
-                  93 字
+                  91 字
                 </span>
               
 
@@ -496,7 +496,7 @@
       <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在Hexo博客增加本地文件资源下载之后，deploy发布时出现：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054</span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line">Everything up-to-date</span><br></pre></td></tr></table></figure></p>
 <p>主要是因为一次性提交的文件过大，超出了HTTP缓存的上限。</p>
 <h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><a id="more"></a>
-<p>通过配置缓存(524288000是100M)可解决。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.postBuffer 524288000</span><br></pre></td></tr></table></figure></p>
+<p>通过配置缓存可解决。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.postBuffer 100M</span><br></pre></td></tr></table></figure></p>
 <p>查看配置<code>git config --list</code><br><img src="/2019/07/29/git出现RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/1564396087.jpg" title="1564396087.jpg"></p>
 
     
