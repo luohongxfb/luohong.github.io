@@ -1,11 +1,15 @@
 (() => {
-  //增加去除的文章名
+  //增加去除的文章链接名
   var exceptUrl = ["Centos-7利用yum安装apache-mysql-8-php7"];
-  var url = window.location.href;
-  var flag = /[0-9]{4}\/[0-9]{2}\/[0-9]{2}/i.test(url)
-  if (flag) {
-    var str = decodeURI(url.slice(url.search(/[0-9]{4}\/[0-9]{2}\/[0-9]{2}/i) + 11, url.length - 1))
-    flag = exceptUrl.indexOf(str) < 0
+  var url = decodeURI(window.location.href);
+  var flag = true
+  let len = exceptUrl.length
+  for (let i = 0; i < len; i++) {
+    let item = exceptUrl[i]
+    if (url.endsWith(item + "/")) {
+      flag = false
+      break
+    }
   }
   if (document.getElementsByClassName("post-copyright").length > 0 && flag) {
     const author = document.getElementsByClassName("author")[0].textContent;
