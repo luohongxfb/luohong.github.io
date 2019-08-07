@@ -395,14 +395,19 @@
     </span>
 
       
-      <header class="post-header">
+        <header class="post-header">
 
-        
-        
-        <h2 class="post-title" itemprop="name headline">git出现The following problems have occurred when adding the files: *** is in submodule</h2>
-        
+          
+          
+            
+            <h2 class="post-title" itemprop="name headline">
+              git出现The following problems have occurred when adding the files: *** is in submodule
+              
+            </h2>
+            
+          
 
-        <div class="post-meta">
+          <div class="post-meta">
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -411,6 +416,10 @@
               
               <span class="post-meta-item-text">创建于</span>
             
+
+
+
+
 
               <time title="创建于 2019-03-06" itemprop="dateCreated datePublished" datetime="2019-03-06T18:57:16+08:00">
                 2019-03-06
@@ -422,15 +431,15 @@
             
           </span>
 
-          
-
-          
-          
             
 
             
             
-              <span id="/git出现The-following-problems-have-occurred-when-adding-the-files-is-in-submodule/" class="leancloud_visitors" data-flag-title="git出现The following problems have occurred when adding the files: *** is in submodule">
+              
+
+              
+              
+                <span id="/git出现The-following-problems-have-occurred-when-adding-the-files-is-in-submodule/" class="leancloud_visitors" data-flag-title="git出现The following problems have occurred when adding the files: *** is in submodule">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -440,13 +449,13 @@
                 
                 <span class="leancloud-visitors-count"></span>
              </span>
-            
+              
 
-            
-            
+              
+              
 
-            
-              <div class="post-wordcount">
+              
+                <div class="post-wordcount">
               
                 
                 <span class="post-meta-item-icon">
@@ -460,44 +469,44 @@
                 </span>
               
 
-                
-                  <span class="post-meta-divider">|</span>
-                
+                  
+                    <span class="post-meta-divider">|</span>
+                  
 
-                
-                  <span class="post-meta-item-icon">
+                  
+                    <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
+                    <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                  
                 <span title="阅读时长">
                   1 分钟
                 </span>
-                
+                  
             </div>
-            
-
-            
               
-        </div>
-      </header>
+
+              
+              
+          </div>
+        </header>
       
 
       
       <div class="post-body" itemprop="articleBody">
 
         
-      
+        
 
-    
-      <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>开始搭建博客的时候，使用到<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">Next主题</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
+      
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>开始搭建博客的时候，使用到<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">Next主题</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
 <p>clone下的项目内包含.git隐藏文件，删除后，更改主题的代码后提交报错，手动git add依然报错<br><code>The following problems have occurred when adding the files: *** is in submodule</code></p>
 <a id="more"></a>
 <h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><p>这是因为本来是其他git项目，需要清除缓存记录。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -rf --cached themes/next</span><br></pre></td></tr></table></figure></p>
 <p>运行上面的代码之后，再git add就不会报错啦~</p>
 
-    
+      
     </div>
     
     <div>

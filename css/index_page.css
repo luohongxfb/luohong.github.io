@@ -26,11 +26,19 @@
 #content {
   opacity: 0.96;
 }
-.post-body h1 {
+body {
+  font-size: 14px;
+}
+.post-title,
+h1 {
   font-size: 1.6em;
+}
+table {
+  font-size: 13px;
 }
 .post-body h2 {
   font-size: 1.45em;
+  border-bottom: none !important;
 }
 .post-body h3 {
   font-size: 1.3em;
