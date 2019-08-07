@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sunflowercoder.com/"/>
-  <updated>2019-08-06T08:27:15.655Z</updated>
+  <updated>2019-08-07T06:09:26.375Z</updated>
   <id>https://sunflowercoder.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git | CentOS 7搭建git服务端</title>
+    <link href="https://sunflowercoder.com/Git-CentOS-7%E6%90%AD%E5%BB%BAgit%E6%9C%8D%E5%8A%A1%E7%AB%AF/"/>
+    <id>https://sunflowercoder.com/Git-CentOS-7搭建git服务端/</id>
+    <published>2019-08-06T09:10:20.000Z</published>
+    <updated>2019-08-07T06:09:26.375Z</updated>
+    
+    <content type="html"><![CDATA[<p>大多数情况下我们使用github托管，特别是私库免费以后，但是github被黑也会有宕机的时候，那怎么办呀，就是喜欢用git呀，特别是微信小程序的官方编辑器用svn时代码颜色不更改呀（不知道版本更新后是否支持），都不知道改了哪行~😧这个时候我们可以考虑在私有服务器搭建git服务端。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>目前通过<code>yum -y install git</code>安装的git版本为 1.8.3.1。</p><img src="/Git-CentOS-7搭建git服务端/1565083693.jpg"><p>但是<a href="https://mirrors.edge.kernel.org/pub/software/scm/git/" target="_blank" rel="noopener">官方git仓库</a>的最新版目前是2.9.5</p><img src="/Git-CentOS-7搭建git服务端/1565083864.jpg"><a id="more"></a><p>想要安装最新版的git只能下载压缩的源码包安装。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># 查看原来是否有git的相关包</span><br><span class="line">rpm -qa|grep git</span><br><span class="line"># 可能的结果为 git-1.8.3.1-20.el7.x86_64</span><br><span class="line"># 删除git包</span><br><span class="line">rpm -e perl-Git</span><br><span class="line">rpm -e git</span><br><span class="line"></span><br><span class="line"># 安装依赖</span><br><span class="line">yum install curl-devel expat-devel openssl-devel zlib-devel</span><br><span class="line"></span><br><span class="line"># 下载2.9.5版本压缩包 soft为自建目录</span><br><span class="line">cd /usr/local/soft</span><br><span class="line">wget  https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.9.5.tar.gz</span><br><span class="line"></span><br><span class="line"># 解压</span><br><span class="line">tar -xzvf git-2.9.5.tar.gz</span><br><span class="line"></span><br><span class="line"># 编译安装</span><br><span class="line">cd git-2.9.5</span><br><span class="line">make prefix=/usr/local all</span><br><span class="line">make prefix=/usr/local install</span><br></pre></td></tr></table></figure></p><p>当前可通过 <code>./git --version</code>查看<br><img src="/Git-CentOS-7搭建git服务端/1565086093.jpg"></p><p><strong>配置环境变量</strong></p><p><code>vi /etc/profile</code>在最后加入<code>export PATH=/usr/local/soft/git-2.9.5:$PATH</code>，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/profile</span><br><span class="line"></span><br><span class="line">i</span><br><span class="line"></span><br><span class="line">最后加入export PATH=/usr/local/soft/git-2.9.5:$PATH</span><br><span class="line"></span><br><span class="line">Esc :wq</span><br><span class="line"></span><br><span class="line"># 生效环境变量</span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure></p><p>至此安装结束，然后就可以愉快的到处使用啦~</p><h2 id="添加管理git的用户"><a href="#添加管理git的用户" class="headerlink" title="添加管理git的用户"></a>添加管理git的用户</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 创建用户git</span><br><span class="line">useradd git</span><br><span class="line"></span><br><span class="line"># 修改用户git的密码（要求&gt;8个字符）输入两遍新密码</span><br><span class="line">passwd git</span><br></pre></td></tr></table></figure><p>通过<code>cd /home &amp;&amp; ls -al</code>可以看见用户已经创建成功</p><img src="/Git-CentOS-7搭建git服务端/1565087656.jpg"><p><strong>禁止用户git通过shell登录</strong>：下面要配置ssh的公钥，为了安全起见，禁止客户端通过shell远程登录服务器</p><p>切换用户git，在根目录下创建git-shell-commands</p><img src="/Git-CentOS-7搭建git服务端/1565089159.jpg"><p>注意：该目录为git shell需要的，不然会报</p><blockquote><p>fatal: Interactive git shell is not enabled.<br>hint: ~/git-shell-commands should exist and have read and execute access.</p></blockquote><p>修改/etc/passwd文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 切换root</span><br><span class="line">su root</span><br><span class="line"></span><br><span class="line"># 编辑文件</span><br><span class="line">vi /etc/passwd</span><br><span class="line"></span><br><span class="line">i</span><br><span class="line"></span><br><span class="line"># 找到git开始的</span><br><span class="line">git:x:1000:1000::/home/git:/bin/bash</span><br><span class="line"># 更改为 </span><br><span class="line">git:x:1000:1000::/home/git:/bin/git-shell</span><br><span class="line"></span><br><span class="line">Esc :wq</span><br></pre></td></tr></table></figure></p><p>此时我们就不用担心客户端通过shell登录，只允许使用git-shell进行管理git的仓库。</p><p><a href="https://www.cnblogs.com/fly_dragon/p/8718614.html" target="_blank" rel="noopener">https://www.cnblogs.com/fly_dragon/p/8718614.html</a><br><a href="https://blog.csdn.net/w252064/article/details/82691343" target="_blank" rel="noopener">https://blog.csdn.net/w252064/article/details/82691343</a><br><a href="https://blog.csdn.net/bbcckkl/article/details/81634761" target="_blank" rel="noopener">https://blog.csdn.net/bbcckkl/article/details/81634761</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;大多数情况下我们使用github托管，特别是私库免费以后，但是github被黑也会有宕机的时候，那怎么办呀，就是喜欢用git呀，特别是微信小程序的官方编辑器用svn时代码颜色不更改呀（不知道版本更新后是否支持），都不知道改了哪行~😧这个时候我们可以考虑在私有服务器搭建git服务端。&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;目前通过&lt;code&gt;yum -y install git&lt;/code&gt;安装的git版本为 1.8.3.1。&lt;/p&gt;
+&lt;img src=&quot;/Git-CentOS-7搭建git服务端/1565083693.jpg&quot;&gt;
+&lt;p&gt;但是&lt;a href=&quot;https://mirrors.edge.kernel.org/pub/software/scm/git/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方git仓库&lt;/a&gt;的最新版目前是2.9.5&lt;/p&gt;
+&lt;img src=&quot;/Git-CentOS-7搭建git服务端/1565083864.jpg&quot;&gt;
+    
+    </summary>
+    
+    
+      <category term="CentOS7" scheme="https://sunflowercoder.com/tags/CentOS7/"/>
+    
+      <category term="Git" scheme="https://sunflowercoder.com/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>yum 查看安装的包 包含了哪些文件</title>
@@ -528,28 +554,6 @@
       <category term="Scrapy线上部署" scheme="https://sunflowercoder.com/tags/Scrapy%E7%BA%BF%E4%B8%8A%E9%83%A8%E7%BD%B2/"/>
     
       <category term="Scrapyd" scheme="https://sunflowercoder.com/tags/Scrapyd/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>webstorm .swig文件语法高亮</title>
-    <link href="https://sunflowercoder.com/webstorm-swig%E6%96%87%E4%BB%B6%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE/"/>
-    <id>https://sunflowercoder.com/webstorm-swig文件语法高亮/</id>
-    <published>2019-03-07T06:36:51.000Z</published>
-    <updated>2019-07-09T08:14:14.112Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>swig是nodeJS前端模板引擎，swig特点<a href="http://vschart.com/compare/swig-template-engine" target="_blank" rel="noopener">看这里</a>。</p><h3 id="语法高亮"><a href="#语法高亮" class="headerlink" title="语法高亮"></a>语法高亮</h3><h4 id="webstrom"><a href="#webstrom" class="headerlink" title="webstrom"></a>webstrom</h4><p>（1）在<code>File&gt;Settings&gt;Plugins</code>，选择下方 <code>Browse repositories...</code></p><p>（2）在编辑框输入 <code>twig</code>，点击 <code>Twig Support</code>，Install之后重启webstorm</p><a id="more"></a><p>（3）重启后，打开<code>File&gt;Settings&gt;Editor&gt;File Types</code>，找到<code>Twig</code>，点击<code>+</code>号添加<code>*.swig</code>，<code>apply</code>后就能看到<code>.swig</code>都高亮啦~</p><img src="/webstorm-swig文件语法高亮/swig_1.png"><img src="/webstorm-swig文件语法高亮/swig_2.jpg">]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;swig是nodeJS前端模板引擎，swig特点&lt;a href=&quot;http://vschart.com/compare/swig-template-engine&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;看这里&lt;/a&gt;。&lt;/p&gt;
-&lt;h3 id=&quot;语法高亮&quot;&gt;&lt;a href=&quot;#语法高亮&quot; class=&quot;headerlink&quot; title=&quot;语法高亮&quot;&gt;&lt;/a&gt;语法高亮&lt;/h3&gt;&lt;h4 id=&quot;webstrom&quot;&gt;&lt;a href=&quot;#webstrom&quot; class=&quot;headerlink&quot; title=&quot;webstrom&quot;&gt;&lt;/a&gt;webstrom&lt;/h4&gt;&lt;p&gt;（1）在&lt;code&gt;File&amp;gt;Settings&amp;gt;Plugins&lt;/code&gt;，选择下方 &lt;code&gt;Browse repositories...&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;（2）在编辑框输入 &lt;code&gt;twig&lt;/code&gt;，点击 &lt;code&gt;Twig Support&lt;/code&gt;，Install之后重启webstorm&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term=".swig" scheme="https://sunflowercoder.com/tags/swig/"/>
     
   </entry>
   

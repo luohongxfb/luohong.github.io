@@ -101,8 +101,8 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT, Android, Python, H5, NodeJS, life">
-
+  <meta name="keywords" content="CentOS7,Git,">
+  
 
 
 
@@ -114,16 +114,24 @@
 
 
 
-<meta name="description" content="Empty page presents more possibilities.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="所谓向日葵族&#39;s Blog">
-<meta property="og:url" content="https://sunflowercoder.com/categories/Hexo/index.html">
+<meta name="description" content="大多数情况下我们使用github托管，特别是私库免费以后，但是github被黑也会有宕机的时候，那怎么办呀，就是喜欢用git呀，特别是微信小程序的官方编辑器用svn时代码颜色不更改呀（不知道版本更新后是否支持），都不知道改了哪行~😧这个时候我们可以考虑在私有服务器搭建git服务端。 安装目前通过yum -y install git安装的git版本为 1.8.3.1。  但是官方git仓库的最新版">
+<meta name="keywords" content="CentOS7,Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git | CentOS 7搭建git服务端">
+<meta property="og:url" content="https://sunflowercoder.com/Git-CentOS-7搭建git服务端/index.html">
 <meta property="og:site_name" content="所谓向日葵族&#39;s Blog">
-<meta property="og:description" content="Empty page presents more possibilities.">
+<meta property="og:description" content="大多数情况下我们使用github托管，特别是私库免费以后，但是github被黑也会有宕机的时候，那怎么办呀，就是喜欢用git呀，特别是微信小程序的官方编辑器用svn时代码颜色不更改呀（不知道版本更新后是否支持），都不知道改了哪行~😧这个时候我们可以考虑在私有服务器搭建git服务端。 安装目前通过yum -y install git安装的git版本为 1.8.3.1。  但是官方git仓库的最新版">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://sunflowercoder.com/Git-CentOS-7搭建git服务端/1565083693.jpg">
+<meta property="og:image" content="https://sunflowercoder.com/Git-CentOS-7搭建git服务端/1565083864.jpg">
+<meta property="og:image" content="https://sunflowercoder.com/Git-CentOS-7搭建git服务端/1565086093.jpg">
+<meta property="og:image" content="https://sunflowercoder.com/Git-CentOS-7搭建git服务端/1565087656.jpg">
+<meta property="og:image" content="https://sunflowercoder.com/Git-CentOS-7搭建git服务端/1565089159.jpg">
+<meta property="og:updated_time" content="2019-08-07T06:09:26.375Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="所谓向日葵族&#39;s Blog">
-<meta name="twitter:description" content="Empty page presents more possibilities.">
+<meta name="twitter:title" content="Git | CentOS 7搭建git服务端">
+<meta name="twitter:description" content="大多数情况下我们使用github托管，特别是私库免费以后，但是github被黑也会有宕机的时候，那怎么办呀，就是喜欢用git呀，特别是微信小程序的官方编辑器用svn时代码颜色不更改呀（不知道版本更新后是否支持），都不知道改了哪行~😧这个时候我们可以考虑在私有服务器搭建git服务端。 安装目前通过yum -y install git安装的git版本为 1.8.3.1。  但是官方git仓库的最新版">
+<meta name="twitter:image" content="https://sunflowercoder.com/Git-CentOS-7搭建git服务端/1565083693.jpg">
 
 
 
@@ -153,7 +161,7 @@
 
 
 
-  <link rel="canonical" href="https://sunflowercoder.com/categories/Hexo/">
+  <link rel="canonical" href="https://sunflowercoder.com/Git-CentOS-7搭建git服务端/">
 
 
 
@@ -167,7 +175,7 @@
   });
 </script>
 
-  <title>分类: Hexo | 所谓向日葵族's Blog</title>
+  <title>Git | CentOS 7搭建git服务端 | 所谓向日葵族's Blog</title>
   
 
 
@@ -199,7 +207,7 @@
   
 
 
-<div class="container sidebar-position-left ">
+<div class="container sidebar-position-left page-post-detail">
   <div class="headband">
   </div>
   <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -366,131 +374,276 @@
         <div id="content" class="content">
           
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block category">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>Hexo<small>分类</small>
-        </h2>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://sunflowercoder.com/Git-CentOS-7搭建git服务端/">
 
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/Hexo-第二弹/" itemprop="url">
-              
-                <span itemprop="name">Hexo--第二弹</span>
-              
-            </a>
-        
-      </h3>
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="所谓向日葵族">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-10T16:00:09+08:00" content="2019-07-10">
-          07-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="所谓向日葵族's Blog">
+    </span>
 
       
+      <header class="post-header">
+
+        
+        
+        <h2 class="post-title" itemprop="name headline">Git | CentOS 7搭建git服务端</h2>
         
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/Hexo-第一弹/" itemprop="url">
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
               
-                <span itemprop="name">Hexo--第一弹</span>
+              <span class="post-meta-item-text">创建于</span>
+            
+
+              <time title="创建于 2019-08-06" itemprop="dateCreated datePublished" datetime="2019-08-06T17:10:20+08:00">
+                2019-08-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+          
+            
+
+            
+            
+              <span id="/Git-CentOS-7搭建git服务端/" class="leancloud_visitors" data-flag-title="Git | CentOS 7搭建git服务端">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+                
+                  <span class="post-meta-item-text">阅读次数&#58;</span>
+                
+                <span class="leancloud-visitors-count"></span>
+             </span>
+            
+
+            
+            
+
+            
+              <div class="post-wordcount">
               
-            </a>
-        
-      </h3>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span class="post-meta-item-text">字数统计&#58;</span>
+              
+                <span title="字数统计">
+                  604 字
+                </span>
+              
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-04T19:23:14+08:00" content="2019-07-04">
-          07-04
-        </time>
-      </div>
+                
+                  <span class="post-meta-divider">|</span>
+                
 
-    </header>
-  </article>
+                
+                  <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2 分钟
+                </span>
+                
+            </div>
+            
 
+            
+              
+        </div>
+      </header>
+      
 
       
+      <div class="post-body" itemprop="articleBody">
+
         
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/Hexo-GitHub-Pages部署/" itemprop="url">
-              
-                <span itemprop="name">Hexo--GitHub Pages部署</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-22T19:08:16+08:00" content="2019-03-22">
-          03-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
       
-        
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+      <p>大多数情况下我们使用github托管，特别是私库免费以后，但是github被黑也会有宕机的时候，那怎么办呀，就是喜欢用git呀，特别是微信小程序的官方编辑器用svn时代码颜色不更改呀（不知道版本更新后是否支持），都不知道改了哪行~😧这个时候我们可以考虑在私有服务器搭建git服务端。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>目前通过<code>yum -y install git</code>安装的git版本为 1.8.3.1。</p>
+<img src="/Git-CentOS-7搭建git服务端/1565083693.jpg">
+<p>但是<a href="https://mirrors.edge.kernel.org/pub/software/scm/git/" target="_blank" rel="noopener">官方git仓库</a>的最新版目前是2.9.5</p>
+<img src="/Git-CentOS-7搭建git服务端/1565083864.jpg">
+<a id="more"></a>
+<p>想要安装最新版的git只能下载压缩的源码包安装。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># 查看原来是否有git的相关包</span><br><span class="line">rpm -qa|grep git</span><br><span class="line"># 可能的结果为 git-1.8.3.1-20.el7.x86_64</span><br><span class="line"># 删除git包</span><br><span class="line">rpm -e perl-Git</span><br><span class="line">rpm -e git</span><br><span class="line"></span><br><span class="line"># 安装依赖</span><br><span class="line">yum install curl-devel expat-devel openssl-devel zlib-devel</span><br><span class="line"></span><br><span class="line"># 下载2.9.5版本压缩包 soft为自建目录</span><br><span class="line">cd /usr/local/soft</span><br><span class="line">wget  https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.9.5.tar.gz</span><br><span class="line"></span><br><span class="line"># 解压</span><br><span class="line">tar -xzvf git-2.9.5.tar.gz</span><br><span class="line"></span><br><span class="line"># 编译安装</span><br><span class="line">cd git-2.9.5</span><br><span class="line">make prefix=/usr/local all</span><br><span class="line">make prefix=/usr/local install</span><br></pre></td></tr></table></figure></p>
+<p>当前可通过 <code>./git --version</code>查看<br><img src="/Git-CentOS-7搭建git服务端/1565086093.jpg"></p>
+<p><strong>配置环境变量</strong></p>
+<p><code>vi /etc/profile</code>在最后加入<code>export PATH=/usr/local/soft/git-2.9.5:$PATH</code>，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/profile</span><br><span class="line"></span><br><span class="line">i</span><br><span class="line"></span><br><span class="line">最后加入export PATH=/usr/local/soft/git-2.9.5:$PATH</span><br><span class="line"></span><br><span class="line">Esc :wq</span><br><span class="line"></span><br><span class="line"># 生效环境变量</span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure></p>
+<p>至此安装结束，然后就可以愉快的到处使用啦~</p>
+<h2 id="添加管理git的用户"><a href="#添加管理git的用户" class="headerlink" title="添加管理git的用户"></a>添加管理git的用户</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 创建用户git</span><br><span class="line">useradd git</span><br><span class="line"></span><br><span class="line"># 修改用户git的密码（要求&gt;8个字符）输入两遍新密码</span><br><span class="line">passwd git</span><br></pre></td></tr></table></figure>
+<p>通过<code>cd /home &amp;&amp; ls -al</code>可以看见用户已经创建成功</p>
+<img src="/Git-CentOS-7搭建git服务端/1565087656.jpg">
+<p><strong>禁止用户git通过shell登录</strong>：下面要配置ssh的公钥，为了安全起见，禁止客户端通过shell远程登录服务器</p>
+<p>切换用户git，在根目录下创建git-shell-commands</p>
+<img src="/Git-CentOS-7搭建git服务端/1565089159.jpg">
+<p>注意：该目录为git shell需要的，不然会报</p>
+<blockquote>
+<p>fatal: Interactive git shell is not enabled.<br>hint: ~/git-shell-commands should exist and have read and execute access.</p>
+</blockquote>
+<p>修改/etc/passwd文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 切换root</span><br><span class="line">su root</span><br><span class="line"></span><br><span class="line"># 编辑文件</span><br><span class="line">vi /etc/passwd</span><br><span class="line"></span><br><span class="line">i</span><br><span class="line"></span><br><span class="line"># 找到git开始的</span><br><span class="line">git:x:1000:1000::/home/git:/bin/bash</span><br><span class="line"># 更改为 </span><br><span class="line">git:x:1000:1000::/home/git:/bin/git-shell</span><br><span class="line"></span><br><span class="line">Esc :wq</span><br></pre></td></tr></table></figure></p>
+<p>此时我们就不用担心客户端通过shell登录，只允许使用git-shell进行管理git的仓库。</p>
+<p><a href="https://www.cnblogs.com/fly_dragon/p/8718614.html" target="_blank" rel="noopener">https://www.cnblogs.com/fly_dragon/p/8718614.html</a><br><a href="https://blog.csdn.net/w252064/article/details/82691343" target="_blank" rel="noopener">https://blog.csdn.net/w252064/article/details/82691343</a><br><a href="https://blog.csdn.net/bbcckkl/article/details/81634761" target="_blank" rel="noopener">https://blog.csdn.net/bbcckkl/article/details/81634761</a></p>
 
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/Hexo--博客搭建/" itemprop="url">
-              
-                <span itemprop="name">Hexo--博客搭建</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-22T16:38:05+08:00" content="2019-03-22">
-          03-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+    
+    </div>
+    
+    <div>
+      
+        <div>
+  
+    <div style="text-align: center;font-size: 13px;letter-spacing: 10px;user-select: none;margin-top: 50px;color: #bbb;">-------------本文结束啦 <i class="fa fa-star"></i> 感谢您的阅读-------------</div>
+  
+</div>
 
       
     </div>
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wx_subscription.jpg" alt="所谓向日葵族 wechat" style="width: 200px; max-width: 100%;">
+    <div>💡 更多好文欢迎关注我的公众号~</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>觉得不错的话，点个赞🌟吧~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赞赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="所谓向日葵族 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="所谓向日葵族 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
 
   </div>
-  
-  
-  
+</div>
 
-  
+      </div>
+    
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    所谓向日葵族
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://sunflowercoder.com/Git-CentOS-7搭建git服务端/" title="Git | CentOS 7搭建git服务端">https://sunflowercoder.com/Git-CentOS-7搭建git服务端/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CentOS7/" rel="tag"><i class="fa fa-tag"> CentOS7</i></a>
+          
+            <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"> Git</i></a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/yum-查看install包装了哪些文件/" rel="next" title="yum 查看安装的包 包含了哪些文件">
+                <i class="fa fa-chevron-left"></i> yum 查看安装的包 包含了哪些文件
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+    </div>
+    
+    
+    
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
         </div>
@@ -498,6 +651,15 @@
 
 
         
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MzMxMi8xOTg1Mw=="></div>
+    </div>
+
+  
+
+
 
       </div>
       
@@ -518,8 +680,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -598,6 +769,22 @@
         </div>
       </section>
 
+      
+        <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加管理git的用户"><span class="nav-number">2.</span> <span class="nav-text">添加管理git的用户</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+        <!--/noindex-->
       
 
       
@@ -784,6 +971,10 @@
 
 
 
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
 
 
@@ -812,6 +1003,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
