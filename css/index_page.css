@@ -28,10 +28,11 @@
 }
 body {
   font-size: 14px;
+  color: #555;
 }
 .post-title,
 h1 {
-  font-size: 1.6em;
+  font-size: 22px;
 }
 table {
   font-size: 13px;
@@ -51,4 +52,7 @@ table {
 }
 .post-body h6 {
   font-size: 1.03em;
+}
+p {
+  margin: 0 0 10px 0;
 }

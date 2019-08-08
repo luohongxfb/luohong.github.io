@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #25ffff;
+  background: #c387ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3143,6 +3143,9 @@ pre .javascript .function {
   }
 }
 body {
+  overflow-x: hidden;
+}
+body {
   background-image: url("/images/11766793.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -3454,7 +3457,6 @@ span#inline-yellow {
   line-height: 1;
   color: #fff;
   text-align: center;
-  white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0;
   background-color: #f0ad4e;
@@ -3467,7 +3469,6 @@ span#inline-green {
   line-height: 1;
   color: #fff;
   text-align: center;
-  white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0;
   background-color: #5cb85c;
@@ -3480,7 +3481,6 @@ span#inline-blue {
   line-height: 1;
   color: #fff;
   text-align: center;
-  white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0;
   background-color: #2780e3;
@@ -3493,7 +3493,6 @@ span#inline-purple {
   line-height: 1;
   color: #fff;
   text-align: center;
-  white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0;
   background-color: #9954bb;
@@ -3506,7 +3505,6 @@ span#inline-red {
   line-height: 1;
   color: #fff;
   text-align: center;
-  white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0;
   background-color: #df3e3e;
@@ -3941,12 +3939,19 @@ a.fork-me-github {
   float: right;
   margin: 0.35em 0 0 0;
   text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
-  margin-right: 3px;
+  margin-right: 5px;
 }
-.menu .menu-item a:hover,
-.menu-item-active a {
+.menu .menu-item a:hover {
   background: #f4f4f4;
   border-bottom-color: #fff;
+}
+.menu-item-active a,
+.menu-item-active a:hover {
+  background: #f4f4f4 !important;
+  border-bottom-color: #fff;
+}
+.menu-item-active a:after {
+  background-color: #536dfe;
 }
 img {
   max-width: 100%;
@@ -4011,6 +4016,9 @@ h6,
 .h6 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.posts-expand .post-body img {
+  border: none;
 }
 @-moz-keyframes anim-moema-1 {
   60% {
