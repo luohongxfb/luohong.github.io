@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://sunflowercoder.com/Git-CentOS-7%E6%90%AD%E5%BB%BAgit%E6%9C%8D%E5%8A%A1%E7%AB%AF/</loc>
-    
-    <lastmod>2019-08-08T05:45:06.771Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://sunflowercoder.com/Centos-7%E5%88%A9%E7%94%A8yum%E5%AE%89%E8%A3%85apache-mysql-8-php7/</loc>
     
     <lastmod>2019-08-07T03:38:37.724Z</lastmod>
@@ -96,13 +89,6 @@
     <loc>https://sunflowercoder.com/redis-migrate-tool%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2019-08-02T06:09:51.649Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sunflowercoder.com/scrapyd%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/</loc>
-    
-    <lastmod>2019-07-26T06:57:13.584Z</lastmod>
     
   </url>
   
