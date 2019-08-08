@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sunflowercoder.com/"/>
-  <updated>2019-08-06T08:27:15.655Z</updated>
+  <updated>2019-08-08T07:18:02.311Z</updated>
   <id>https://sunflowercoder.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AndroidStudio打开旧项目报No toolchains found in the NDK toolchains folder for ABI with prefix: mipsel-linux-android</title>
+    <link href="https://sunflowercoder.com/AndroidStudio%E6%89%93%E5%BC%80%E6%97%A7%E9%A1%B9%E7%9B%AE%E6%8A%A5No-toolchains-found-in-the-NDK-toolchains-folder-for-ABI-with-prefix-mipsel-linux-android/"/>
+    <id>https://sunflowercoder.com/AndroidStudio打开旧项目报No-toolchains-found-in-the-NDK-toolchains-folder-for-ABI-with-prefix-mipsel-linux-android/</id>
+    <published>2019-08-08T06:38:43.000Z</published>
+    <updated>2019-08-08T07:18:02.311Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>今天从github下了个轮子，从日期看已经发布两年多了，用AndroidStudio打开加载报错<br><strong>No toolchains found in the NDK toolchains folder for ABI with prefix: mipsel-linux-android</strong></p></blockquote><p>很明显跟ndk有关，通过 <strong>File -&gt; Project Structure -&gt; SDK Location</strong>  Android NDK Location就是项目所使用的ndk目录，打开目录下的toolchains</p><img src="/AndroidStudio打开旧项目报No-toolchains-found-in-the-NDK-toolchains-folder-for-ABI-with-prefix-mipsel-linux-android/1565248270.jpg"><p>确实没有mipsel-linux-android开始的文件名，那这怎么办呢~ </p><p>其实，主要原因是 <strong>新版本的NDK与3.0及以前旧版的Android Gradle plugin插件不兼容</strong>，既然是版本的问题，那么解决的方式有两种：</p><ul><li>更新gradle版本，使用跟其他项目一样的最新版。弊端：以前版本的用法会有一部分在新版本被移除，都需要更改，例如compile改为api/implementation，输出apk名称方式的更改等等。。</li><li>下载旧版的NDK，将其中的toolchain复制到新版的NDK中。</li></ul><p>如果采用更改gradle版本，就在项目下的build.gradle。然后Sync Now，开始改版本更改报出来的种种方法过时错误.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dependencies &#123;</span><br><span class="line">  classpath &apos;com.android.tools.build:gradle:3.3.2&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>采用下载旧版的NDK方式，需要去官网下载旧版，如  <a href="https://developer.android.google.cn/ndk/downloads/older_releases.html" target="_blank" rel="noopener">https://developer.android.google.cn/ndk/downloads/older_releases.html</a> 下载。</p><p>下载完成解压后，将报的错toolchains下缺的mipsel-linux-android开始的文件名的文件粘贴到项目所使用的ndk目录下即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;今天从github下了个轮子，从日期看已经发布两年多了，用AndroidStudio打开加载报错&lt;br&gt;&lt;strong&gt;No toolchains found in the NDK toolchains folder for ABI with pr
+      
+    
+    </summary>
+    
+      <category term="Android" scheme="https://sunflowercoder.com/categories/Android/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>yum 查看安装的包 包含了哪些文件</title>
@@ -521,27 +545,6 @@
     
     
       <category term=".swig" scheme="https://sunflowercoder.com/tags/swig/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git出现The following problems have occurred when adding the files: *** is in submodule</title>
-    <link href="https://sunflowercoder.com/git%E5%87%BA%E7%8E%B0The-following-problems-have-occurred-when-adding-the-files-is-in-submodule/"/>
-    <id>https://sunflowercoder.com/git出现The-following-problems-have-occurred-when-adding-the-files-is-in-submodule/</id>
-    <published>2019-03-06T10:57:16.000Z</published>
-    <updated>2019-03-21T10:03:52.323Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>开始搭建博客的时候，使用到<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">Next主题</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p><p>clone下的项目内包含.git隐藏文件，删除后，更改主题的代码后提交报错，手动git add依然报错<br><code>The following problems have occurred when adding the files: *** is in submodule</code></p><a id="more"></a><h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><p>这是因为本来是其他git项目，需要清除缓存记录。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -rf --cached themes/next</span><br></pre></td></tr></table></figure></p><p>运行上面的代码之后，再git add就不会报错啦~</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;开始搭建博客的时候，使用到&lt;a href=&quot;https://github.com/iissnan/hexo-theme-next&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Next主题&lt;/a&gt;&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/iissnan/hexo-theme-next themes/next&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;clone下的项目内包含.git隐藏文件，删除后，更改主题的代码后提交报错，手动git add依然报错&lt;br&gt;&lt;code&gt;The following problems have occurred when adding the files: *** is in submodule&lt;/code&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Git" scheme="https://sunflowercoder.com/tags/Git/"/>
     
   </entry>
   
