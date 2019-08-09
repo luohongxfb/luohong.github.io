@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sunflowercoder.com/"/>
-  <updated>2019-08-08T07:18:02.311Z</updated>
+  <updated>2019-08-09T06:46:04.083Z</updated>
   <id>https://sunflowercoder.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gradle错误 解决办法 （汇总 不定期更新）</title>
+    <link href="https://sunflowercoder.com/gradle%E9%94%99%E8%AF%AF-%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-%EF%BC%88%E6%B1%87%E6%80%BB-%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0%EF%BC%89/"/>
+    <id>https://sunflowercoder.com/gradle错误-解决办法-（汇总-不定期更新）/</id>
+    <published>2019-08-08T09:15:10.000Z</published>
+    <updated>2019-08-09T06:46:04.083Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-Could-not-find-com-android-tools-build-aapt2-3-3-2-5309881"><a href="#1-Could-not-find-com-android-tools-build-aapt2-3-3-2-5309881" class="headerlink" title="1. Could not find com.android.tools.build:aapt2:3.3.2-5309881"></a>1. Could not find com.android.tools.build:aapt2:3.3.2-5309881</h3><p>build失败，报错</p><img src="/gradle错误-解决办法-（汇总-不定期更新）/1565255955.jpg"><p><strong>解决办法</strong>：在项目下的build.gradle repositories下加入 <code>google()</code></p><a id="more"></a><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">buildscript</span> &#123;</span><br><span class="line">    <span class="keyword">repositories</span> &#123;</span><br><span class="line">        jcenter()</span><br><span class="line">        google()</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">dependencies</span> &#123;</span><br><span class="line">        <span class="keyword">classpath</span> <span class="string">'com.android.tools.build:gradle:3.3.2'</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// <span class="doctag">NOTE:</span> Do not place your application dependencies here; they belong</span></span><br><span class="line">        <span class="comment">// in the individual module build.gradle files</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">allprojects</span> &#123;</span><br><span class="line">    <span class="keyword">repositories</span> &#123;</span><br><span class="line">        jcenter()</span><br><span class="line">        google()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="2-This-version-of-Android-Studio-cannot-open-this-project-please-retry-with-Android-Studio-3-4-or-newer"><a href="#2-This-version-of-Android-Studio-cannot-open-this-project-please-retry-with-Android-Studio-3-4-or-newer" class="headerlink" title="2. This version of Android Studio cannot open this project, please retry with Android Studio 3.4 or newer."></a>2. This version of Android Studio cannot open this project, please retry with Android Studio 3.4 or newer.</h3><p><strong>解决办法</strong>：升级AndroidStudio或者gradle版本降级</p><h3 id="3-Circular-dependency-between-the-following-tasks"><a href="#3-Circular-dependency-between-the-following-tasks" class="headerlink" title="3. Circular dependency between the following tasks:"></a>3. Circular dependency between the following tasks:</h3><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">FAILURE: Build failed with an exception.</span><br><span class="line"></span><br><span class="line">* What went wrong:</span><br><span class="line">Circular dependency between the following tasks:</span><br><span class="line">:llib:compileDebugAidl</span><br><span class="line">\--- :llib:compileDebugAidl (*)</span><br><span class="line"></span><br><span class="line">(*) - details omitted (listed previously)</span><br><span class="line">...</span><br></pre></td></tr></table></figure><p><strong>解决办法</strong>：更换项目下repositories的顺序，如<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">repositories</span> &#123;</span><br><span class="line">    mavenCentral()</span><br><span class="line">    maven &#123;</span><br><span class="line">        url <span class="string">'https://jitpack.io'</span></span><br><span class="line">    &#125;</span><br><span class="line">    maven &#123; url <span class="string">"https://dl.bintray.com/thelasterstar/maven/"</span> &#125;</span><br><span class="line"></span><br><span class="line">    google()</span><br><span class="line">    jcenter()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="4-com-android-ide-common-signing-KeytoolException-Failed-to-read-key"><a href="#4-com-android-ide-common-signing-KeytoolException-Failed-to-read-key" class="headerlink" title="4. com.android.ide.common.signing.KeytoolException: Failed to read key ??????"></a>4. com.android.ide.common.signing.KeytoolException: Failed to read key ??????</h3><p>.properties用来存放app名称或者keystore信息时，出现中文会读取乱码。</p><img src="/gradle错误-解决办法-（汇总-不定期更新）/1565332631.jpg"><p><strong>解决办法</strong>：首先项目的文件编码都改为utf-8</p><img src="/gradle错误-解决办法-（汇总-不定期更新）/42b12aeeed338b410d958d40a6e2013.png"><p>然后取值的时候，如取keystore alias使用<code>new String(KEYSTORE_ALIAS.getBytes(&quot;iso8859-1&quot;), &quot;UTF-8&quot;)</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-Could-not-find-com-android-tools-build-aapt2-3-3-2-5309881&quot;&gt;&lt;a href=&quot;#1-Could-not-find-com-android-tools-build-aapt2-3-3-2-5309881&quot; class=&quot;headerlink&quot; title=&quot;1. Could not find com.android.tools.build:aapt2:3.3.2-5309881&quot;&gt;&lt;/a&gt;1. Could not find com.android.tools.build:aapt2:3.3.2-5309881&lt;/h3&gt;&lt;p&gt;build失败，报错&lt;/p&gt;
+&lt;img src=&quot;/gradle错误-解决办法-（汇总-不定期更新）/1565255955.jpg&quot;&gt;
+&lt;p&gt;&lt;strong&gt;解决办法&lt;/strong&gt;：在项目下的build.gradle repositories下加入 &lt;code&gt;google()&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="https://sunflowercoder.com/categories/Android/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>AndroidStudio打开旧项目报No toolchains found in the NDK toolchains folder for ABI with prefix: mipsel-linux-android</title>
@@ -523,28 +545,6 @@
     
       <category term="Hexo" scheme="https://sunflowercoder.com/categories/Hexo/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>webstorm .swig文件语法高亮</title>
-    <link href="https://sunflowercoder.com/webstorm-swig%E6%96%87%E4%BB%B6%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE/"/>
-    <id>https://sunflowercoder.com/webstorm-swig文件语法高亮/</id>
-    <published>2019-03-07T06:36:51.000Z</published>
-    <updated>2019-07-09T08:14:14.112Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>swig是nodeJS前端模板引擎，swig特点<a href="http://vschart.com/compare/swig-template-engine" target="_blank" rel="noopener">看这里</a>。</p><h3 id="语法高亮"><a href="#语法高亮" class="headerlink" title="语法高亮"></a>语法高亮</h3><h4 id="webstrom"><a href="#webstrom" class="headerlink" title="webstrom"></a>webstrom</h4><p>（1）在<code>File&gt;Settings&gt;Plugins</code>，选择下方 <code>Browse repositories...</code></p><p>（2）在编辑框输入 <code>twig</code>，点击 <code>Twig Support</code>，Install之后重启webstorm</p><a id="more"></a><p>（3）重启后，打开<code>File&gt;Settings&gt;Editor&gt;File Types</code>，找到<code>Twig</code>，点击<code>+</code>号添加<code>*.swig</code>，<code>apply</code>后就能看到<code>.swig</code>都高亮啦~</p><img src="/webstorm-swig文件语法高亮/swig_1.png"><img src="/webstorm-swig文件语法高亮/swig_2.jpg">]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;swig是nodeJS前端模板引擎，swig特点&lt;a href=&quot;http://vschart.com/compare/swig-template-engine&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;看这里&lt;/a&gt;。&lt;/p&gt;
-&lt;h3 id=&quot;语法高亮&quot;&gt;&lt;a href=&quot;#语法高亮&quot; class=&quot;headerlink&quot; title=&quot;语法高亮&quot;&gt;&lt;/a&gt;语法高亮&lt;/h3&gt;&lt;h4 id=&quot;webstrom&quot;&gt;&lt;a href=&quot;#webstrom&quot; class=&quot;headerlink&quot; title=&quot;webstrom&quot;&gt;&lt;/a&gt;webstrom&lt;/h4&gt;&lt;p&gt;（1）在&lt;code&gt;File&amp;gt;Settings&amp;gt;Plugins&lt;/code&gt;，选择下方 &lt;code&gt;Browse repositories...&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;（2）在编辑框输入 &lt;code&gt;twig&lt;/code&gt;，点击 &lt;code&gt;Twig Support&lt;/code&gt;，Install之后重启webstorm&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term=".swig" scheme="https://sunflowercoder.com/tags/swig/"/>
     
   </entry>
   

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[gradle错误 解决办法 （汇总 不定期更新）]]></title>
+    <url>%2Fgradle%E9%94%99%E8%AF%AF-%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-%EF%BC%88%E6%B1%87%E6%80%BB-%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[1. Could not find com.android.tools.build:aapt2:3.3.2-5309881build失败，报错 解决办法：在项目下的build.gradle repositories下加入 google() 12345678910111213141516171819buildscript &#123; repositories &#123; jcenter() google() &#125; dependencies &#123; classpath 'com.android.tools.build:gradle:3.3.2' // NOTE: Do not place your application dependencies here; they belong // in the individual module build.gradle files &#125;&#125;allprojects &#123; repositories &#123; jcenter() google() &#125;&#125; 2. This version of Android Studio cannot open this project, please retry with Android Studio 3.4 or newer.解决办法：升级AndroidStudio或者gradle版本降级 3. Circular dependency between the following tasks:123456789FAILURE: Build failed with an exception.* What went wrong:Circular dependency between the following tasks::llib:compileDebugAidl\--- :llib:compileDebugAidl (*)(*) - details omitted (listed previously)... 解决办法：更换项目下repositories的顺序，如12345678910repositories &#123; mavenCentral() maven &#123; url 'https://jitpack.io' &#125; maven &#123; url "https://dl.bintray.com/thelasterstar/maven/" &#125; google() jcenter()&#125; 4. com.android.ide.common.signing.KeytoolException: Failed to read key ??????.properties用来存放app名称或者keystore信息时，出现中文会读取乱码。 解决办法：首先项目的文件编码都改为utf-8 然后取值的时候，如取keystore alias使用new String(KEYSTORE_ALIAS.getBytes(&quot;iso8859-1&quot;), &quot;UTF-8&quot;)]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[AndroidStudio打开旧项目报No toolchains found in the NDK toolchains folder for ABI with prefix: mipsel-linux-android]]></title>
     <url>%2FAndroidStudio%E6%89%93%E5%BC%80%E6%97%A7%E9%A1%B9%E7%9B%AE%E6%8A%A5No-toolchains-found-in-the-NDK-toolchains-folder-for-ABI-with-prefix-mipsel-linux-android%2F</url>
     <content type="text"><![CDATA[今天从github下了个轮子，从日期看已经发布两年多了，用AndroidStudio打开加载报错No toolchains found in the NDK toolchains folder for ABI with prefix: mipsel-linux-android 很明显跟ndk有关，通过 File -&gt; Project Structure -&gt; SDK Location Android NDK Location就是项目所使用的ndk目录，打开目录下的toolchains 确实没有mipsel-linux-android开始的文件名，那这怎么办呢~ 其实，主要原因是 新版本的NDK与3.0及以前旧版的Android Gradle plugin插件不兼容，既然是版本的问题，那么解决的方式有两种： 更新gradle版本，使用跟其他项目一样的最新版。弊端：以前版本的用法会有一部分在新版本被移除，都需要更改，例如compile改为api/implementation，输出apk名称方式的更改等等。。 下载旧版的NDK，将其中的toolchain复制到新版的NDK中。 如果采用更改gradle版本，就在项目下的build.gradle。然后Sync Now，开始改版本更改报出来的种种方法过时错误.123dependencies &#123; classpath &apos;com.android.tools.build:gradle:3.3.2&apos;&#125; 采用下载旧版的NDK方式，需要去官网下载旧版，如 https://developer.android.google.cn/ndk/downloads/older_releases.html 下载。 下载完成解压后，将报的错toolchains下缺的mipsel-linux-android开始的文件名的文件粘贴到项目所使用的ndk目录下即可。]]></content>
