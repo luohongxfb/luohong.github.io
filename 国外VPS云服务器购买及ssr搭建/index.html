@@ -138,7 +138,7 @@
 <meta property="og:image" content="https://sunflowercoder.com/国外VPS云服务器购买及ssr搭建/1564899249.jpg">
 <meta property="og:image" content="https://sunflowercoder.com/国外VPS云服务器购买及ssr搭建/af8d07d90911918ce5f82600b833ac0.png">
 <meta property="og:image" content="https://sunflowercoder.com/国外VPS云服务器购买及ssr搭建/1c7689e846daa4f8e3dc57130906fca.png">
-<meta property="og:updated_time" content="2019-08-05T08:01:35.630Z">
+<meta property="og:updated_time" content="2019-08-29T03:26:39.395Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="国外VPS云服务器购买及ssr搭建">
 <meta name="twitter:description" content="是否需要买一个云主机？VPS云？当前常见的云主机管理平台包括Eucalyptus云主机，CloudStack云主机，OpenStack云主机 , OpenNebula云主机，onapp云主机等。国外的服务器有什么好处？简单来说不需要备案，搭个ssr免了买vpn的钱。 国外VPS选购SSR的速度完全取决于你VPS速度的快慢，国外VPS商家众多，本篇文章主要推荐vultr和搬瓦工这两家。 1.vult">
@@ -178,13 +178,13 @@
 
 
 
-
-
-  
-    
-    
-  
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6325456197063435",
+    enable_page_level_ads: true
+  });
+</script>
 
   <title>国外VPS云服务器购买及ssr搭建 | 所谓向日葵族's Blog</title>
   
@@ -534,7 +534,7 @@
 <p>（1）设置SSR连接密码：Please enter password for ShadowsocksR。（如不设定，默认为 teddysun.com）<br><img src="/国外VPS云服务器购买及ssr搭建/20181231160302.png"><br>（2）设置你的服务器端口[1-65535]：Please enter a port for ShadowsocksR 。（如不设定就是提示的）<br><img src="/国外VPS云服务器购买及ssr搭建/20181231160423.png"><br>（3）设置加密方式：Please select stream cipher for ShadowsocksR，输入序号回车选择：<br><img src="/国外VPS云服务器购买及ssr搭建/20181231155203.png"><br>（4）选择协议：Please select protocol for ShadowsocksR，输入序号回车选择：（如不设定，默认为 origin）<br><img src="/国外VPS云服务器购买及ssr搭建/20181231155214.png"><br>（5）选择混淆方式：Please select obfs for ShadowsocksR，输入序号回车选择(免流请选择2:http_simple),（如不设定，默认为 plain）<br><img src="/国外VPS云服务器购买及ssr搭建/20181231155226.png"><br>设置完成回车，等待几分钟完成，<br><img src="/国外VPS云服务器购买及ssr搭建/1564895298.jpg"></p>
 <p>还需要在服务器及vultr后台开放端口！如 端口为8502<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 在public.xml添加端口</span><br><span class="line">firewall-cmd --zone=public --permanent --add-port=8502/tcp </span><br><span class="line">firewall-cmd --zone=public --permanent --add-port=8502/udp </span><br><span class="line"></span><br><span class="line"># 重启防火墙生效</span><br><span class="line">systemctl restart firewalld.service</span><br></pre></td></tr></table></figure></p>
 <p>vultr后台配置防火墙端口<strong>Products-&gt;firewall</strong>。<br><img src="/国外VPS云服务器购买及ssr搭建/1564899008.jpg"><br>没有权限组的就创建一个，<br><img src="/国外VPS云服务器购买及ssr搭建/1564899136.jpg"><br>有的话进入点击编辑Edit firewall，选择TCP，填写刚刚设置ssr的端口，点击加号添加<br><img src="/国外VPS云服务器购买及ssr搭建/1564899249.jpg"><br>提示大约120S内生效。</p>
-<p>SSR各系统连接工具下载请看<a href="https://github.com/shadowsocks，选择合适的系统点击release选择版本下载。" target="_blank" rel="noopener">https://github.com/shadowsocks，选择合适的系统点击release选择版本下载。</a></p>
+<p>SSR各系统连接工具下载请看<a href="https://github.com/shadowsocksrr，选择合适的系统点击release选择版本下载。" target="_blank" rel="noopener">https://github.com/shadowsocksrr，选择合适的系统点击release选择版本下载。</a></p>
 <h2 id="ssr多端口配置"><a href="#ssr多端口配置" class="headerlink" title="ssr多端口配置"></a>ssr多端口配置</h2><p>脚本默认创建单用户配置文件，如需配置多用户，需更改配置文件。</p>
 <p>ssr服务启动/停止/重启/状态：/etc/init.d/shadowsocks start/stop/restart/status</p>
 <p>编辑配置文件：vi /etc/shadowsocks.json 按i进行编辑<br><img src="/国外VPS云服务器购买及ssr搭建/af8d07d90911918ce5f82600b833ac0.png"><br>将原来的<code>server_port</code>和<code>password</code>改为<code>port_password</code>对应的多个以port为键，password为值形式的<br><img src="/国外VPS云服务器购买及ssr搭建/1c7689e846daa4f8e3dc57130906fca.png"><br>Esc :wq保存退出。重启shadowsocks服务。</p>

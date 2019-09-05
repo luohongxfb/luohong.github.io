@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://sunflowercoder.com/%E5%9B%BD%E5%A4%96VPS%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%B4%AD%E4%B9%B0%E5%8F%8Assr%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2019-08-29</lastmod>
+  </url>  <url>
     <loc>https://sunflowercoder.com/gradle%E9%94%99%E8%AF%AF-%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-%EF%BC%88%E6%B1%87%E6%80%BB-%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0%EF%BC%89/</loc>
     <lastmod>2019-08-09</lastmod>
   </url>  <url>
@@ -38,9 +41,6 @@
     <lastmod>2019-08-06</lastmod>
   </url>  <url>
     <loc>https://sunflowercoder.com/git%E5%87%BA%E7%8E%B0RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/</loc>
-    <lastmod>2019-08-05</lastmod>
-  </url>  <url>
-    <loc>https://sunflowercoder.com/%E5%9B%BD%E5%A4%96VPS%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%B4%AD%E4%B9%B0%E5%8F%8Assr%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2019-08-05</lastmod>
   </url>  <url>
     <loc>https://sunflowercoder.com/redis-migrate-tool%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/</loc>
