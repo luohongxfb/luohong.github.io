@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[python读写Excel]]></title>
-    <url>%2Fpython%E8%AF%BB%E5%86%99Excel%2F</url>
-    <content type="text"><![CDATA[最近在做.xls表格的数据处理和计算的工作，撰写此文总结一下python读写Excel的方式。 我用的主要是xlrd（读）和xlwt（写）两个库， xlrd官方API：https://xlrd.readthedocs.io/en/latest/api.html#module-xlrdxlwt官方API：https://xlwt.readthedocs.io/en/latest/api.html 安装：12pip install xlrdpip install xlwt 表格读取读取比较麻烦的是合并单元格的内容，]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[gradle错误 解决办法 （汇总 不定期更新）]]></title>
     <url>%2Fgradle%E9%94%99%E8%AF%AF-%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-%EF%BC%88%E6%B1%87%E6%80%BB-%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0%EF%BC%89%2F</url>
     <content type="text"><![CDATA[1. Could not find com.android.tools.build:aapt2:3.3.2-5309881build失败，报错 解决办法：在项目下的build.gradle repositories下加入 google() 12345678910111213141516171819buildscript &#123; repositories &#123; jcenter() google() &#125; dependencies &#123; classpath 'com.android.tools.build:gradle:3.3.2' // NOTE: Do not place your application dependencies here; they belong // in the individual module build.gradle files &#125;&#125;allprojects &#123; repositories &#123; jcenter() google() &#125;&#125; 2. This version of Android Studio cannot open this project, please retry with Android Studio 3.4 or newer.解决办法：升级AndroidStudio或者gradle版本降级 3. Circular dependency between the following tasks:123456789FAILURE: Build failed with an exception.* What went wrong:Circular dependency between the following tasks::llib:compileDebugAidl\--- :llib:compileDebugAidl (*)(*) - details omitted (listed previously)... 解决办法：更换项目下repositories的顺序，如12345678910repositories &#123; mavenCentral() maven &#123; url 'https://jitpack.io' &#125; maven &#123; url "https://dl.bintray.com/thelasterstar/maven/" &#125; google() jcenter()&#125; 4. com.android.ide.common.signing.KeytoolException: Failed to read key ??????.properties用来存放app名称或者keystore信息时，出现中文会读取乱码。 解决办法：首先项目的文件编码都改为utf-8 然后取值的时候，如取keystore alias使用new String(KEYSTORE_ALIAS.getBytes(&quot;iso8859-1&quot;), &quot;UTF-8&quot;)]]></content>
@@ -164,18 +159,6 @@
       <categories>
         <category>Hexo</category>
       </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[Scrapyd使用详解]]></title>
-    <url>%2Fscrapyd%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3%2F</url>
-    <content type="text"><![CDATA[前言Scrapyd通常作为守护进程运行，它侦听运行爬虫的请求，并为每个请求生成一个进程，该进程基本上执行:scrapy crawl [myspider]。 Scrapyd还并行运行多个进程，将它们分配到max_proc和max_proc_per_cpu选项提供的固定数量的插槽中，启动尽可能多的进程来处理负载。 除了调度和管理进程之外，Scrapyd还提供了一个JSON web服务来上载新的项目版本(作为egg)和调度爬虫。 Scrapyd官方文档 https://scrapyd.readthedocs.io/en/latest/index.html 使用详解安装1pip install scrapyd 依赖的库及版本： Python 2.7 or above Twisted 8.0 or above Scrapy 1.0 or above six 启动在项目目录下，输入scrapyd即可运行，默认地址为http://localhost:68001scrapyd 官方详细配置文档说明：https://scrapyd.readthedocs.io/en/latest/config.html 修改默认配置信息可以在项目下新建一个scrapyd.conf或者在scrapy.cfg中增加[scrapyd]：123456[scrapyd]# 网页和Json服务监听的IP地址，默认为127.0.0.1bind_address = 127.0.0.1# 监听的端口，默认为6800http_port = 6800debug = off 项目部署部署主要分为两步： 将项目打包成egg 将egg通过Scrapyd的addversion.json接口上传到目标服务器 官方的部署上传接口文档：https://scrapyd.readthedocs.io/en/latest/api.html#addversion-json 推荐使用Scrapyd-client中的scrapyd-deploy一步上传，关于Scrapyd-client介绍： Scrapyd-client is a client for Scrapyd. It provides the general scrapyd-client and the scrapyd-deploy utility which allows you to deploy your project to a Scrapyd server. Scrapy-client安装1pip install scrapyd-client http://www.mamicode.com/info-detail-2288308.htmlhttps://www.jianshu.com/p/457003a8dbc4https://scrapyd.readthedocs.io/en/latest/index.html]]></content>
-      <categories>
-        <category>Scrapy</category>
-      </categories>
-      <tags>
-        <tag>Scrapy线上部署</tag>
-        <tag>Scrapyd</tag>
-      </tags>
   </entry>
   <entry>
     <title><![CDATA[webstorm .swig文件语法高亮]]></title>
