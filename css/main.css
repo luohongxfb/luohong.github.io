@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #617fab;
+  background: #1312c9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3980,24 +3980,43 @@ h6,
 }
 .post-title,
 h1 {
-  font-size: 1.9em;
+  font-size: 22px;
 }
 .post-body h2 {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
-  font-size: 1.75em;
+  font-size: 1.45em;
+  border-bottom: none !important;
 }
 .post-body h3 {
-  font-size: 1.6em;
-}
-.post-body h4 {
-  font-size: 1.45em;
-}
-.post-body h5 {
   font-size: 1.3em;
 }
-.post-body h6 {
+.post-body h4 {
   font-size: 1.2em;
+}
+.post-body h5 {
+  font-size: 1.07em;
+}
+.post-body h6 {
+  font-size: 1.03em;
+}
+.post-title,
+h1 {
+  font-size: 22px;
+}
+.post-body h2 {
+  font-size: 1.45em;
+  border-bottom: none !important;
+}
+.post-body h3 {
+  font-size: 1.3em;
+}
+.post-body h4 {
+  font-size: 1.2em;
+}
+.post-body h5 {
+  font-size: 1.07em;
+}
+.post-body h6 {
+  font-size: 1.03em;
 }
 h1,
 .h1,

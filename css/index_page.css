@@ -30,28 +30,8 @@ body {
   font-size: 14px;
   color: #555;
 }
-.post-title,
-h1 {
-  font-size: 22px;
-}
 table {
   font-size: 13px;
-}
-.post-body h2 {
-  font-size: 1.45em;
-  border-bottom: none !important;
-}
-.post-body h3 {
-  font-size: 1.3em;
-}
-.post-body h4 {
-  font-size: 1.2em;
-}
-.post-body h5 {
-  font-size: 1.07em;
-}
-.post-body h6 {
-  font-size: 1.03em;
 }
 p {
   margin: 0 0 10px 0;
