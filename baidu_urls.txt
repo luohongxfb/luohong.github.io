@@ -18,6 +18,7 @@ https://sunflowercoder.com/Hexo-第一弹/
 https://sunflowercoder.com/markdown转html、pdf-带目录生成/
 https://sunflowercoder.com/Hexo-GitHub-Pages部署/
 https://sunflowercoder.com/Hexo--博客搭建/
+https://sunflowercoder.com/scrapyd使用详解/
 https://sunflowercoder.com/webstorm-swig文件语法高亮/
 https://sunflowercoder.com/git出现The-following-problems-have-occurred-when-adding-the-files-is-in-submodule/
 https://sunflowercoder.com/Android-P报java-net-UnknownServiceException-CLEARTEXT-communication-to-not-permitted-by-netwo/
