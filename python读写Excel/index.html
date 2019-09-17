@@ -101,7 +101,7 @@
 
 
 
-  <meta name="keywords" content="Git,">
+  <meta name="keywords" content="xlwt,xlrt,Excel,">
   
 
 
@@ -114,20 +114,21 @@
 
 
 
-<meta name="description" content="前言在Hexo博客增加本地文件资源下载之后，deploy发布时出现：123error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054fatal: The remote end hung up unexpectedlyEverything up-to-date 主要是因为一次性提交的文件过大，超出了HTTP">
-<meta name="keywords" content="Git">
+<meta name="description" content="最近小编在处理各种.xlsx表格的数据处理和计算的工作，目前python用于操作表格的模块有很多，功能各有千秋。 表格写入简单的写入功能可用xlwt模块，写入功能的难点在于写入合并的单元格。单元格的下标都是从0开始。  xlwt官方API：https://xlwt.readthedocs.io/en/latest/api.html  安装：1pip install xlwt  新建workbook">
+<meta name="keywords" content="xlwt,xlrt,Excel">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git出现RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054">
-<meta property="og:url" content="https://sunflowercoder.com/git出现RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/index.html">
+<meta property="og:title" content="python读写Excel">
+<meta property="og:url" content="https://sunflowercoder.com/python读写Excel/index.html">
 <meta property="og:site_name" content="所谓向日葵族&#39;s Blog">
-<meta property="og:description" content="前言在Hexo博客增加本地文件资源下载之后，deploy发布时出现：123error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054fatal: The remote end hung up unexpectedlyEverything up-to-date 主要是因为一次性提交的文件过大，超出了HTTP">
+<meta property="og:description" content="最近小编在处理各种.xlsx表格的数据处理和计算的工作，目前python用于操作表格的模块有很多，功能各有千秋。 表格写入简单的写入功能可用xlwt模块，写入功能的难点在于写入合并的单元格。单元格的下标都是从0开始。  xlwt官方API：https://xlwt.readthedocs.io/en/latest/api.html  安装：1pip install xlwt  新建workbook">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://sunflowercoder.com/git出现RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/1564396087.jpg">
-<meta property="og:updated_time" content="2019-08-05T10:39:14.643Z">
+<meta property="og:image" content="https://sunflowercoder.com/python读写Excel/1568706718.jpg">
+<meta property="og:image" content="https://sunflowercoder.com/python读写Excel/1568707371.jpg">
+<meta property="og:updated_time" content="2019-09-17T08:06:25.459Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git出现RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054">
-<meta name="twitter:description" content="前言在Hexo博客增加本地文件资源下载之后，deploy发布时出现：123error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054fatal: The remote end hung up unexpectedlyEverything up-to-date 主要是因为一次性提交的文件过大，超出了HTTP">
-<meta name="twitter:image" content="https://sunflowercoder.com/git出现RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/1564396087.jpg">
+<meta name="twitter:title" content="python读写Excel">
+<meta name="twitter:description" content="最近小编在处理各种.xlsx表格的数据处理和计算的工作，目前python用于操作表格的模块有很多，功能各有千秋。 表格写入简单的写入功能可用xlwt模块，写入功能的难点在于写入合并的单元格。单元格的下标都是从0开始。  xlwt官方API：https://xlwt.readthedocs.io/en/latest/api.html  安装：1pip install xlwt  新建workbook">
+<meta name="twitter:image" content="https://sunflowercoder.com/python读写Excel/1568706718.jpg">
 
 
 
@@ -157,7 +158,7 @@
 
 
 
-  <link rel="canonical" href="https://sunflowercoder.com/git出现RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/">
+  <link rel="canonical" href="https://sunflowercoder.com/python读写Excel/">
 
 
 
@@ -173,7 +174,7 @@
 <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
 </script>
 
-  <title>git出现RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054 | 所谓向日葵族's Blog</title>
+  <title>python读写Excel | 所谓向日葵族's Blog</title>
   
 
 
@@ -386,7 +387,7 @@
     
     
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://sunflowercoder.com/git出现RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/">
+      <link itemprop="mainEntityOfPage" href="https://sunflowercoder.com/python读写Excel/">
 
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="所谓向日葵族">
@@ -405,7 +406,7 @@
           
             
             <h2 class="post-title" itemprop="name headline">
-              git出现RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054
+              python读写Excel
               
             </h2>
             
@@ -425,8 +426,8 @@
 
 
 
-              <time title="创建于 2019-07-29" itemprop="dateCreated datePublished" datetime="2019-07-29T17:36:48+08:00">
-                2019-07-29
+              <time title="创建于 2019-08-19" itemprop="dateCreated datePublished" datetime="2019-08-19T14:10:43+08:00">
+                2019-08-19
               </time>
             
 
@@ -436,6 +437,28 @@
           </span>
 
             
+              <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+                
+                  <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                  
+                  
+                
+            </span>
+            
 
             
             
@@ -443,7 +466,7 @@
 
               
               
-                <span id="/git出现RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/" class="leancloud_visitors" data-flag-title="git出现RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054">
+                <span id="/python读写Excel/" class="leancloud_visitors" data-flag-title="python读写Excel">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -469,7 +492,7 @@
                 <span class="post-meta-item-text">字数统计&#58;</span>
               
                 <span title="字数统计">
-                  91 字
+                  1.5k 字
                 </span>
               
 
@@ -485,7 +508,7 @@
                     <span class="post-meta-item-text">阅读时长 &asymp;</span>
                   
                 <span title="阅读时长">
-                  1 分钟
+                  6 分钟
                 </span>
                   
             </div>
@@ -504,11 +527,42 @@
         
 
       
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在Hexo博客增加本地文件资源下载之后，deploy发布时出现：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054</span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line">Everything up-to-date</span><br></pre></td></tr></table></figure></p>
-<p>主要是因为一次性提交的文件过大，超出了HTTP缓存的上限。</p>
-<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><a id="more"></a>
-<p>通过配置缓存可解决。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.postBuffer 100M</span><br></pre></td></tr></table></figure></p>
-<p>查看配置<code>git config --list</code><br><img src="/git出现RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/1564396087.jpg" title="1564396087.jpg"></p>
+        <p>最近小编在处理各种.xlsx表格的数据处理和计算的工作，目前python用于操作表格的模块有很多，功能各有千秋。</p>
+<h2 id="表格写入"><a href="#表格写入" class="headerlink" title="表格写入"></a>表格写入</h2><p>简单的写入功能可用<code>xlwt</code>模块，写入功能的难点在于写入合并的单元格。<strong>单元格的下标都是从0开始</strong>。</p>
+<blockquote>
+<p>xlwt官方API：<a href="https://xlwt.readthedocs.io/en/latest/api.html" target="_blank" rel="noopener">https://xlwt.readthedocs.io/en/latest/api.html</a></p>
+</blockquote>
+<p>安装：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install xlwt</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p>新建workbook:</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wk=xlwt.Workbook()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>新建sheet：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sheet1 = wk.add_sheet(<span class="string">"数据"</span>, cell_overwrite_ok=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>写入普通单元格：写入第3行，第2列</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sheet1.write(<span class="number">2</span> , <span class="number">1</span>, <span class="string">"liebao"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 参数一：行下标</span></span><br><span class="line"><span class="comment"># 参数二：列下标</span></span><br><span class="line"><span class="comment"># 参数三：写入的内容</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>写入合并的单元格：</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 列合并：写入第2行，第2~5列</span></span><br><span class="line">sheet1.write_merge(<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="string">"列合并"</span>)</span><br><span class="line"><span class="comment"># 行合并：写入第1~3行，第3列</span></span><br><span class="line">sheet1.write_merge(<span class="number">0</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="string">"行合并"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 参数一：开始的行下标</span></span><br><span class="line"><span class="comment"># 参数二：结束的行下标（包含）</span></span><br><span class="line"><span class="comment"># 参数三：开始的列下标</span></span><br><span class="line"><span class="comment"># 参数四：结束的列下标（包含）</span></span><br><span class="line"><span class="comment"># 参数五：写入的内容</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>保存至表格文件</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wk.save(file_name)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 参数一：保存的表格文件名或者流</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>但是我们的单元格怎么设置样式呢？一般的单元格都会调整样式，如合并居中、设置字体大小、背景色等等？</p>
+<p>如何写入公式？</p>
+<p>如实现下面的</p>
+<img src="/python读写Excel/1568706718.jpg">
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">xlwt_excel</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    表格写入</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="comment"># 获得可写入的workbook对象</span></span><br><span class="line">    wk = xlwt.Workbook()</span><br><span class="line">    <span class="comment"># 增加一个sheet 并且单元格可重写</span></span><br><span class="line">    sheet1 = wk.add_sheet(sheet_name, cell_overwrite_ok=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 合并的行：写入合并的第一、二行</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(row0_2)):</span><br><span class="line">        sheet1.write_merge(<span class="number">0</span>, <span class="number">1</span>, i, i, row0_2[i], get_style())</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 写入单个最后一列的第一、二行：分开的两行消耗（元） 折前</span></span><br><span class="line">    sheet1.write(<span class="number">0</span>, len(row0_2), simple_end_col[<span class="number">0</span>], get_style())</span><br><span class="line">    sheet1.write(<span class="number">1</span>, len(row0_2), simple_end_col[<span class="number">1</span>], get_style())</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 合并的行：写第一列</span></span><br><span class="line">    sheet1.write_merge(<span class="number">2</span>, len(liebao_accounts) + <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, colum0[<span class="number">0</span>], get_style())</span><br><span class="line">    sheet1.write_merge(<span class="number">2</span> + len(liebao_accounts), len(liebao_accounts) + len(wifi_accounts) + <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, colum0[<span class="number">1</span>],</span><br><span class="line">                       get_style())</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 写入单个单元格：写猎豹数据：</span></span><br><span class="line">    <span class="keyword">for</span> index <span class="keyword">in</span> range(<span class="number">0</span>, len(liebao_accounts)):</span><br><span class="line">        sheet1.write(<span class="number">2</span> + index, <span class="number">1</span>, liebao_accounts[index][<span class="string">'app'</span>], get_style(<span class="literal">True</span>))</span><br><span class="line">        sheet1.write(<span class="number">2</span> + index, <span class="number">2</span>, liebao_accounts[index][<span class="string">'system'</span>], get_style(<span class="literal">True</span>))</span><br><span class="line">        sheet1.write(<span class="number">2</span> + index, <span class="number">3</span>, liebao_accounts[index][<span class="string">'account'</span>], get_style(<span class="literal">True</span>))</span><br><span class="line">        sheet1.write(<span class="number">2</span> + index, <span class="number">4</span>, float(liebao_accounts[index][<span class="string">'spend'</span>]), get_style(<span class="literal">True</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 写入单个单元格：写入wifi数据</span></span><br><span class="line">    <span class="keyword">for</span> index <span class="keyword">in</span> range(<span class="number">0</span>, len(wifi_accounts)):</span><br><span class="line">        sheet1.write(<span class="number">2</span> + len(liebao_accounts) + index, <span class="number">1</span>, wifi_accounts[index][<span class="string">'app'</span>], get_style(<span class="literal">True</span>))</span><br><span class="line">        sheet1.write(<span class="number">2</span> + len(liebao_accounts) + index, <span class="number">2</span>, wifi_accounts[index][<span class="string">'system'</span>], get_style(<span class="literal">True</span>))</span><br><span class="line">        sheet1.write(<span class="number">2</span> + len(liebao_accounts) + index, <span class="number">3</span>, wifi_accounts[index][<span class="string">'account'</span>], get_style(<span class="literal">True</span>))</span><br><span class="line">        sheet1.write(<span class="number">2</span> + len(liebao_accounts) + index, <span class="number">4</span>, float(wifi_accounts[index][<span class="string">'spend'</span>]), get_style(<span class="literal">True</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 写入数字格式化</span></span><br><span class="line">    sheet1.write_merge(<span class="number">2</span> + len(liebao_accounts) + len(wifi_accounts), <span class="number">2</span> + len(liebao_accounts) + len(wifi_accounts), <span class="number">0</span>,</span><br><span class="line">                       <span class="number">1</span>, datetime.now(), get_style(num_format=<span class="literal">True</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 写入合并列：合计</span></span><br><span class="line">    sheet1.write_merge(<span class="number">2</span> + len(liebao_accounts) + len(wifi_accounts), <span class="number">2</span> + len(liebao_accounts) + len(wifi_accounts), <span class="number">2</span>,</span><br><span class="line">                       <span class="number">3</span>, <span class="string">"合计"</span>, get_style())</span><br><span class="line">    <span class="comment"># 写入公式：求和消耗总和</span></span><br><span class="line">    sheet1.write(<span class="number">2</span> + len(liebao_accounts) + len(wifi_accounts), <span class="number">4</span>,</span><br><span class="line">                 xlwt.Formula(<span class="string">"SUM(E3:E%d)"</span> % (<span class="number">3</span> + len(liebao_accounts) + len(wifi_accounts) - <span class="number">1</span>)), get_style())</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 写入超链接</span></span><br><span class="line">    sheet1.write_merge(<span class="number">3</span> + len(liebao_accounts) + len(wifi_accounts), <span class="number">3</span> + len(liebao_accounts) + len(wifi_accounts), <span class="number">0</span>,</span><br><span class="line">                       <span class="number">4</span>, xlwt.Formula(<span class="string">'HYPERLINK("https://sunflowercoder.com/";"更多好文 点击查看我的博客")'</span>),</span><br><span class="line">                       get_style(bold=<span class="literal">True</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 修改列宽度</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(row0_2) + <span class="number">1</span>):</span><br><span class="line">        sheet1.col(i).width = <span class="number">150</span> * <span class="number">30</span>  <span class="comment"># 定义列宽</span></span><br><span class="line">    sheet1.col(<span class="number">0</span>).width = <span class="number">50</span> * <span class="number">30</span>  <span class="comment"># 定义列宽</span></span><br><span class="line">    sheet1.col(<span class="number">2</span>).width = <span class="number">200</span> * <span class="number">30</span>  <span class="comment"># 定义列宽</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 保存到文件</span></span><br><span class="line">    wk.save(file_name)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_style</span><span class="params">(simple_ceil=False, num_format=False, bold=False)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    设置表格样式</span></span><br><span class="line"><span class="string">    :param simple_ceil: 是否为 普通单元格，默认为非普通单元格</span></span><br><span class="line"><span class="string">    :param num_format: 是否为需要格式化的数字单元格</span></span><br><span class="line"><span class="string">    :param bold: 是否需要加粗</span></span><br><span class="line"><span class="string">    :return: </span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    style = xlwt.XFStyle()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> simple_ceil:</span><br><span class="line">        <span class="comment"># 字体</span></span><br><span class="line">        font = xlwt.Font()</span><br><span class="line">        font.name = <span class="string">"宋体"</span></span><br><span class="line">        font.bold = bold</span><br><span class="line">        font.underline = <span class="literal">False</span></span><br><span class="line">        font.italic = <span class="literal">False</span></span><br><span class="line">        font.colour_index = <span class="number">0</span></span><br><span class="line">        font.height = <span class="number">200</span>  <span class="comment"># 200为10号字体</span></span><br><span class="line">        style.font = font</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 单元格居中</span></span><br><span class="line">        align = xlwt.Alignment()</span><br><span class="line">        align.horz = xlwt.Alignment.HORZ_CENTER  <span class="comment"># 水平方向</span></span><br><span class="line">        align.vert = xlwt.Alignment.VERT_CENTER  <span class="comment"># 竖直方向</span></span><br><span class="line">        style.alignment = align</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 背景色</span></span><br><span class="line">        pattern = xlwt.Pattern()</span><br><span class="line">        pattern.pattern = xlwt.Pattern.SOLID_PATTERN</span><br><span class="line">        pattern.pattern_fore_colour = xlwt.Style.colour_map[<span class="string">'pale_blue'</span>]  <span class="comment"># 设置单元格背景色为黄色</span></span><br><span class="line">        style.pattern = pattern</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 边框</span></span><br><span class="line">    border = xlwt.Borders()  <span class="comment"># 给单元格加框线</span></span><br><span class="line">    border.left = xlwt.Borders.THIN  <span class="comment"># 左</span></span><br><span class="line">    border.top = xlwt.Borders.THIN  <span class="comment"># 上</span></span><br><span class="line">    border.right = xlwt.Borders.THIN  <span class="comment"># 右</span></span><br><span class="line">    border.bottom = xlwt.Borders.THIN  <span class="comment"># 下</span></span><br><span class="line">    border.left_colour = <span class="number">0x40</span>  <span class="comment"># 边框线颜色</span></span><br><span class="line">    border.right_colour = <span class="number">0x40</span></span><br><span class="line">    border.top_colour = <span class="number">0x40</span></span><br><span class="line">    border.bottom_colour = <span class="number">0x40</span></span><br><span class="line">    style.borders = border</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 数字格式化</span></span><br><span class="line">    <span class="keyword">if</span> num_format:</span><br><span class="line">        style.num_format_str = <span class="string">'M/D/YY'</span>  <span class="comment"># 选项: D-MMM-YY, D-MMM-YY, D-MMM, MMM-YY, h:mm, h:mm:ss, h:mm, h:mm:ss, M/D/YY h:mm, mm:ss, [h]:mm:ss, mm:ss.0</span></span><br><span class="line">    <span class="keyword">return</span> style</span><br></pre></td></tr></table></figure>
+<h2 id="表格读取"><a href="#表格读取" class="headerlink" title="表格读取"></a>表格读取</h2><p>读取比较麻烦的是合并单元格的内容，Python读取Excel中单元格的内容返回的有5种类型，ctype分别为 :  0 empty，1 string，2 number， 3 date，4 boolean，5 error</p>
+<blockquote>
+<p>xlrd官方API：<a href="https://xlrd.readthedocs.io/en/latest/api.html#module-xlrd" target="_blank" rel="noopener">https://xlrd.readthedocs.io/en/latest/api.html#module-xlrd</a></p>
+</blockquote>
+<p>安装：<code>pip install xlrd</code></p>
+<p>读取示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">xlrd_excel</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    表格读取</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="comment"># 打开文件</span></span><br><span class="line">    wb = xlrd.open_workbook(filename=file_name, formatting_info=<span class="literal">True</span>)</span><br><span class="line">    <span class="comment"># 获取所有表格名字</span></span><br><span class="line">    print(<span class="string">"所有的表格名："</span>, wb.sheet_names())</span><br><span class="line">    <span class="comment"># 通过索引获取表格</span></span><br><span class="line">    sheet1 = wb.sheet_by_index(<span class="number">0</span>)</span><br><span class="line">    <span class="comment"># 通过名字获取表格</span></span><br><span class="line">    <span class="comment"># sheet2 = wb.sheet_by_name(sheet_name)</span></span><br><span class="line">    <span class="comment"># 输出表格的名字，行数和列数</span></span><br><span class="line">    print(<span class="string">"第一个表格名："</span>, sheet1.name, <span class="string">"   行数："</span>, sheet1.nrows, <span class="string">"  列数："</span>, sheet1.ncols)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 获取行、列的内容</span></span><br><span class="line">    rows = sheet1.row_values(<span class="number">0</span>)  <span class="comment"># 获取第一行的内容</span></span><br><span class="line">    cols = sheet1.col_values(<span class="number">0</span>)  <span class="comment"># 获取第一列内容</span></span><br><span class="line">    print(rows)</span><br><span class="line">    print(cols)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 获取单元格内容 三种方式</span></span><br><span class="line">    print(sheet1.cell(<span class="number">0</span>, <span class="number">4</span>).value)</span><br><span class="line">    print(sheet1.cell_value(<span class="number">0</span>, <span class="number">4</span>))</span><br><span class="line">    print(sheet1.row(<span class="number">0</span>)[<span class="number">4</span>].value)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 输出合并表格的内容：注意 xlrd.open_workbook()时，必须formatting_info=True，否则merged_cells返回空</span></span><br><span class="line">    merged_cells = sheet1.merged_cells</span><br><span class="line">    print(<span class="string">"合并的单元格："</span>, merged_cells)</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> merged_cells:</span><br><span class="line">        <span class="comment"># 合并的单元格为元组形式 如(12, 13, 0, 2) 为(开始的行标，结束的行标，开始的列标，结束的列标) 取值为（开始的行标，开始的列标）即可</span></span><br><span class="line">        print(<span class="string">"合并的单元格"</span>, item, <span class="string">"值为："</span>, sheet1.cell_value(item[<span class="number">0</span>], item[<span class="number">2</span>]))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Python读取Excel中单元格的内容返回的有5种类型，ctype分别为 :  0 empty，1 string，2 number， 3 date，4 boolean，5 error</span></span><br><span class="line">    <span class="comment"># 输出日期格式</span></span><br><span class="line">    <span class="keyword">if</span> sheet1.cell_type(<span class="number">12</span>, <span class="number">0</span>) == <span class="number">3</span>:</span><br><span class="line">        date_value = xlrd.xldate_as_tuple(sheet1.cell_value(<span class="number">12</span>, <span class="number">0</span>), wb.datemode)</span><br><span class="line">        print(<span class="string">"日期为："</span>, date_value, )</span><br><span class="line">        print(<span class="string">"日期为（格式为2019-09-17）："</span>, date(*date_value[:<span class="number">3</span>]))</span><br><span class="line">        print(<span class="string">"日期为（格式为2019/09/17）："</span>, date(*date_value[:<span class="number">3</span>]).strftime(<span class="string">'%Y/%m/%d'</span>))</span><br></pre></td></tr></table></figure></p>
+<img src="/python读写Excel/1568707371.jpg">
+<p>需要示例代码，点击<a href="/download/ExcelOp.zip">资源下载</a></p>
 
       
     </div>
@@ -573,7 +627,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://sunflowercoder.com/git出现RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/" title="git出现RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errfno 10054">https://sunflowercoder.com/git出现RPC-failed-curl-56-OpenSSL-SSL-read-SSL-ERROR-SYSCALL-errfno-10054/</a>
+    <a href="https://sunflowercoder.com/python读写Excel/" title="python读写Excel">https://sunflowercoder.com/python读写Excel/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -588,7 +642,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"> Git</i></a>
+            <a href="/tags/xlwt/" rel="tag"><i class="fa fa-tag"> xlwt</i></a>
+          
+            <a href="/tags/xlrt/" rel="tag"><i class="fa fa-tag"> xlrt</i></a>
+          
+            <a href="/tags/Excel/" rel="tag"><i class="fa fa-tag"> Excel</i></a>
           
         </div>
       
@@ -601,8 +659,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Scrapy-Selenium爬取动态渲染网站/" rel="next" title="Scrapy+Selenium爬取动态渲染网站">
-                <i class="fa fa-chevron-left"></i> Scrapy+Selenium爬取动态渲染网站
+              <a href="/gradle错误-解决办法-（汇总-不定期更新）/" rel="next" title="gradle错误 解决办法 （汇总 不定期更新）">
+                <i class="fa fa-chevron-left"></i> gradle错误 解决办法 （汇总 不定期更新）
               </a>
             
           </div>
@@ -610,10 +668,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/Cluster数据迁移单实例方案实战/" rel="prev" title="Redis Cluster数据迁移单实例方案实战">
-                Redis Cluster数据迁移单实例方案实战 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -775,7 +829,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决"><span class="nav-number">2.</span> <span class="nav-text">解决</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#表格写入"><span class="nav-number">1.</span> <span class="nav-text">表格写入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表格读取"><span class="nav-number">2.</span> <span class="nav-text">表格读取</span></a></li></ol></div>
             
 
           </div>
