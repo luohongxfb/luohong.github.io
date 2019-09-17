@@ -114,20 +114,20 @@
 
 
 
-<meta name="description" content="最近小编在处理各种.xlsx表格的数据处理和计算的工作，目前python用于操作表格的模块有很多，功能各有千秋。 表格写入简单的写入功能可用xlwt模块，写入功能的难点在于写入合并的单元格。单元格的下标都是从0开始。  xlwt官方API：https://xlwt.readthedocs.io/en/latest/api.html  安装：1pip install xlwt  新建workbook">
+<meta name="description" content="最近小编在处理各种.xlsx表格的数据处理和计算的工作，目前python用于操作表格的模块有很多，功能各有千秋。本文主要讲的是xlwt用于写，xlrt用于读。 表格写入简单的写入功能可用xlwt模块，写入功能的难点在于写入合并的单元格。单元格的下标都是从0开始。  xlwt官方API：https://xlwt.readthedocs.io/en/latest/api.html  安装：1pip i">
 <meta name="keywords" content="xlwt,xlrt,Excel">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python读写Excel">
 <meta property="og:url" content="https://sunflowercoder.com/python读写Excel/index.html">
 <meta property="og:site_name" content="所谓向日葵族&#39;s Blog">
-<meta property="og:description" content="最近小编在处理各种.xlsx表格的数据处理和计算的工作，目前python用于操作表格的模块有很多，功能各有千秋。 表格写入简单的写入功能可用xlwt模块，写入功能的难点在于写入合并的单元格。单元格的下标都是从0开始。  xlwt官方API：https://xlwt.readthedocs.io/en/latest/api.html  安装：1pip install xlwt  新建workbook">
+<meta property="og:description" content="最近小编在处理各种.xlsx表格的数据处理和计算的工作，目前python用于操作表格的模块有很多，功能各有千秋。本文主要讲的是xlwt用于写，xlrt用于读。 表格写入简单的写入功能可用xlwt模块，写入功能的难点在于写入合并的单元格。单元格的下标都是从0开始。  xlwt官方API：https://xlwt.readthedocs.io/en/latest/api.html  安装：1pip i">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://sunflowercoder.com/python读写Excel/1568706718.jpg">
 <meta property="og:image" content="https://sunflowercoder.com/python读写Excel/1568707371.jpg">
-<meta property="og:updated_time" content="2019-09-17T08:06:25.459Z">
+<meta property="og:updated_time" content="2019-09-17T08:11:28.017Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python读写Excel">
-<meta name="twitter:description" content="最近小编在处理各种.xlsx表格的数据处理和计算的工作，目前python用于操作表格的模块有很多，功能各有千秋。 表格写入简单的写入功能可用xlwt模块，写入功能的难点在于写入合并的单元格。单元格的下标都是从0开始。  xlwt官方API：https://xlwt.readthedocs.io/en/latest/api.html  安装：1pip install xlwt  新建workbook">
+<meta name="twitter:description" content="最近小编在处理各种.xlsx表格的数据处理和计算的工作，目前python用于操作表格的模块有很多，功能各有千秋。本文主要讲的是xlwt用于写，xlrt用于读。 表格写入简单的写入功能可用xlwt模块，写入功能的难点在于写入合并的单元格。单元格的下标都是从0开始。  xlwt官方API：https://xlwt.readthedocs.io/en/latest/api.html  安装：1pip i">
 <meta name="twitter:image" content="https://sunflowercoder.com/python读写Excel/1568706718.jpg">
 
 
@@ -527,7 +527,7 @@
         
 
       
-        <p>最近小编在处理各种.xlsx表格的数据处理和计算的工作，目前python用于操作表格的模块有很多，功能各有千秋。</p>
+        <p>最近小编在处理各种.xlsx表格的数据处理和计算的工作，目前python用于操作表格的模块有很多，功能各有千秋。本文主要讲的是xlwt用于写，xlrt用于读。</p>
 <h2 id="表格写入"><a href="#表格写入" class="headerlink" title="表格写入"></a>表格写入</h2><p>简单的写入功能可用<code>xlwt</code>模块，写入功能的难点在于写入合并的单元格。<strong>单元格的下标都是从0开始</strong>。</p>
 <blockquote>
 <p>xlwt官方API：<a href="https://xlwt.readthedocs.io/en/latest/api.html" target="_blank" rel="noopener">https://xlwt.readthedocs.io/en/latest/api.html</a></p>
@@ -562,6 +562,7 @@
 <p>安装：<code>pip install xlrd</code></p>
 <p>读取示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">xlrd_excel</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    表格读取</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="comment"># 打开文件</span></span><br><span class="line">    wb = xlrd.open_workbook(filename=file_name, formatting_info=<span class="literal">True</span>)</span><br><span class="line">    <span class="comment"># 获取所有表格名字</span></span><br><span class="line">    print(<span class="string">"所有的表格名："</span>, wb.sheet_names())</span><br><span class="line">    <span class="comment"># 通过索引获取表格</span></span><br><span class="line">    sheet1 = wb.sheet_by_index(<span class="number">0</span>)</span><br><span class="line">    <span class="comment"># 通过名字获取表格</span></span><br><span class="line">    <span class="comment"># sheet2 = wb.sheet_by_name(sheet_name)</span></span><br><span class="line">    <span class="comment"># 输出表格的名字，行数和列数</span></span><br><span class="line">    print(<span class="string">"第一个表格名："</span>, sheet1.name, <span class="string">"   行数："</span>, sheet1.nrows, <span class="string">"  列数："</span>, sheet1.ncols)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 获取行、列的内容</span></span><br><span class="line">    rows = sheet1.row_values(<span class="number">0</span>)  <span class="comment"># 获取第一行的内容</span></span><br><span class="line">    cols = sheet1.col_values(<span class="number">0</span>)  <span class="comment"># 获取第一列内容</span></span><br><span class="line">    print(rows)</span><br><span class="line">    print(cols)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 获取单元格内容 三种方式</span></span><br><span class="line">    print(sheet1.cell(<span class="number">0</span>, <span class="number">4</span>).value)</span><br><span class="line">    print(sheet1.cell_value(<span class="number">0</span>, <span class="number">4</span>))</span><br><span class="line">    print(sheet1.row(<span class="number">0</span>)[<span class="number">4</span>].value)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 输出合并表格的内容：注意 xlrd.open_workbook()时，必须formatting_info=True，否则merged_cells返回空</span></span><br><span class="line">    merged_cells = sheet1.merged_cells</span><br><span class="line">    print(<span class="string">"合并的单元格："</span>, merged_cells)</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> merged_cells:</span><br><span class="line">        <span class="comment"># 合并的单元格为元组形式 如(12, 13, 0, 2) 为(开始的行标，结束的行标，开始的列标，结束的列标) 取值为（开始的行标，开始的列标）即可</span></span><br><span class="line">        print(<span class="string">"合并的单元格"</span>, item, <span class="string">"值为："</span>, sheet1.cell_value(item[<span class="number">0</span>], item[<span class="number">2</span>]))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Python读取Excel中单元格的内容返回的有5种类型，ctype分别为 :  0 empty，1 string，2 number， 3 date，4 boolean，5 error</span></span><br><span class="line">    <span class="comment"># 输出日期格式</span></span><br><span class="line">    <span class="keyword">if</span> sheet1.cell_type(<span class="number">12</span>, <span class="number">0</span>) == <span class="number">3</span>:</span><br><span class="line">        date_value = xlrd.xldate_as_tuple(sheet1.cell_value(<span class="number">12</span>, <span class="number">0</span>), wb.datemode)</span><br><span class="line">        print(<span class="string">"日期为："</span>, date_value, )</span><br><span class="line">        print(<span class="string">"日期为（格式为2019-09-17）："</span>, date(*date_value[:<span class="number">3</span>]))</span><br><span class="line">        print(<span class="string">"日期为（格式为2019/09/17）："</span>, date(*date_value[:<span class="number">3</span>]).strftime(<span class="string">'%Y/%m/%d'</span>))</span><br></pre></td></tr></table></figure></p>
 <img src="/python读写Excel/1568707371.jpg">
+<p><code>xlwt</code>最大的弊端就是不能修改表格只能新增，修改的方法，小编会在后面的文章阐述。</p>
 <p>需要示例代码，点击<a href="/download/ExcelOp.zip">资源下载</a></p>
 
       
@@ -863,7 +864,7 @@
     
       <span class="post-meta-item-text">本站总字数&#58;</span>
     
-    <span title="本站总字数">25.9k 字</span>
+    <span title="本站总字数">26k 字</span>
   
 </div>
 
