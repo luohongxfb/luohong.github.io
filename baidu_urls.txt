@@ -2,6 +2,7 @@ https://sunflowercoder.com/python生成requirements-txt方法/
 https://sunflowercoder.com/python读写Excel/
 https://sunflowercoder.com/gradle错误-解决办法-（汇总-不定期更新）/
 https://sunflowercoder.com/AndroidStudio打开旧项目报No-toolchains-found-in-the-NDK-toolchains-folder-for-ABI-with-prefix-mipsel-linux-android/
+https://sunflowercoder.com/Git-CentOS-7搭建git服务端/
 https://sunflowercoder.com/yum-查看install包装了哪些文件/
 https://sunflowercoder.com/Centos7防火墙设置/
 https://sunflowercoder.com/Centos-7利用yum安装apache-mysql-8-php7/
