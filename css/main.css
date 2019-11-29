@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9f75ff;
+  background: #b494db;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3150,9 +3150,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  color: #444;
+  color: #555;
   line-height: 1.8;
-  font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
+  font-family: 'PT Sans', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-meta {
   background: linear-gradient(90deg, #5586f3 0%, #666eab 100%);
