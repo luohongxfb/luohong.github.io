@@ -1951,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b494db;
+  background: #65fff5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -4033,18 +4033,10 @@ h6,
   }
 }
 .links-of-blogroll {
-  text-align: initial;
   font-size: 13px;
 }
 .links-of-blogroll-inline .links-of-blogroll-item a {
   box-sizing: border-box;
-  display: inline-block;
-  margin-right: 0;
-  margin-bottom: 0;
-  padding: 0 5px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .sidebar a {
   color: #555;
